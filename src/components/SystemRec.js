@@ -5,9 +5,9 @@ import RecommendedSystem from './RecommendedSystem';
 import './styles/shop.css';
 
 import validZipcodes from './data/zipcodes';
-import './data/electricUnits';
-import './data/gasUnits';
-import './data/replacementParts';
+// import './data/electricUnits';
+// import './data/gasUnits';
+// import './data/replacementParts';
 
 const SystemRec = () => {
   const [zipcode, setZipcode] = useState('');
@@ -153,8 +153,7 @@ const SystemRec = () => {
                   htmlFor="full-sys">Full System</label>
                 <br />
                 <br />
-                {/* <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="replacement" id="replace" /><label
-                  htmlFor="replace">Replacement Parts</label> */}
+
                 <strong>Replacement Parts:</strong>
                 <br />
                 <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="acCondenserOnly" id="acCondenserOnly" /><label
@@ -180,7 +179,7 @@ const SystemRec = () => {
             <div className={`recommendation ${recShow ? 'show' : ''}`}>
               <button className="close-modal" onClick={handleCloseModalClick}>X</button>
               {/* FULL SYSTEM BOX   ##################### */}
-              <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={fullOrReplace} />
+              <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
 
             </div>
             {/* REPLACEMENT PARTS BOX   ############### */}

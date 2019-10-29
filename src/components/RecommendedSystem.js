@@ -13,19 +13,19 @@ import './styles/grid.css';
 const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
 
   const sysData = { gasSystems, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
-  // let [dataSource, setDataSource] = useState(gasSystems);
-  const destructure = (systemData) => {
-    console.log(':::::', systemData);
 
-  }
-
+  // if (sysType === 'gas' && fullOrReplace === 'full') {
+  //   fullOrReplace = 'gasSystems';
+  // }
 
   let { productTitle, productImage, pricingLevels, seers, levelDescriptions, levelFeatureLists, levelTotFinancings, levelTotPrices } = sysData[fullOrReplace][sysTonnage];
 
   if (sysType === '' || !sysType) {
     return <p>nothing here yet</p>
   } else if (sysType === 'electric') {
-    return <p>ELECTRIC UNIT</p>
+    return <div> <p>ELECTRIC UNIT</p>
+      <p><i>needs data</i></p>
+    </div>
   }
 
   return (
@@ -34,7 +34,7 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
       <div className="info-grid">
         <div className="cell title">{productTitle}</div>
         <div className="cell product-image">
-          <img src={productImage} alt={`Image of ${productTitle}`} />
+          <img src={productImage} alt={`${productTitle}`} rel="noopener noreferrer" />
 
         </div>
         <div className="cell pricing-info">
@@ -68,7 +68,7 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
         </div>
         <div className="cell finance-btn1">
           <div className="12-month-button">
-            <a target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=RE468&loamt=" className="apply-button">12 Month <span>Same-As-Cash*</span></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=RE468&loamt=" className="apply-button">12 Month <span>Same-As-Cash*</span></a>
             <aside className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside>
           </div>
         </div>
@@ -77,13 +77,14 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
         </div>
         <div className="cell finance-btn2">
           <div className="60-month-button">
-            <a target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=ZRE78&loamt=" className="apply-button">0.00%<span>60-Month Loan*</span></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=ZRE78&loamt=" className="apply-button">0.00%<span>60-Month Loan*</span></a>
             <aside className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside>
           </div>
         </div>
         <footer className="cell footer">
-          <img src="https://seal-utah.bbb.org/seals/darkgray-seal-200-65-bbb-22001531.png" /><img style={{ WebkitUserSelect: 'none', margin: 'auto' }} src="https://application.enerbank.com/content/images/MemberFDIC.png" />
-          <img src="https://application.enerbank.com/content/images/e-b-logo.png" />
+          <img alt="Seal of the better business bureau" src="https://seal-utah.bbb.org/seals/darkgray-seal-200-65-bbb-22001531.png" />
+          <img alt="Apply ##########" style={{ WebkitUserSelect: 'none', margin: 'auto' }} src="https://application.enerbank.com/content/images/MemberFDIC.png" />
+          <img alt="Apply ##########" src="https://application.enerbank.com/content/images/e-b-logo.png" />
         </footer>
       </div>
     </div>
