@@ -71,8 +71,8 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
         </div>
         <div className="cell finance-btn1">
           <div className="12-month-button">
-            <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=RE468&loamt=" className="apply-button">12 Month <span>Same-As-Cash*</span></a>
-            <aside className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside>
+            <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=RE468&loamt=" className="apply-button">12 Month <span>Same-As-Cash*</span>
+              <aside className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside></a>
           </div>
         </div>
         <div className="cell brand-logos">
@@ -80,8 +80,8 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
         </div>
         <div className="cell finance-btn2">
           <div className="60-month-button">
-            <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=ZRE78&loamt=" className="apply-button">0.00%<span>60-Month Loan*</span></a>
-            <aside className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside>
+            <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=ZRE78&loamt=" className="apply-button">0.00%<span>60-Month Loan*</span>
+              <aside className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside></a>
           </div>
         </div>
         <footer className="cell footer">
