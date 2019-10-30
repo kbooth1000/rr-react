@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -24,24 +25,31 @@ const Header = () => {
       </div>
 
       <div className="main-nav">
-        <a href="../index.html"><div className="logo">
-        </div></a>
+        <Link to="/"><div className="logo">
+        </div></Link>
         <div className="nav-list">
           <span className="menu-icon"><i className="fas fa-bars"></i></span>
           <ul>
-            <li><a href="../index.html" className="active">HOME</a></li>
-            <li><a href="#">SHOP NOW</a></li>
-            <li><a href="#">
-              <span className="nobreak">HVAC EQUIPMENT</span>
-              <span className="nobreak">FOR SALE
-                                      </span></a></li>
-            <li><a href="#">FINANCING AVAILABLE
-                              </a></li>
+            <li>
+              <Link to="/">HOME</Link>
+            </li>
+            <li>
+              <Link to="/shop">SHOP NOW</Link>
+            </li>
+            <li>
+              <Link to="equipment-for-sale">
+                <span className="nobreak">HVAC EQUIPMENT</span>
+                <span className="nobreak">FOR SALE</span>
+              </Link>
+            </li>
+            <li><Link to="financing">
+              FINANCING AVAILABLE
+                              </Link></li>
             <li><a href="#">MORE&nbsp;></a></li>
           </ul>
         </div>
         <div className="quote-button">
-          <a href="#">GET A QUOTE</a>
+          <Link to="quote">GET A QUOTE</Link>
         </div>
       </div>
     </div>
