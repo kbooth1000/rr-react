@@ -25,7 +25,7 @@ input[type='submit'] {
     color: rgb(94, 94, 94);
     font-family: Montserrat, arial, sans-serif;
     font-weight: 400;
-    max-width: 1150px;
+    /* max-width: 1150px; */
     background: #fff;
     width: 100%;
     position: relative;
@@ -111,11 +111,13 @@ form.active
 }
 
 .recommendation.show {
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw - 2rem);
+    height: 98%;
+    min-height: 98vh;
     padding: 0.5rem;
     filter: opacity(1);
-    border: 1rem rgba(0, 0, 0, 0.4) solid
+    border: 1rem rgba(0, 0, 0, 0.4) solid;
+    margin: 1rem;
 }
 
 aside {
@@ -221,7 +223,7 @@ input[type='submit'],
 .close-modal {
     position: sticky;
     left: 97%;
-    top: 0;
+    top: .5%;
     padding: 0.5rem;
     background: #00aeef;
     color: #fff;

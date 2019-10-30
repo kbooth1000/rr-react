@@ -300,7 +300,7 @@ a {
 
 .hero {
   background: rgba(0, 0, 0, .4);
-  width: 70%;
+  width: 84%;
   margin: 14% auto auto 8%;
   position: absolute;
   padding: 1rem;
@@ -338,7 +338,7 @@ a {
 .call-to-action a {
   background: var(--hi-blue);
   color: #fff;
-  height: 1.6em;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -377,6 +377,13 @@ a {
   }
 }
 
+@media screen and (min-width: 460px) {
+  .call-to-action a {
+    height: 2.8rem;
+  }
+}
+
+
 @media screen and (min-width: 699px) {
   .email-link {
       display: flex;
@@ -385,7 +392,13 @@ a {
   .login-link {
       margin-left: calc(100% - 630px) !important;
   }
+
+
+.hero {
+  width: 70%;
 }
+}
+
 
 @media screen and (min-width: 834px) {
 
@@ -444,10 +457,13 @@ a {
       background: var(--main-blue-trans);
   }
 }
+.call-to-action a {
+  font-size: .95rem;
+}
 
 @media screen and (min-width: 1060px) {
   .call-to-action a {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
   }
 
 }

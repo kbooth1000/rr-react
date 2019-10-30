@@ -183,7 +183,7 @@ const SystemRec = () => {
             <div className={`recommendation ${recShow ? 'show' : ''}`}>
               <button className="close-modal" onClick={handleCloseModalClick}>X</button>
               {/* FULL SYSTEM BOX   ##################### */}
-              <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />}
+              <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
 
             </div>
             {/* REPLACEMENT PARTS BOX   ############### */}
