@@ -23,6 +23,8 @@ const SystemRec = () => {
   const [step4Active, setStep4Active] = useState('');
   const [tonDropdownSelect, setTonDropdownSelect] = useState('');
   const [recShow, setRecShow] = useState(false);
+  const [fullOrReplaceSelected, setFullOrReplaceSelected] = useState('');
+
 
 
   const handleZipChange = e => {
@@ -53,10 +55,12 @@ const SystemRec = () => {
 
   const handleFullOrReplaceSubmit = e => {
     setFullOrReplace(e.target.value);
+    setFullOrReplaceSelected(e.target.value);
     setRecShow(true);
   }
 
   const handleCloseModalClick = e => {
+    setFullOrReplaceSelected('');
     setRecShow(!recShow)
   }
 
@@ -142,7 +146,7 @@ const SystemRec = () => {
             <aside className="aside3"></aside>
 
 
-            <form className={`step4 ${step4Show} ${step4Active}`}>
+            <form className={`step4 ${step4Show} ${step4Active}`} value={setFullOrReplaceSelected}>
               <fieldset className="fieldset">
                 <legend>Full System or Replacement Parts:</legend>
                 <p>
@@ -174,12 +178,12 @@ const SystemRec = () => {
               </fieldset>
             </form>
 
-            <aside className="aside4"></aside>
+            <aside className="aside4">{setFullOrReplaceSelected}</aside>
 
             <div className={`recommendation ${recShow ? 'show' : ''}`}>
               <button className="close-modal" onClick={handleCloseModalClick}>X</button>
               {/* FULL SYSTEM BOX   ##################### */}
-              <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
+              <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />}
 
             </div>
             {/* REPLACEMENT PARTS BOX   ############### */}

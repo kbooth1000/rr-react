@@ -18,7 +18,10 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
   //   fullOrReplace = 'gasSystems';
   // }
 
-  let { productTitle, productImage, pricingLevels, seers, levelDescriptions, levelFeatureLists, levelTotFinancings, levelTotPrices } = sysData[fullOrReplace][sysTonnage];
+  let { productTitle, productImage, pricingLevels, seers, levelDescriptions, levelFeatureLists, levelTotFinancings, levelTotPrices } = sysData[fullOrReplace] ? sysData[fullOrReplace][sysTonnage] :
+    {
+      productTitle: 'no data', productImage: 'no data', pricingLevels: 'no data', seers: 'no data', levelDescriptions: 'no data', levelFeatureLists: 'no data', levelTotFinancings: 'no data', levelTotPrices: 'no data'
+    }
 
   if (sysType === '' || !sysType) {
     return <p>nothing here yet</p>
@@ -82,9 +85,11 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
           </div>
         </div>
         <footer className="cell footer">
-          <img alt="Seal of the better business bureau" src="https://seal-utah.bbb.org/seals/darkgray-seal-200-65-bbb-22001531.png" />
-          <img alt="Apply ##########" style={{ WebkitUserSelect: 'none', margin: 'auto' }} src="https://application.enerbank.com/content/images/MemberFDIC.png" />
-          <img alt="Apply ##########" src="https://application.enerbank.com/content/images/e-b-logo.png" />
+          <a href="https://www.bbb.org/us/ut/salt-lake-city/profile/loans/enerbank-usa-1166-22001531#sealclick" rel="noopener noreferrer" target="_blank">
+            <img alt="Seal of the better business bureau" src="https://seal-utah.bbb.org/seals/darkgray-seal-200-65-bbb-22001531.png" />
+          </a>
+          <img alt="Apply: 12 Months, same as cash" style={{ WebkitUserSelect: 'none', margin: 'auto' }} src="https://application.enerbank.com/content/images/MemberFDIC.png" />
+          <img alt="Apply: 0.00% 60-month loan" src="https://application.enerbank.com/content/images/e-b-logo.png" />
         </footer>
       </div>
     </div>

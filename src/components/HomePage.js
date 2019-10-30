@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -7,13 +8,12 @@ const HomePage = () => {
         <div className="nav-breaker">
           <div className="tile-nav">
             <div className="tile-bg"></div>
-            <a href="#" className="tile-mask">Pay now
-                    </a>
+            <Link to="/pay-now" className="tile-mask">Pay now
+                    </Link>
           </div>
           <div className="tile-nav">
             <div className="tile-bg"></div>
-            <a href="#" className="tile-mask">Shop now
-                    </a>
+            <Link to="/shop" className="tile-mask">Shop now</Link>
           </div>
         </div>
 
@@ -21,13 +21,13 @@ const HomePage = () => {
         <div className="nav-breaker">
           <div className="tile-nav">
             <div className="tile-bg"></div>
-            <a href="#" className="tile-mask">Apply now
-                    </a>
+            <Link to="Financing" className="tile-mask">Apply now
+                    </Link>
           </div>
           <div className="tile-nav">
             <div className="tile-bg"></div>
-            <a href="#" className="tile-mask">Financing
-                    </a>
+            <Link to="Financing" className="tile-mask">Financing
+                    </Link>
           </div>
         </div>
       </div>
