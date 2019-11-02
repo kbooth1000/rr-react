@@ -3,10 +3,9 @@ import React from 'react';
 const Quote = () => {
   return (
     <div className="Quote">
-
-      <div> <p>GET A QUOTE</p>
-        <p><i>needs data</i></p>
-      </div>
+      <main style={{ margin: '1rem 0' }}>
+        <h1 style={{ float: 'right', marginRight: '5rem' }}>Get a quote</h1>
+      </main>
     </div>
   )
 }
