@@ -74,6 +74,7 @@ const SystemRec = () => {
 
 
         <main style={{ margin: '1rem 0' }}>
+          <h1 style={{ float: 'right', marginRight: '5rem' }}>Shop now</h1>
           <section className="recommendation-finder">
             <form onSubmit={handleZipSubmit} className={`step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
               <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
