@@ -5,6 +5,10 @@ import RecommendedSystem from './RecommendedSystem';
 import './styles/shop.css';
 
 import validZipcodes from './data/zipcodes';
+import { acCondenserOnly } from './data/acCondenserOnly';
+import { evaporatorCoilOnly } from './data/evaporatorCoilOnly';
+import { furnaceOnly } from './data/furnaceOnly';
+import { heatPumpOnly } from './data/heatPumpOnly';
 // import './data/electricUnits';
 // import './data/gasUnits';
 // import './data/replacementParts';
@@ -147,42 +151,42 @@ const SystemRec = () => {
             <aside className="aside3"></aside>
 
 
-            <form className={`step4 ${step4Show} ${step4Active}`} value={setFullOrReplaceSelected}>
+            <form className={`step4 ${step4Show} ${step4Active}`} value={fullOrReplaceSelected}>
               <fieldset className="fieldset">
                 <legend>Full System or Replacement Parts:</legend>
                 <p>
                   Do you need a full system installed or are you looking for replacement
                   parts?
                     </p>
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="full" id="full-sys" /><label
+                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="full" id="full-sys" checked={(fullOrReplace === 'full') ? 'true' : null} /><label
                   htmlFor="full-sys">Full System</label>
                 <br />
                 <br />
 
                 <strong>Replacement Parts:</strong>
-                <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="acCondenserOnly" id="acCondenserOnly" /><label
+                <br />{fullOrReplace}
+                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="acCondenserOnly" id="acCondenserOnly" checked={(fullOrReplace === 'acCondenserOnly') ? 'checked' : null} /><label
                   htmlFor="acCondenserOnly">AC Condenser Only</label>
                 <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="airHandlerOnly" id="airHandlerOnly" /><label
+                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="airHandlerOnly" id="airHandlerOnly" checked={(fullOrReplace === 'airHandlerOnly') ? 'checked' : null} /><label
                   htmlFor="airHandlerOnly">Air Handler Only</label>
                 <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="evaporatorCoilOnly" id="evaporatorCoilOnly" /><label
+                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="evaporatorCoilOnly" id="evaporatorCoilOnly" checked={(fullOrReplace === 'evaporatorCoilOnly') ? 'checked' : null} /><label
                   htmlFor="evaporatorCoilOnly">Evaporator Coil Only</label>
                 <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="furnaceOnly" id="furnaceOnly" /><label
+                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="furnaceOnly" id="furnaceOnly" checked={(fullOrReplace === 'furnaceOnly') ? 'checked' : null} /><label
                   htmlFor="furnaceOnly">Furnace Only</label>
                 <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="heatPumpOnly" id="heatPumpOnly" /><label
+                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="heatPumpOnly" id="heatPumpOnly" checked={(fullOrReplace === 'heatPumpOnly') ? 'checked' : null} /><label
                   htmlFor="heatPumpOnly">Heat Pump Only</label>
                 <br />
               </fieldset>
             </form>
 
-            <aside className="aside4">{setFullOrReplaceSelected}</aside>
+            <aside className="aside4">{fullOrReplaceSelected}</aside>
 
             <div className={`recommendation ${recShow ? 'show' : ''}`}>
-              <button className="close-modal" onClick={handleCloseModalClick}>X</button>
+              <button className="close-modal" value="" onClick={handleCloseModalClick}>X</button>
               {/* FULL SYSTEM BOX   ##################### */}
               <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
 
