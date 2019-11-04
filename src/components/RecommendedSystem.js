@@ -14,13 +14,9 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
 
   const sysData = { gasSystems, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
 
-  // if (sysType === 'gas' && fullOrReplace === 'full') {
-  //   fullOrReplace = 'gasSystems';
-  // }
-
   let { productTitle, productImage, pricingLevels, seers, levelDescriptions, levelFeatureLists, levelTotFinancings, levelTotPrices } = sysData[fullOrReplace] ? sysData[fullOrReplace][sysTonnage] :
     {
-      productTitle: 'no data', productImage: 'no data', pricingLevels: 'no data', seers: 'no data', levelDescriptions: 'no data', levelFeatureLists: 'no data', levelTotFinancings: 'no data', levelTotPrices: 'no data'
+      productTitle: 'no data', productImage: 'no data', pricingLevels: ['no data'], seers: ['no data'], levelDescriptions: ['no data'], levelFeatureLists: [['no data']], levelTotFinancings: ['no data'], levelTotPrices: ['no data']
     }
 
   if (sysType === '' || !sysType) {
