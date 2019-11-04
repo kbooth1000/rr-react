@@ -120,6 +120,20 @@ form.active
     margin: 1rem;
 }
 
+.price-grid {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: .5s;
+    padding-top: 2rem;
+    transform: translateX(110%);
+}
+
+.price-grid.show {
+    height: auto;
+    transform: translateX(0);
+}
+
 aside {
     color: rgb(94, 94, 94);
     font-family: Montserrat, arial, sans-serif;

@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 import RecommendedSystem from './RecommendedSystem';
+import RecommendedReplacements from './RecommendedReplacements';
 
 import './styles/shop.css';
 
 import validZipcodes from './data/zipcodes';
-import { acCondenserOnly } from './data/acCondenserOnly';
-import { evaporatorCoilOnly } from './data/evaporatorCoilOnly';
-import { furnaceOnly } from './data/furnaceOnly';
-import { heatPumpOnly } from './data/heatPumpOnly';
-// import './data/electricUnits';
-// import './data/gasUnits';
-// import './data/replacementParts';
+
 
 const SystemRec = () => {
   const [zipcode, setZipcode] = useState('');
@@ -47,6 +42,7 @@ const SystemRec = () => {
     setSysType(e.target.value);
     setStep3Active('active');
     setStep3Show('show');
+    setFullOrReplace('');
   }
 
   const handleSysTonSubmit = e => {
@@ -55,6 +51,7 @@ const SystemRec = () => {
     setStep4Active('active');
     setStep4Show('show');
     setTonDropdownSelect(e.target.value);
+    setFullOrReplace('');
   }
 
   const handleFullOrReplaceSubmit = e => {
@@ -64,9 +61,15 @@ const SystemRec = () => {
   }
 
   const handleCloseModalClick = e => {
-    setFullOrReplaceSelected('');
     setRecShow(!recShow)
   }
+
+  const fullOrReplaceComponent = (sysType, sysTon, fullOrReplace) => {
+    if (fullOrReplace === 'full') {
+      return <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
+    } else return <RecommendedReplacements sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
+  }
+
 
 
   return (
@@ -148,51 +151,32 @@ const SystemRec = () => {
               </fieldset>
             </form>
 
-            <aside className="aside3"></aside>
-
-
-            <form className={`step4 ${step4Show} ${step4Active}`} value={fullOrReplaceSelected}>
+            <form className={`step4 ${step4Show} ${step4Active}`}>
               <fieldset className="fieldset">
                 <legend>Full System or Replacement Parts:</legend>
                 <p>
                   Do you need a full system installed or are you looking for replacement
                   parts?
                     </p>
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="full" id="full-sys" checked={(fullOrReplace === 'full') ? 'true' : null} /><label
+                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="full" id="full-sys" checked={(fullOrReplace === 'full') ? true : false} /><label
                   htmlFor="full-sys">Full System</label>
                 <br />
                 <br />
 
-                <strong>Replacement Parts:</strong>
-                <br />{fullOrReplace}
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="acCondenserOnly" id="acCondenserOnly" checked={(fullOrReplace === 'acCondenserOnly') ? 'checked' : null} /><label
-                  htmlFor="acCondenserOnly">AC Condenser Only</label>
+                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="replacement" id="replacement" checked={(fullOrReplace === 'replacement') ? true : false} /><label
+                  htmlFor="replacement">Replacement Parts</label>
                 <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="airHandlerOnly" id="airHandlerOnly" checked={(fullOrReplace === 'airHandlerOnly') ? 'checked' : null} /><label
-                  htmlFor="airHandlerOnly">Air Handler Only</label>
-                <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="evaporatorCoilOnly" id="evaporatorCoilOnly" checked={(fullOrReplace === 'evaporatorCoilOnly') ? 'checked' : null} /><label
-                  htmlFor="evaporatorCoilOnly">Evaporator Coil Only</label>
-                <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="furnaceOnly" id="furnaceOnly" checked={(fullOrReplace === 'furnaceOnly') ? 'checked' : null} /><label
-                  htmlFor="furnaceOnly">Furnace Only</label>
-                <br />
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="heatPumpOnly" id="heatPumpOnly" checked={(fullOrReplace === 'heatPumpOnly') ? 'checked' : null} /><label
-                  htmlFor="heatPumpOnly">Heat Pump Only</label>
-                <br />
+
               </fieldset>
             </form>
 
-            <aside className="aside4">{fullOrReplaceSelected}</aside>
-
             <div className={`recommendation ${recShow ? 'show' : ''}`}>
-              <button className="close-modal" value="" onClick={handleCloseModalClick}>X</button>
-              {/* FULL SYSTEM BOX   ##################### */}
-              <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
 
-            </div>
-            {/* REPLACEMENT PARTS BOX   ############### */}
-            <div className="replacement-parts-box">
+              <button className="close-modal" value="" onClick={handleCloseModalClick}>X</button>
+
+              {/* FULL SYSTEM BOX   ##################### */}
+
+              {fullOrReplaceComponent(sysType, sysTon, fullOrReplace)}
 
             </div>
 
