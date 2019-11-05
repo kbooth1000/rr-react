@@ -13,7 +13,7 @@ const Main = () => {
     <div className="Main">
       <Header />
       <Route exact path='/' component={HomePage} />
-      <Route exact path='/shop' component={SystemRec} />
+      <Route path='/shop' component={SystemRec} />
       <Route exact path='/equipment-for-sale' component={ForSale} />
       <Route exact path='/financing' component={Financing} />
       <Route exact path='/quote' component={Quote} />
