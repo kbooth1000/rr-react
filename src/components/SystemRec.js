@@ -11,7 +11,7 @@ import validZipcodes from './data/zipcodes';
 const SystemRec = () => {
   const [zipcode, setZipcode] = useState('');
   const [zipcodeText, setZipcodeText] = useState('');
-  const [sysType, setSysType] = useState('gas');
+  const [sysType, setSysType] = useState('');
   const [sysTon, setSysTon] = useState('2.0');
   const [fullOrReplace, setFullOrReplace] = useState('gasSystems');
   const [step2Show, setStep2Show] = useState('');
@@ -98,13 +98,13 @@ const SystemRec = () => {
               <fieldset className="fieldset">
                 <legend>Heat Source:</legend>
                 <p>Is your heat source a:</p>
-                <input value="gas" type="radio" name="heat-source" id="gas-furnace" />
-                <label htmlFor="gas-furnace">
+                <label htmlFor="gas-furnace" className={sysType === 'gas' ? 'selected' : ''}>
+                  <input value="gas" type="radio" name="heat-source" id="gas-furnace" />
                   Gas Furnace
                 </label>
-                <br />
-                <input value="electric" type="radio" name="heat-source" id="electric" /><label
-                  htmlFor="electric">Electric/Heat Pump</label> <br />
+                <label className={sysType === 'electric' ? 'selected' : ''}
+                  htmlFor="electric">
+                  <input value="electric" type="radio" name="heat-source" id="electric" /> Electric / Heat Pump</label> <br />
               </fieldset>
             </form>
             <aside className="aside2"></aside>
@@ -158,13 +158,13 @@ const SystemRec = () => {
                   Do you need a full system installed or are you looking for replacement
                   parts?
                     </p>
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="full" id="full-sys" checked={(fullOrReplace === 'full') ? true : false} /><label
-                  htmlFor="full-sys">Full System</label>
-                <br />
-                <br />
+                <label className={fullOrReplace === 'full' ? 'selected' : ''}
+                  htmlFor="full-sys" >
+                  <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="full" id="full-sys" checked={(fullOrReplace === 'full') ? true : false} />Full System</label>
 
-                <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="replacement" id="replacement" checked={(fullOrReplace === 'replacement') ? true : false} /><label
-                  htmlFor="replacement">Replacement Parts</label>
+                <label className={fullOrReplace === 'replacement' ? 'selected' : ''}
+                  htmlFor="replacement">
+                  <input onChange={handleFullOrReplaceSubmit} type="radio" name="system-or-replacements" value="replacement" id="replacement" checked={(fullOrReplace === 'replacement') ? true : false} />Replacement Parts</label>
                 <br />
 
               </fieldset>

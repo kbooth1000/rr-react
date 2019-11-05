@@ -39,24 +39,29 @@ const RecommendedReplacements = ({ sysType, sysTonnage, fullOrReplace }) => {
         <fieldset className="fieldset">
           <p>Choose which replacement part you need:</p>
           <span className="nowrap">
-            <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="acCondenserOnly" id="acCondenserOnly" checked={(replacementPart === 'acCondenserOnly') ? true : false} /><label
-              htmlFor="acCondenserOnly">AC Condenser</label></span>
+            <label className={replacementPart === 'acCondenserOnly' ? 'selected' : ''}
+              htmlFor="acCondenserOnly">
+              <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="acCondenserOnly" id="acCondenserOnly" checked={(replacementPart === 'acCondenserOnly') ? true : false} />AC Condenser</label></span>
           <wbr></wbr>
           <span className="nowrap">
-            <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="airHandlerOnly" id="airHandlerOnly" checked={(replacementPart === 'airHandlerOnly') ? true : false} /><label
-              htmlFor="airHandlerOnly">Air Handler</label></span>
+            <label className={replacementPart === 'airHandlerOnly' ? 'selected' : ''}
+              htmlFor="airHandlerOnly">
+              <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="airHandlerOnly" id="airHandlerOnly" checked={(replacementPart === 'airHandlerOnly') ? true : false} />Air Handler</label></span>
           <wbr></wbr>
           <span className="nowrap">
-            <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="evaporatorCoilOnly" id="evaporatorCoilOnly" checked={(replacementPart === 'evaporatorCoilOnly') ? true : false} /><label
-              htmlFor="evaporatorCoilOnly">Evaporator Coil</label></span>
+            <label className={replacementPart === 'evaporatorCoilOnly' ? 'selected' : ''}
+              htmlFor="evaporatorCoilOnly">
+              <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="evaporatorCoilOnly" id="evaporatorCoilOnly" checked={(replacementPart === 'evaporatorCoilOnly') ? true : false} />Evaporator Coil</label></span>
           <wbr></wbr>
           <span className="nowrap">
-            <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="furnaceOnly" id="furnaceOnly" checked={(replacementPart === 'furnaceOnly') ? true : false} /><label
-              htmlFor="furnaceOnly">Furnace</label></span>
+            <label className={replacementPart === 'furnaceOnly' ? 'selected' : ''}
+              htmlFor="furnaceOnly">
+              <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="furnaceOnly" id="furnaceOnly" checked={(replacementPart === 'furnaceOnly') ? true : false} />Furnace</label></span>
           <wbr></wbr>
           <span className="nowrap">
-            <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="heatPumpOnly" id="heatPumpOnly" checked={(replacementPart === 'heatPumpOnly') ? true : false} /><label
-              htmlFor="heatPumpOnly">Heat Pump</label></span>
+            <label className={replacementPart === 'heatPumpOnly' ? 'selected' : ''}
+              htmlFor="heatPumpOnly">
+              <input onChange={handleChoosePart} type="radio" name="system-or-replacements" value="heatPumpOnly" id="heatPumpOnly" checked={(replacementPart === 'heatPumpOnly') ? true : false} />Heat Pump</label></span>
           <br />
 
         </fieldset>
