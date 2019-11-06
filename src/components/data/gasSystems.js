@@ -1,4 +1,4 @@
-export const totFinancingDefault = "0%, 84 months (OAC)"
+export const totFinancingDefault = "0%, 84 months"
 
 export const gasSystems = {
   "1.5": {
@@ -13,19 +13,19 @@ export const gasSystems = {
     ],
     levelFeatureLists: [
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "18 SEER Inverter Variable",
         "Variable speed Indoor Fan",
         "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Two Stage Compressor",
         "Up to 92% AFUE Two Stage Furnace",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Single Stage Compressor",
         "80% AFUE",
         "10 Year Parts / 1 Year Labor Warranty",
@@ -52,19 +52,19 @@ export const gasSystems = {
     ],
     levelFeatureLists: [
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "18 SEER Inverter Variable",
         "Variable speed Indoor Fan",
         "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Two Stage Compressor",
         "Up to 92% AFUE Two Stage Furnace",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Single Stage Compressor",
         "80% AFUE",
         "10 Year Parts / 1 Year Labor Warranty",
@@ -90,19 +90,19 @@ export const gasSystems = {
     ],
     levelFeatureLists: [
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization($1K Value)",
         "18 SEER Inverter Variable",
         "Variable speed Indoor Fan",
         "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Two Stage Compressor",
         "Up to 92% AFUE Two Stage Furnace",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Single Stage Compressor",
         "80% AFUE",
         "10 Year Parts / 1 Year Labor Warranty",
@@ -128,19 +128,19 @@ export const gasSystems = {
     ],
     levelFeatureLists: [
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "18 SEER Inverter Variable",
         "Variable speed Indoor Fan",
         "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Two Stage Compressor",
         "Up to 92% AFUE Two Stage Furnace",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Single Stage Compressor",
         "80% AFUE",
         "10 Year Parts / 1 Year Labor Warranty",
@@ -167,19 +167,19 @@ export const gasSystems = {
     ],
     levelFeatureLists: [
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "18 SEER Inverter Variable",
         "Variable speed Indoor Fan",
         "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Two Stage Compressor",
         "Up to 92% AFUE Two Stage Furnace",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Single Stage Compressor",
         "80% AFUE",
         "10 Year Parts / 1 Year Labor Warranty",
@@ -206,19 +206,19 @@ export const gasSystems = {
     ],
     levelFeatureLists: [
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "18 SEER Inverter Variable",
         "Variable speed Indoor Fan",
         "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Two Stage Compressor",
         "Up to 92% AFUE Two Stage Furnace",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Single Stage Compressor",
         "80% AFUE",
         "10 Year Parts / 1 Year Labor Warranty",
@@ -245,19 +245,19 @@ export const gasSystems = {
     ],
     levelFeatureLists: [
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "18 SEER Inverter Variable",
         "Variable speed Indoor Fan",
         "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Two Stage Compressor",
         "Up to 92% AFUE Two Stage Furnace",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "Entire Duct Cleaning & Sanitization($1K)",
+        "Entire Duct Cleaning & Sanitization ($1K Value)",
         "Single Stage Compressor",
         "80% AFUE",
         "10 Year Parts / 1 Year Labor Warranty",

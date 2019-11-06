@@ -1,4 +1,4 @@
-const totFinancingDefault = "0%, 84 months (OAC)"
+const totFinancingDefault = "0%, 84 months"
 
 export const evaporatorCoilOnly = {
   "1.5": {
