@@ -260,8 +260,8 @@ input[type='submit'],
 
 .close-modal {
     position: sticky;
-    left: 97%;
-    top: .5%;
+    left: 95%;
+    top: 1%;
     padding: 0.5rem;
     background: #00aeef;
     color: #fff;
