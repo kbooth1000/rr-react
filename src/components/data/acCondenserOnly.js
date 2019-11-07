@@ -1,4 +1,4 @@
-const totFinancingDefault = "0%, 84 months (OAC)"
+const totFinancingDefault = "0%, 84 months"
 
 export const acCondenserOnly = {
   "1.5": {
