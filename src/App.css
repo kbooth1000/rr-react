@@ -201,156 +201,7 @@ a {
   justify-content: center;
 }
 
-.tile-navbar {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto 0.2rem;
-}
 
-.nav-breaker {
-  display: flex;
-  justify-content: space-around;
-  min-width: 200px;
-  width: 100%;
-}
-
-.tile-nav {
-  min-width: 140px;
-  height: 220px;
-  flex-grow: 1;
-  margin: .2rem;
-  background: var(--main-blue);
-  /* border: 6px solid var(--main-blue); */
-  box-sizing: border-box;
-  filter: opacity(1);
-}
-
-.tile-nav:hover .tile-bg {
-  filter: brightness(.8);
-}
-
-.tile-nav:hover .tile-mask {
-  background: rgba(255,255,255,.3) !important;
-}
-
-.tile-nav .tile-mask {
-  width: 100%;
-  height: 100%;
-  flex-grow: 1;
-  margin: 0;
-  background: var(--main-blue-trans);
-  box-sizing: border-box;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.6rem;
-}
-
-.tile-navbar .tile-bg {
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  filter: grayscale(1) opacity(0.5);
-}
-
-.nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-bg {
-  background-image: url(./components/images/cytonn-photography-n95VMLxqM2I-unsplash.jpg);
-}
-
-.nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-bg {
-  background-image: url(https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg);
-}
-
-.nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-bg {
-  background-image: url(./components/images/cytonn-photography-n95VMLxqM2I-unsplash.jpg);
-}
-
-.nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-bg {
-  background-image: url(https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg);
-}
-
-.nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
-.nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask {
-  background: var(--lt-blue-trans);
-}
-
-.nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask,
-.nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-mask {
-  background: var(--main-blue-trans);
-}
-
-.tile-mask:hover {
-  background: var(--lt-blue-trans);
-}
-
-.slider-div {
-  background: url(./components/images/ACCondenser.webp) no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 550px;
-  width: 100%;
-  position: relative;
-}
-
-.hero {
-  background: rgba(0, 0, 0, .4);
-  width: 84%;
-  margin: 14% auto auto 8%;
-  position: absolute;
-  padding: 1rem;
-
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.27) 0%, rgba(0, 0, 0, 0.65) 37%, rgba(0, 0, 0, 0.65) 69%, rgba(0, 0, 0, 0.47) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.27) 0%, rgba(0, 0, 0, 0.65) 37%, rgba(0, 0, 0, 0.65) 69%, rgba(0, 0, 0, 0.47) 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.27) 0%, rgba(0, 0, 0, 0.65) 37%, rgba(0, 0, 0, 0.65) 69%, rgba(0, 0, 0, 0.47) 100%);
-}
-
-.hero h3 {
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: .05rem;
-  margin: auto;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  color: var(--lt-blue);
-  background: rgba(255, 255, 255, .9);
-  font-weight: 700;
-  display: inline-block;
-  padding: 0 1rem;
-}
-
-.hero .deck {
-  color: #fff;
-  font-weight: 400;
-  font-size: 0.85rem;
-  letter-spacing: .04rem;
-}
-
-.call-to-action a {
-  background: var(--hi-blue);
-  color: #fff;
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  justify-content: center;
-  margin: 1rem 0 0;
-  width: 90%;
-  font-size: 1rem;
-}
 
 @media screen and (min-width: 410px) {
   .top-links {
@@ -389,6 +240,9 @@ a {
 
 
 @media screen and (min-width: 699px) {
+  .HomePage {
+    flex-direction: column-reverse;
+}
   .email-link {
       display: flex;
   }
@@ -406,13 +260,9 @@ a {
 
 @media screen and (min-width: 834px) {
 
-
-
   .call-to-action a {
-      width: 55%;
+    width: 55%;
   }
-
-
 }
 
 @media screen and (min-width: 934px) {
@@ -423,32 +273,36 @@ a {
       height: 130px;
       top: 5px;
   }
-
+  
   .nav-list {
-      width: 100%;
-      height: 75px;
-      top: 19px;
+    width: 100%;
+    height: 75px;
+    top: 19px;
   }
-
+  
   .menu-icon {
-      display: none;
+    display: none;
   }
-
+  
   .nav-list ul {
-      flex-direction: row;
+    flex-direction: row;
   }
-
+  
   .nav-list li {
-      display: inline-block;
+    display: inline-block;
   }
-
+  
   .nav-breaker {
-      min-width: 400px;
-      width: 50%;
+    min-width: 400px;
+    width: 50%;
   }
-
+  
+  .tile-navbar {
+    height: 25vw;
+  }
+  
   .tile-nav {
-      margin: .1rem;
+    margin: .1rem;
   }
 
   .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
@@ -469,5 +323,4 @@ a {
   .call-to-action a {
       font-size: 1.3rem;
   }
-
 }
