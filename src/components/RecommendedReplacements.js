@@ -7,24 +7,25 @@ import { evaporatorCoilOnly } from './data/evaporatorCoilOnly';
 import { furnaceOnly } from './data/furnaceOnly';
 import { heatPumpOnly } from './data/heatPumpOnly';
 import { airHandlerOnly } from './data/airHandlerOnly';
+import { electricUnits } from './data/electricUnits';
 
 
 import './styles/grid.css';
 
 const RecommendedReplacements = ({ sysType, sysTonnage, fullOrReplace }) => {
 
-  const sysData = { gasSystems, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
+  const sysData = { gasSystems, electricUnits, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
 
   const [replacementPart, setReplacementPart] = useState('');
   const [priceGridShow, setPriceGridShow] = useState('hide');
 
-  if (sysType === '' || !sysType) {
-    return <p>nothing here yet</p>
-  } else if (sysType === 'electric') {
-    return <div> <p>ELECTRIC UNIT</p>
-      <p><i>needs data</i></p>
-    </div>
-  }
+  // if (sysType === '' || !sysType) {
+  //   return <p>nothing here yet</p>
+  // } else if (sysType === 'electric') {
+  //   return <div> <p>ELECTRIC UNIT</p>
+  //     <p><i>needs data</i></p>
+  //   </div>
+  // }
 
   const handleChoosePart = e => {
     setReplacementPart(e.target.value);
