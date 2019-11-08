@@ -10,12 +10,12 @@ const HomePage = () => {
         <div className="nav-breaker">
           <div className="tile-nav">
             <div className="tile-bg"></div>
-            <Link to="/pay-now" className="tile-mask">Pay now
+            <Link to="/cooling" className="tile-mask">Cooling
                     </Link>
           </div>
           <div className="tile-nav">
             <div className="tile-bg"></div>
-            <Link to="/shop" className="tile-mask">Shop now</Link>
+            <Link to="/heating" className="tile-mask">Heating</Link>
           </div>
         </div>
 
@@ -23,8 +23,8 @@ const HomePage = () => {
         <div className="nav-breaker">
           <div className="tile-nav">
             <div className="tile-bg"></div>
-            <Link to="Financing" className="tile-mask">Apply now
-                    </Link>
+            <Link to="/shop" className="tile-mask">Shop now</Link>
+
           </div>
           <div className="tile-nav">
             <div className="tile-bg"></div>
