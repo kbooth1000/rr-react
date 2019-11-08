@@ -66,8 +66,8 @@ const SystemRec = () => {
 
   const fullOrReplaceComponent = (sysType, sysTon, fullOrReplace) => {
     if (fullOrReplace === 'full') {
-      return <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
-    } else return <RecommendedReplacements sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas' && fullOrReplace === 'full') ? 'gasSystems' : fullOrReplace} />
+      return <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas') ? 'gasSystems' : 'electricSystems'} />
+    } else return <RecommendedReplacements sysType={sysType} sysTonnage={sysTon} fullOrReplace={fullOrReplace} />
   }
 
 
