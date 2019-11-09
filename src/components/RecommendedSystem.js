@@ -6,30 +6,27 @@ import { evaporatorCoilOnly } from './data/evaporatorCoilOnly';
 import { furnaceOnly } from './data/furnaceOnly';
 import { heatPumpOnly } from './data/heatPumpOnly';
 import { airHandlerOnly } from './data/airHandlerOnly';
+import { electricSystems } from './data/electricSystems';
 
 
 import './styles/grid.css';
 
 const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
 
-  const sysData = { gasSystems, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
-
-  // if (sysType === 'gas' && fullOrReplace === 'full') {
-  //   fullOrReplace = 'gasSystems';
-  // }
+  const sysData = { gasSystems, electricSystems, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
 
   let { productTitle, productImage, pricingLevels, seers, levelDescriptions, levelFeatureLists, levelTotFinancings, levelTotPrices } = sysData[fullOrReplace] ? sysData[fullOrReplace][sysTonnage] :
     {
-      productTitle: 'no data', productImage: 'no data', pricingLevels: 'no data', seers: 'no data', levelDescriptions: 'no data', levelFeatureLists: 'no data', levelTotFinancings: 'no data', levelTotPrices: 'no data'
+      productTitle: 'no data', productImage: 'no data', pricingLevels: ['no data'], seers: ['no data'], levelDescriptions: ['no data'], levelFeatureLists: [['no data']], levelTotFinancings: ['no data'], levelTotPrices: ['no data']
     }
 
-  if (sysType === '' || !sysType) {
-    return <p>nothing here yet</p>
-  } else if (sysType === 'electric') {
-    return <div> <p>ELECTRIC UNIT</p>
-      <p><i>needs data</i></p>
-    </div>
-  }
+  // if (sysType === '' || !sysType) {
+  //   return <p>nothing here yet</p>
+  // } else if (sysType === 'electric') {
+  //   return <div> <p>ELECTRIC UNIT</p>
+  //     <p><i>needs data</i></p>
+  //   </div>
+  // }
 
   return (
 

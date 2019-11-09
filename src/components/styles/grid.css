@@ -20,6 +20,8 @@
       "footer   footer   footer   footer   footer";
   }
 
+  top: 25%;
+
   .pricing-info-box {
     display: flex;
     flex-direction: column;
@@ -34,35 +36,17 @@
   }
 
   .pricing-info-row.platinum {
-    background-image: linear-gradient(
-      55deg,
-      transparent,
-      rgba(208, 208, 208, 0.6),
-      transparent,
-      transparent,
-      transparent
+    background-image: linear-gradient(55deg, hsla(170,10%,50.6%,.0),hsla(170,10%,50.6%,.6),hsla(170,10%,50.6%,.2),hsla(170,10%,50.6%,.4),hsla(170,10%,50.6%,.2),hsla(170,10%,50.6%,.2),hsla(170,10%,50.6%,.3),hsla(170,10%,50.6%,0.2),hsla(170,10%,50.6%,.4)
     );
   }
 
   .pricing-info-row.gold {
-    background-image: linear-gradient(
-      55deg,
-      transparent,
-      rgba(234, 233, 123, 0.6),
-      transparent,
-      transparent,
-      transparent
+    background-image: linear-gradient(55deg, hsla(65,60%,50.6%,.0),hsla(65,60%,50.6%,.6),hsla(65,60%,50.6%,.2),hsla(65,60%,50.6%,.4),hsla(65,60%,50.6%,.2),hsla(65,60%,50.6%,.2),hsla(65,60%,50.6%,.3),hsla(65,60%,50.6%,0.2),hsla(65,60%,50.6%,.4)
     );
   }
 
   .pricing-info-row.silver {
-    background-image: linear-gradient(
-      55deg,
-      transparent,
-      rgba(166, 166, 166, 0.6),
-      transparent,
-      transparent,
-      transparent
+    background-image: linear-gradient(55deg, hsla(210,15%,82.6%,.0),hsla(210,15%,82.6%,.6),hsla(210,15%,82.6%,.2),hsla(210,15%,82.6%,.4),hsla(210,15%,82.6%,.2),hsla(210,15%,82.6%,.2),hsla(210,15%,82.6%,.3),hsla(210,15%,82.6%,0.2),hsla(210,15%,82.6%,.4)
     );
     border-bottom: 0 none;
   }
@@ -114,6 +98,8 @@
   }
   .info-grid .product-image {
     grid-area: product-image;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .info-grid .product-image img {
     max-width: 100%;
