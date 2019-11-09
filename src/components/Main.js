@@ -9,6 +9,7 @@ import Cooling from './Cooling';
 import ForSale from './ForSale';
 import Financing from './Financing';
 import Quote from './Quote';
+import Carousel from './Carousel';
 
 const Main = () => {
   return (
@@ -21,6 +22,7 @@ const Main = () => {
       <Route exact path='/equipment-for-sale' component={ForSale} />
       <Route exact path='/financing' component={Financing} />
       <Route exact path='/quote' component={Quote} />
+      <Route exact path='/carousel' component={Carousel} />
     </div>
   )
 }
