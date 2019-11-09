@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from './Carousel';
 
+import galleryImages from './data/galleryImages';
 import './styles/homepage.css';
 
 const HomePage = () => {
@@ -33,7 +35,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       <div className="slider-div">
+        <Carousel images={galleryImages} />
         <div className="hero">
           <h3>Let us keep you COOL!</h3>
           <h2>RockRuth Heating &amp; Air in Atlanta</h2>

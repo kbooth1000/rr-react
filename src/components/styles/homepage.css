@@ -100,12 +100,14 @@
 }
 
 .slider-div {
-  background: url(../images/ACCondenser.webp) no-repeat;
+  /* background: url(../images/ACCondenser.webp) no-repeat; */
   background-size: cover;
   background-position: center center;
+  background-color: #fff;
   height: 550px;
   width: 100%;
   position: relative;
+  padding: 3px;
 }
 
 .hero {
