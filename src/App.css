@@ -265,7 +265,7 @@ a {
   }
 }
 
-@media screen and (min-width: 934px) {
+@media screen and (min-width: 875px) {
   .logo {
       position: relative;
       left: auto;
