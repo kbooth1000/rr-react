@@ -147,7 +147,8 @@
   letter-spacing: .04rem;
 }
 
-.call-to-action a {
+.call-to-action a, 
+.call-to-action span {
   background: var(--hi-blue);
   color: #fff;
   height: 3.5rem;

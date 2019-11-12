@@ -3,7 +3,7 @@ export const totFinancingDefault = "0%, 84 months"
 export const electricSystems = {
   "1.5": {
     productImage: "images/ach_goodman.png",
-    productTitle: "electric -- no data",
+    productTitle: 'Complete Heat Pump System',
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["--", "--", "--"],
     levelDescriptions: ["no data", "no data", "no data"
@@ -29,7 +29,7 @@ export const electricSystems = {
 
   "2.0": {
     productImage: "images/ach_goodman.png",
-    productTitle: "electric -- no data",
+    productTitle: 'Complete Heat Pump System',
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["--", "--", "--"],
     levelDescriptions: ["no data", "no data", "no data"
@@ -54,7 +54,7 @@ export const electricSystems = {
   },
   "2.5": {
     productImage: "images/ach_goodman.png",
-    productTitle: "electric -- no data",
+    productTitle: 'Complete Heat Pump System',
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["--", "--", "--"],
     levelDescriptions: ["no data", "no data", "no data"
@@ -79,7 +79,7 @@ export const electricSystems = {
   },
   "3.0": {
     productImage: "images/ach_goodman.png",
-    productTitle: "electric -- no data",
+    productTitle: 'Complete Heat Pump System',
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["--", "--", "--"],
     levelDescriptions: ["no data", "no data", "no data"
@@ -105,7 +105,7 @@ export const electricSystems = {
 
   "3.5": {
     productImage: "images/ach_goodman.png",
-    productTitle: "electric -- no data",
+    productTitle: 'Complete Heat Pump System',
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["--", "--", "--"],
     levelDescriptions: ["no data", "no data", "no data"
@@ -131,7 +131,7 @@ export const electricSystems = {
 
   "4.0": {
     productImage: "images/ach_goodman.png",
-    productTitle: "electric -- no data",
+    productTitle: 'Complete Heat Pump System',
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["--", "--", "--"],
     levelDescriptions: ["no data", "no data", "no data"
@@ -157,7 +157,7 @@ export const electricSystems = {
 
   "5.0": {
     productImage: "images/ach_goodman.png",
-    productTitle: "electric -- no data",
+    productTitle: 'Complete Heat Pump System',
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["--", "--", "--"],
     levelDescriptions: ["no data", "no data", "no data"
