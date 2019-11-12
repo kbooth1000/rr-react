@@ -7,8 +7,20 @@ html {
   --lt-blue-trans: hsla(194, 100%, 57%, 0.5);
 }
 
+
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  background: #369;
+  padding-top: 1rem;
+}
+
+.App {
+  max-width: 1450px;
+  margin: auto;
+  background: #fff;
 }
 
 a {

@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "eslint": "^6.6.0",
+    "konva": "^4.0.17",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-gesture-gallery": "^1.1.0",
     "react-gesture-responder": "^2.1.0",
+    "react-native": "^0.61.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "typescript": "*"
