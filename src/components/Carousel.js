@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Gallery, GalleryImage } from 'react-gesture-gallery';
 
 import './styles/carousel.css';
@@ -19,16 +20,29 @@ const Carousel = props => {
       }
     }, 3500);
     return () => clearInterval(carouselDelay);
-  }, [imgIndex])
+  }, [imgIndex, props.images.length])
 
   return (
     <div className="Carousel">
       <Gallery index={imgIndex} onRequestChange={i => setImgIndex(i)} style={{ width: '100%', height: '550px' }}>
         {props.images.map((img, i) => (
-          <GalleryImage src={img} objectFit="cover" style={{ width: '100vw', height: '550px' }} width="100%" height="100%" key={i} />
+          <Link key={i} to={`${img.path}`}>
+
+            <div className="hero">
+              <h3>{img.heroTitle}</h3>
+              <h2>RockRuth Heating &amp; Air in Atlanta</h2>
+              <div className="deck">{img.heroDeck}</div>
+              <div className="call-to-action">
+                <span>{img.callToAction}</span>
+              </div>
+            </div>
+
+            <GalleryImage src={img.src} objectFit="cover" style={{ width: '100vw', height: '550px' }} width="100%" height="100%" key={i} />
+          </Link>
         )
         )}
       </Gallery>
+
     </div>
   )
 }

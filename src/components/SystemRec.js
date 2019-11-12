@@ -78,8 +78,6 @@ const SystemRec = () => {
 
       <div className="main">
 
-
-
         <main style={{ margin: '1rem 0' }}>
           <h1 style={{ float: 'right', marginRight: '5rem' }}>Shop now</h1>
           <section className="recommendation-finder">
@@ -92,8 +90,8 @@ const SystemRec = () => {
                 <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" /><br />
                 <input type="submit" value="Submit" className="submit-button" />
               </fieldset>
+              <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
             </form>
-            <aside className="aside1">{validZipcodes.includes(zipcode) ? 'Great, we serve your area.' : '' === zipcode ? '' : `Sorry, we don't serve your area yet.`}</aside>
             <form onChange={handleSysTypeSubmit} className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>
               <fieldset className="fieldset">
                 <legend>Heat Source:</legend>
