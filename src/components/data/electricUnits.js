@@ -13,7 +13,7 @@ var electricUnits = {
     sf1000: {
         ton: 2,
         seer: 14,
-        name: 'Complete Heat Pump System',
+        name: 'Comlete Heat Pump System',
         kw: 5,
         imgUrl: heatPumpImgUrl,
         priceSplit: 3985,
