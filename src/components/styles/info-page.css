@@ -12,6 +12,13 @@
   text-align: center;
 }
 
+.info-page .deck {
+    min-width: 250px;
+    display: block;
+    flex-basis: 100%;
+    margin: 1rem;
+}
+
 .info-blurb {
   min-width: 250px;
     display: block;

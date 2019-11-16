@@ -17,7 +17,7 @@ const Financing = () => {
 
     <div className="info-page">
       <h1 className="title"> HVAC FINANCING 101</h1>
-      <div className="info-blurb">
+      <div className="deck">
         <p><i>For most people, HVAC financing is a large expense, and can be challenging
               for anyone, especially a new homeowner. While paying out of pocket is the
               best option, there are plenty of options to finance the HVAC system that
@@ -58,7 +58,7 @@ const Financing = () => {
         <p>Utility companies can also help by charging monthly payments for your new HVAC
         system on your electric bill. They often provide low-interest rates if you choose
               energy-efficient systems.</p>
-        <div className="finance-buttons" style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+        <div className="finance-buttons" style={{ marginTop:'4rem', width: '100%', display: 'flex', justifyContent: 'space-around' }}>
           <div class="cell finance-btn1" style={{ width: '9rem', textAlign: 'center' }}>
             <div class="12-month-button">
               <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&amp;cid=10021&amp;promo=RE468&amp;loamt="
