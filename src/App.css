@@ -285,47 +285,6 @@ a {
       height: 130px;
       top: 5px;
   }
-  
-  .nav-list {
-    width: 100%;
-    height: 75px;
-    top: 19px;
-  }
-  
-  .menu-icon {
-    display: none;
-  }
-  
-  .nav-list ul {
-    flex-direction: row;
-  }
-  
-  .nav-list li {
-    display: inline-block;
-  }
-  
-  .nav-breaker {
-    min-width: 400px;
-    width: 50%;
-  }
-  
-  .tile-navbar {
-    height: 25vw;
-  }
-  
-  .tile-nav {
-    margin: .1rem;
-  }
-
-  .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
-  .nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-mask {
-      background: var(--lt-blue-trans);
-  }
-
-  .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask,
-  .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask {
-      background: var(--main-blue-trans);
-  }
 }
 .call-to-action a {
   font-size: .95rem;
