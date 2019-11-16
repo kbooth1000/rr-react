@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useEffect } from 'react';
+import React, { useCallback } from 'react';
 
 import './styles/info-page.css';
 import heatingUnitImg from './images/heating-unit-ceiling.webp';
@@ -26,7 +26,8 @@ const Heating = () => {
       return <div className="Heating" ref={setScrollRef}>
 
             <div className="info-page">
-                  <h1 className="title"> HEATING INSTALLATION & REPAIR </h1> <div className="info-blurb">
+                  <h1 className="title"> HEATING INSTALLATION & REPAIR </h1>
+                  <div className="info-blurb">
                         <h2> DON&apos;T NEGLECT YOUR HEATING SYSTEM</h2> <img src={
                               heatingUnitImg
                         }

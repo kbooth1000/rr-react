@@ -3,181 +3,272 @@ export const totFinancingDefault = "0%, 84 months"
 export const electricSystems = {
   "1.5": {
     productImage: "images/ach_goodman.png",
-    productTitle: 'Complete Heat Pump System',
-    pricingLevels: ["Platinum", "Gold", "Silver"],
-    seers: ["--", "--", "--"],
-    levelDescriptions: ["no data", "no data", "no data"
+    productTitle: "1.5 Complete Heat Pump System/Package Electric Heat Pump System",
+    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
+    seers: ["14 SEER", "14 SEER"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
     ],
     levelFeatureLists: [
-      ["no data"
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [76, 61, 46],
+    perMonthPrices: [46, 45],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [6395, 5095, 3895],
+    levelTotPrices: [3895, 3799],
   },
 
   "2.0": {
     productImage: "images/ach_goodman.png",
-    productTitle: 'Complete Heat Pump System',
-    pricingLevels: ["Platinum", "Gold", "Silver"],
-    seers: ["--", "--", "--"],
-    levelDescriptions: ["no data", "no data", "no data"
+    productTitle: "2.0 Complete Heat Pump System/Package Electric Heat Pump System",
+    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
+    seers: ["14 SEER", "14 SEER"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
     ],
     levelFeatureLists: [
-      ["no data"
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [77, 62, 47],
+    perMonthPrices: [47, 45],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [6485, 5185, 3985],
+    levelTotPrices: [3985, 3799],
   },
   "2.5": {
     productImage: "images/ach_goodman.png",
-    productTitle: 'Complete Heat Pump System',
-    pricingLevels: ["Platinum", "Gold", "Silver"],
-    seers: ["--", "--", "--"],
-    levelDescriptions: ["no data", "no data", "no data"
+    productTitle: "2.5 Complete Heat Pump System/Package Electric Heat Pump System",
+    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
+    seers: ["14 SEER", "14 SEER"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
     ],
     levelFeatureLists: [
-      ["no data"
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [79, 63, 49],
+    perMonthPrices: [47, 50],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [6605, 5305, 4105],
+    levelTotPrices: [4105, 4200],
   },
   "3.0": {
     productImage: "images/ach_goodman.png",
-    productTitle: 'Complete Heat Pump System',
-    pricingLevels: ["Platinum", "Gold", "Silver"],
-    seers: ["--", "--", "--"],
-    levelDescriptions: ["no data", "no data", "no data"
+    productTitle: "3.0 Complete Heat Pump System/Package Electric Heat Pump System",
+    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
+    seers: ["14 SEER", "14 SEER"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
     ],
     levelFeatureLists: [
-      ["no data"
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [81, 65, 51],
+    perMonthPrices: [51, 52],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [6799, 5499, 4299],
+    levelTotPrices: [4299, 4399],
   },
 
   "3.5": {
     productImage: "images/ach_goodman.png",
-    productTitle: 'Complete Heat Pump System',
-    pricingLevels: ["Platinum", "Gold", "Silver"],
-    seers: ["--", "--", "--"],
-    levelDescriptions: ["no data", "no data", "no data"
+    productTitle: "3.5 Complete Heat Pump System/Package Electric Heat Pump System",
+    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
+    seers: ["14 SEER", "14 SEER"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
     ],
     levelFeatureLists: [
-      ["no data"
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [82, 66, 52],
+    perMonthPrices: [52, 54],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [6879, 5579, 4379],
+    levelTotPrices: [4379, 4499],
   },
 
   "4.0": {
     productImage: "images/ach_goodman.png",
-    productTitle: 'Complete Heat Pump System',
-    pricingLevels: ["Platinum", "Gold", "Silver"],
-    seers: ["--", "--", "--"],
-    levelDescriptions: ["no data", "no data", "no data"
+    productTitle: "4.0 Complete Heat Pump System/Package Electric Heat Pump System",
+    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
+    seers: ["14 SEER", "14 SEER"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
     ],
     levelFeatureLists: [
-      ["no data"
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [87, 71, 57],
+    perMonthPrices: [57, 58],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [7299, 5999, 4799],
+    levelTotPrices: [4799, 4850],
   },
 
   "5.0": {
     productImage: "images/ach_goodman.png",
-    productTitle: 'Complete Heat Pump System',
-    pricingLevels: ["Platinum", "Gold", "Silver"],
-    seers: ["--", "--", "--"],
-    levelDescriptions: ["no data", "no data", "no data"
+    productTitle: "5.0 Complete Heat Pump System/Package Electric Heat Pump System",
+    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
+    seers: ["14 SEER", "14 SEER"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
     ],
     levelFeatureLists: [
-      ["no data"
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
-        "no data"
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [88, 73, 58],
+    perMonthPrices: [58, 60],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [7399, 6099, 4899],
+    levelTotPrices: [4899, 4999],
   },
 }
