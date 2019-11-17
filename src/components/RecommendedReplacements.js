@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
+import { useParams } from 'react-router-dom';
+import * as qs from 'query-string';
 import RecommendedSystem from './RecommendedSystem';
 
 import { gasSystems } from './data/gasSystems';
@@ -18,10 +20,16 @@ import airHandlerOnlyPic from './images/replacement-parts/air-handler.png';
 
 import './styles/grid.css';
 
-const RecommendedReplacements = ({ sysType, sysTonnage, fullOrReplace }) => {
+const RecommendedReplacements = (props) => {
+  const { sysType, sysTonnage, fullOrReplace } = props;
+  const {sysTypePm, sysTonnagePm, fullOrReplacePm } = props.location ? qs.parse(props.location.search) : {sysTypePm:null,sysTonnagePm:null,fullOrReplacePm:null};
+  
+  let sysTypeProp = sysTypePm ? sysTypePm : sysType,
+  sysTonnageProp = sysTonnagePm ? sysTonnagePm : sysTonnage,
+  fullOrReplaceProp = fullOrReplacePm ? fullOrReplacePm : fullOrReplace;
 
-  const sysData = { gasSystems, electricUnits, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
-
+  console.log('sysprops:', sysTypeProp, sysTonnageProp, fullOrReplaceProp);
+  
   const [replacementPart, setReplacementPart] = useState('');
   const [priceGridShow, setPriceGridShow] = useState('hide');
 
@@ -30,10 +38,18 @@ const RecommendedReplacements = ({ sysType, sysTonnage, fullOrReplace }) => {
     setPriceGridShow('show');
   }
 
-  return (
+  const setScrollRef = useCallback(node => {
+    if (node !== null) {
+          node.parentNode.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+          });
+    }
+}, [])
 
-    <div className="RecommendedReplacements">
+return ( <div className="Heating" ref={setScrollRef}>
 
+{ !fullOrReplacePm ?
       <form className={`step4 show`}>
         <fieldset className="fieldset">
           <p>Which replacement part do you need:</p>
@@ -94,6 +110,11 @@ const RecommendedReplacements = ({ sysType, sysTonnage, fullOrReplace }) => {
 
         </fieldset>
       </form>
+      :
+      <div className={`price-grid show`}>
+      <RecommendedSystem sysType={sysTypePm} sysTonnage={sysTonnagePm} fullOrReplace={fullOrReplacePm} />
+    </div>
+      }
       <br />
       <br />
       <br />
@@ -101,7 +122,7 @@ const RecommendedReplacements = ({ sysType, sysTonnage, fullOrReplace }) => {
       <br />
       <br />
       <div className={`price-grid  ${priceGridShow}`}>
-        <RecommendedSystem sysType={sysType} sysTonnage={sysTonnage} fullOrReplace={(sysType === 'gas' && replacementPart === 'full') ? 'gasSystems' : replacementPart} />
+        <RecommendedSystem sysType={sysTypeProp} sysTonnage={sysTonnageProp} fullOrReplace={(sysTypeProp === 'gas' && replacementPart === 'full') ? 'gasSystems' : replacementPart} />
       </div>
 
     </div>

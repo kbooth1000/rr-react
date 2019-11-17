@@ -2,6 +2,8 @@ const totFinancingDefault = "0%, 84 months";
 const defaultImgUrl = 'images/replacement-parts/ac-condenser.webp';
 
 export const acCondenserOnly = {
+  defaultImgUrl,
+  mainTitle: "A/C Condenser Unit Only Replacement",
   "1.5": {
     productImage: defaultImgUrl,
     productTitle: "1.5 Ton A/C Condenser Only",

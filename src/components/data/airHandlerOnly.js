@@ -2,6 +2,8 @@ const totFinancingDefault = "0%, 84 months"
 const defaultImgUrl = 'images/replacement-parts/air-handler.webp';
 
 export const airHandlerOnly = {
+  defaultImgUrl,
+  mainTitle: "Air Handler Replacement",
   "1.5": {
     productImage: defaultImgUrl,
     productTitle: "1.5 Ton Air Handler Only",

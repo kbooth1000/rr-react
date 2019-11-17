@@ -2,6 +2,8 @@ export const totFinancingDefault = "0%, 84 months"
 const defaultImgUrl = 'images/replacement-parts/heat-pump.webp';
 
 export const electricSystems = {
+  defaultImgUrl,
+  mainTitle: "Complete Heat Pump System/Package Electric Heat Pump System",
   "1.5": {
     productImage: defaultImgUrl,
     productTitle: "1.5 Complete Heat Pump System/Package Electric Heat Pump System",

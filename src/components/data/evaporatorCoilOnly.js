@@ -2,6 +2,8 @@ const totFinancingDefault = "0%, 84 months"
 const defaultImgUrl = 'images/replacement-parts/evaporator-coil.png';
 
 export const evaporatorCoilOnly = {
+  defaultImgUrl,
+  mainTitle: "Evaporator Coil Replacement",
   "1.5": {
     productImage: defaultImgUrl,
     productTitle: "1.5 Ton Evaporator Coil Only",

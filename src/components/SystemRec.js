@@ -127,7 +127,7 @@ const SystemRec = () => {
             <form onChange={handleSysTypeSubmit}
               className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
 
-              <fieldset className="fieldset" style={{ marginTop: '70px' }}>
+              <fieldset className="fieldset">
                 <legend>Heat Source:</legend>
                 <p>Is your heat source a:</p>
                 <label htmlFor="gas-furnace" className={sysType === 'gas' ? 'selected' : ''}>

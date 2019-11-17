@@ -2,6 +2,8 @@ const totFinancingDefault = "0%, 84 months"
 const defaultImgUrl = 'images/replacement-parts/heat-pump.webp';
 
 export const heatPumpOnly = {
+  defaultImgUrl,
+  mainTitle: "Heat Pump Unit Only Replacement",
   "1.5": {
     productImage: defaultImgUrl,
     productTitle: "1.5 Ton Heat Pump Only",
