@@ -28,12 +28,42 @@
 }
 
 .info-blurb h2 {
-  height: 3rem;
   display: flex;
     align-items: flex-end;
+    text-align: center;
 }
 
 .info-blurb img {
   width: 100%;
   height: auto;
+}
+
+ul.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+li.product-box {
+  width: 32%;
+  display: block;
+  margin: 0 3rem 4rem;
+}
+.product-img {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.product-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+ul.product-options{
+  list-style: none;
+  padding-left: 4rem;
 }

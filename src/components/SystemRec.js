@@ -112,7 +112,9 @@ const SystemRec = () => {
         <main style={{ margin: '1rem 0' }}>
 
           <section className="recommendation-finder">
-            <h1 style={{ float: 'right', marginRight: '5rem' }}>Shop now</h1>
+
+            <h1 className="title" style={{ fontWeight: '700', color: '#000', fontSize: '2rem', float: 'right', marginRight: '5rem' }}>SHOP NOW</h1>
+
             <form onSubmit={handleZipSubmit} className={`step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
               <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
                 alt="Display of numerous AC units and accessories." className="main-graphic" />

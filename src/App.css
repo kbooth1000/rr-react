@@ -129,20 +129,7 @@ a {
   height: 140px;
 }
 
-.nav-list {
-  width: 70px;
-  height: 35px;
-  overflow: hidden;
 
-  width: auto;
-  overflow: hidden;
-  height: 160px;
-  position: relative;
-  top: 42px;
-  text-align: right;
-  right: 0;
-  min-width: 170px;
-}
 
 /* .nav-list:hover {
   width: auto;
@@ -162,7 +149,6 @@ a {
   height: 30px;
   transition: 1s;
   overflow: hidden;
-
 
   display: none;
 }

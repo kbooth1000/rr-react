@@ -34,29 +34,33 @@ const ForSale = () => {
   return (
     <div className="ForSale" ref={setScrollRef}>
       <main style={{ margin: '1rem 0' }}>
-        <h1 style={{ float: 'right', marginRight: '5rem' }}> HVAC equipment for sale</h1>
-        <div className="info-blurb">
-          <ul>
-            {partsEntries.map(([name, product], i) => (
-              <div className="productBox" key={i}>
-                <li>
-                  <img src={product.defaultImgUrl} style={{ width: '150px' }} alt="" />
-                  <br />
-                  <strong>{product.mainTitle}</strong>
-                  <ul>
-                   {
+        <div className="info-page">
+          <h1 className="title">HVAC EQUIPMENT FOR SALE</h1>
+          <div className="info-blurb">
+            <ul className="products">
+              {partsEntries.map(([name, product], i) => (
+                <li className="product-box" key={i}>
+                  <div className="product-img">
+                    <img src={product.defaultImgUrl} alt="" />
+                  </div>
+                  <h2>{product.mainTitle}</h2>
+
+                  <ul className="product-options">
+                    {
                       tonnages.map((tonnage, i) => <li key={i}> <Link
                         to={
-                          `/replacement-parts?sysTypePm=${(name==='electricSystems' ||name==='heatPumpOnly') ? 'electric' : 'gas'}&sysTonnagePm=${tonnage}&fullOrReplacePm=${name}`
-                        }>{tonnage}</Link>
+                          `/replacement-parts?sysTypePm=${(name === 'electricSystems' || name === 'heatPumpOnly') ? 'electric' : 'gas'}&sysTonnagePm=${tonnage}&fullOrReplacePm=${name}`
+                        }>{tonnage} ton <span className="pricing-link" style={{ fontWeight: '900', color: '#00AEEF' }}>(see pricing)</span></Link>
                       </li>
                       )
                     }
                   </ul>
+
                 </li>
-              </div>
-            ))}
-          </ul>
+
+              ))}
+            </ul>
+          </div>
         </div>
       </main>
     </div>
