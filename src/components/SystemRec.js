@@ -70,15 +70,6 @@ const SystemRec = () => {
     } else return <RecommendedReplacements sysType={sysType} sysTonnage={sysTon} fullOrReplace={fullOrReplace} />
   }
 
-  const setScrollRef = useCallback(node => {
-    if (node !== null) {
-      console.log('node1', node);
-      node.parentNode.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  }, [])
 
 
   // const setStep2ScrollRef = useEffect((node) => {
@@ -102,17 +93,26 @@ const SystemRec = () => {
   // }, [sysTon])
 
 
+  const setScrollRef = useCallback(node => {
+    if (node !== null) {
+      node.parentNode.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+
+    }
+  }, [])
 
   return (
-    <div className="SystemRec" ref={[setScrollRef]}>
+    <div className="SystemRec" ref={setScrollRef}>
       {/* {sysType} {sysTon} {fullOrReplace} {zipcode} */}
 
       <div className="main">
 
         <main style={{ margin: '1rem 0' }}>
-          <h1 style={{ float: 'right', marginRight: '5rem' }}>Shop now</h1>
 
           <section className="recommendation-finder">
+            <h1 style={{ float: 'right', marginRight: '5rem' }}>Shop now</h1>
             <form onSubmit={handleZipSubmit} className={`step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
               <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
                 alt="Display of numerous AC units and accessories." className="main-graphic" />

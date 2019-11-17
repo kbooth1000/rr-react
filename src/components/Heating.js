@@ -19,7 +19,6 @@ const Heating = () => {
                         behavior: 'smooth',
                         block: 'start',
                   });
-
             }
       }, [])
 

@@ -1,8 +1,9 @@
 export const totFinancingDefault = "0%, 84 months"
+const defaultImgUrl = 'images/replacement-parts/heat-pump.webp';
 
 export const electricSystems = {
   "1.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "1.5 Complete Heat Pump System/Package Electric Heat Pump System",
     pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
     seers: ["14 SEER", "14 SEER"],
@@ -41,7 +42,7 @@ export const electricSystems = {
   },
 
   "2.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.0 Complete Heat Pump System/Package Electric Heat Pump System",
     pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
     seers: ["14 SEER", "14 SEER"],
@@ -79,7 +80,7 @@ export const electricSystems = {
     levelTotPrices: [3985, 3799],
   },
   "2.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.5 Complete Heat Pump System/Package Electric Heat Pump System",
     pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
     seers: ["14 SEER", "14 SEER"],
@@ -117,7 +118,7 @@ export const electricSystems = {
     levelTotPrices: [4105, 4200],
   },
   "3.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.0 Complete Heat Pump System/Package Electric Heat Pump System",
     pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
     seers: ["14 SEER", "14 SEER"],
@@ -156,7 +157,7 @@ export const electricSystems = {
   },
 
   "3.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.5 Complete Heat Pump System/Package Electric Heat Pump System",
     pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
     seers: ["14 SEER", "14 SEER"],
@@ -195,7 +196,7 @@ export const electricSystems = {
   },
 
   "4.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "4.0 Complete Heat Pump System/Package Electric Heat Pump System",
     pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
     seers: ["14 SEER", "14 SEER"],
@@ -234,7 +235,7 @@ export const electricSystems = {
   },
 
   "5.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "5.0 Complete Heat Pump System/Package Electric Heat Pump System",
     pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
     seers: ["14 SEER", "14 SEER"],

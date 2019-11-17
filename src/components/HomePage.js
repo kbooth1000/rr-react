@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from './Carousel';
 
@@ -6,8 +6,20 @@ import galleryImages from './data/galleryImages';
 import './styles/homepage.css';
 
 const HomePage = () => {
+
+
+  const setScrollRef = useCallback(node => {
+    if (node !== null) {
+      node.parentNode.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+
+    }
+  }, [])
+
   return (
-    <div className="HomePage">
+    <div className="HomePage" ref={setScrollRef}>
       <div className="tile-navbar">
         <div className="nav-breaker">
           <div className="tile-nav">

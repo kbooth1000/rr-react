@@ -21,6 +21,16 @@ input[type="radio"] {
 }
 
 /* .RecommendedReplacements  */
+
+.RecommendedReplacements .step4 {
+    overflow: visible;
+    height: 9rem;padding: 1rem 1rem 1.5rem;
+}
+
+.RecommendedReplacements .step4 fieldset {
+    padding: 1rem 1rem 4.7rem;
+}
+
 label {
     margin: .8rem;
     border: 1px #ccc solid;
@@ -30,7 +40,11 @@ label {
     background: #fff;
     font-size: .9rem;
     font-weight: 600;
-    display: inline-block;
+    display: inline-flex;
+    position: relative;
+    height: 2.4rem;
+    margin: 0 3vw;
+    align-items: center;
 }
 
 label.selected {
@@ -52,7 +66,7 @@ label.selected {
     background: #fff;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 form,
@@ -103,6 +117,25 @@ legend {
     line-height: 25px;
 }
 
+label .thumb-pic {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    position: absolute;
+    top: 1.7rem;
+}
+
+label:hover {
+    transform: scale(1.05);
+}
+
+label:hover .thumb-pic {
+    width: 96px;
+    height: 96px;
+    top: 1.5rem;
+    left: -1px;
+}
+
 form.active
  {
     border-bottom: 3px solid #00aeef;
@@ -124,24 +157,27 @@ form.active
     width: 100vw;
     height: 0;
     left: 0;
-    top: 0;
+    top: -40px;
     overflow: auto;
     background: #fff;
     z-index: 10;
     filter: opacity(0);
     transition: 0.5s;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .recommendation.show {
     width: calc(100vw - 2rem);
-    height: 98%;
-    min-height: 98vh;
+    max-width: calc(100% - 2rem);
+    /* height: 98%;
+    min-height: 98vh; */
+    height: calc(100vh - 220px);
     padding: 0.5rem;
     filter: opacity(1);
     border: 1rem rgba(0, 0, 0, 0.4) solid;
     margin: 1rem;
+    box-shadow: #333 7px 10px 11px;
 }
 
 .price-grid {
@@ -156,6 +192,10 @@ form.active
 .price-grid.show {
     height: auto;
     transform: translateX(0);
+}
+
+.pricing-info-box {
+    width: 90%;
 }
 
 aside {
@@ -177,6 +217,8 @@ aside {
     text-align: center;
     flex-direction: column
 }
+
+
 
 input,
 select,
@@ -259,13 +301,29 @@ input[type='submit'],
 }
 
 .close-modal {
+    position: -webkit-sticky;
     position: sticky;
     left: 95%;
     top: 1%;
-    padding: 0.5rem;
-    background: #00aeef;
+    padding: 0;
+    background: hsla(196, 100%, 47%, 1);
     color: #fff;
     z-index: 99;
+    border: 3px  hsl(196, 100%, 37%) solid;
+    height: 2rem;
+    width: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    line-height: 1em;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.close-modal:hover {
+    border: 3px  hsl(196, 100%, 27%) solid;
+    background: hsla(196, 100%, 37%, 1);
+    color: hsla(196, 100%, 87%, 1);
 }
 
 .phone-button-box {
