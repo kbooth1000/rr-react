@@ -123,7 +123,7 @@ a {
   max-width: 1210;
   width: 94%;
   margin: 0.4rem auto auto;
-  font-size: .8rem;
+  font-size: .89rem;
   font-weight: 900;
   position: relative;
   height: 140px;
@@ -133,8 +133,6 @@ a {
   width: 70px;
   height: 35px;
   overflow: hidden;
-
-
 
   width: auto;
   overflow: hidden;

@@ -1,8 +1,11 @@
 const totFinancingDefault = "0%, 84 months"
+const defaultImgUrl = 'images/replacement-parts/furnace.webp';
 
 export const furnaceOnly = {
+  defaultImgUrl,
+  mainTitle: "Furnace Replacement",
   "1.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "1.5 Ton Furnace Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -40,7 +43,7 @@ export const furnaceOnly = {
     levelTotPrices: [4625, 3325, 2125],
   },
   "2.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.0 Ton Furnace Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -78,7 +81,7 @@ export const furnaceOnly = {
     levelTotPrices: [4799, 3499, 2299],
   },
   "2.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.5 Ton Furnace Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -116,7 +119,7 @@ export const furnaceOnly = {
     levelTotPrices: [4825, 3525, 2325],
   },
   "3.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.0 Ton Furnace Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -154,7 +157,7 @@ export const furnaceOnly = {
     levelTotPrices: [4899, 3599, 2399],
   },
   "3.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.5 Ton Furnace Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -192,7 +195,7 @@ export const furnaceOnly = {
     levelTotPrices: [4499, 3699, 2499],
   },
   "4.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "4.0 Ton Furnace Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -230,7 +233,7 @@ export const furnaceOnly = {
     levelTotPrices: [5099, 3799, 2599],
   },
   "5.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "5.0 Ton Furnace Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],

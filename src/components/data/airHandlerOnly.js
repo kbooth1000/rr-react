@@ -1,8 +1,11 @@
 const totFinancingDefault = "0%, 84 months"
+const defaultImgUrl = 'images/replacement-parts/air-handler.webp';
 
 export const airHandlerOnly = {
+  defaultImgUrl,
+  mainTitle: "Air Handler Replacement",
   "1.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "1.5 Ton Air Handler Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -40,7 +43,7 @@ export const airHandlerOnly = {
     levelTotPrices: [4600, 3300, 2100],
   },
   "2.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.0 Ton Air Handler Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -78,7 +81,7 @@ export const airHandlerOnly = {
     levelTotPrices: [4699, 3399, 2199],
   },
   "2.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.5 Ton Air Handler Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -116,7 +119,7 @@ export const airHandlerOnly = {
     levelTotPrices: [4825, 3525, 2325],
   },
   "3.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.0 Ton Air Handler Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -154,7 +157,7 @@ export const airHandlerOnly = {
     levelTotPrices: [5050, 3750, 2550],
   },
   "3.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.5 Ton Air Handler Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -192,7 +195,7 @@ export const airHandlerOnly = {
     levelTotPrices: [5125, 3825, 2625],
   },
   "4.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "4.0 Ton Air Handler Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -230,7 +233,7 @@ export const airHandlerOnly = {
     levelTotPrices: [5299, 3999, 2799],
   },
   "5.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "5.0 Ton Air Handler Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],

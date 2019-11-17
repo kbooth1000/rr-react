@@ -1,8 +1,11 @@
 const totFinancingDefault = "0%, 84 months"
+const defaultImgUrl = 'images/replacement-parts/evaporator-coil.png';
 
 export const evaporatorCoilOnly = {
+  defaultImgUrl,
+  mainTitle: "Evaporator Coil Replacement",
   "1.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "1.5 Ton Evaporator Coil Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -40,7 +43,7 @@ export const evaporatorCoilOnly = {
     levelTotPrices: [3999, 2699, 1499],
   },
   "2.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.0 Ton Evaporator Coil Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -78,7 +81,7 @@ export const evaporatorCoilOnly = {
     levelTotPrices: [4099, 2799, 1599],
   },
   "2.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.5 Ton Evaporator Coil Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -116,7 +119,7 @@ export const evaporatorCoilOnly = {
     levelTotPrices: [4199, 2899, 1699],
   },
   "3.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.0 Ton Evaporator Coil Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -154,7 +157,7 @@ export const evaporatorCoilOnly = {
     levelTotPrices: [4225, 2925, 1725],
   },
   "3.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.5 Ton Evaporator Coil Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -192,7 +195,7 @@ export const evaporatorCoilOnly = {
     levelTotPrices: [4325, 3025, 1825],
   },
   "4.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "4.0 Ton Evaporator Coil Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -230,7 +233,7 @@ export const evaporatorCoilOnly = {
     levelTotPrices: [4425, 3125, 1925],
   },
   "5.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "5.0 Ton Evaporator Coil Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
