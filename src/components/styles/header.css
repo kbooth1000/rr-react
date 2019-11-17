@@ -4,3 +4,17 @@
   z-index: 10;
   background: #fff;
 }
+
+.nav-list {
+  width: 70px;
+  overflow: hidden;
+
+  width: auto;
+  overflow: hidden;
+  height: 85px;
+  position: relative;
+  top: 10px;
+  text-align: right;
+  right: 0;
+  min-width: 170px;
+}

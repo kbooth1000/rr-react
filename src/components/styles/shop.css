@@ -18,6 +18,10 @@ input[type='submit'] {
 
 .SystemRec .step4 {
     margin-top: 2.9rem;
+    overflow: hidden;
+}
+.Replacements .step4 {
+    margin-top: 1.9rem;
     overflow: visible;
 }
 /* .RecommendedReplacements  */
@@ -175,14 +179,13 @@ form.active
 .recommendation.show {
     width: calc(100vw - 2rem);
     max-width: calc(100% - 2rem);
-    /* height: 98%;
-    min-height: 98vh; */
-    height: calc(100vh - 220px);
-    padding: 0.5rem;
+    height: calc(100vh - 155px);
+    padding: .5rem;
+    -webkit-filter: opacity(1);
     filter: opacity(1);
-    border: 1rem rgba(0, 0, 0, 0.4) solid;
+    border: 1rem solid rgba(0,0,0,.4);
     margin: 1rem;
-    box-shadow: #333 7px 10px 11px;
+    box-shadow: 7px 10px 11px #333;
 }
 
 .price-grid {
@@ -467,6 +470,11 @@ input[type='submit'],
 
 .replacement-parts-box.display {
     display: block
+}
+
+.info-page .title {
+    width: 100%;
+    text-align: center;
 }
 
 @media only screen and (min-width: 450px) {
