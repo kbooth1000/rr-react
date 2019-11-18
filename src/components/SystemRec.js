@@ -14,6 +14,7 @@ const SystemRec = () => {
   const [sysType, setSysType] = useState('');
   const [sysTon, setSysTon] = useState('2.0');
   const [fullOrReplace, setFullOrReplace] = useState('gasSystems');
+  const [aside1Show, setAside1Show] = useState('');
   const [step2Show, setStep2Show] = useState('');
   const [step2Active, setStep2Active] = useState('');
   const [step3Show, setStep3Show] = useState('');
@@ -35,6 +36,7 @@ const SystemRec = () => {
     setZipcode(zipcodeText);
     setStep2Active('active');
     setStep2Show('show');
+    setAside1Show('show');
   }
   const handleSysTypeSubmit = e => {
     // e.preventDefault();
@@ -124,7 +126,7 @@ const SystemRec = () => {
                 <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" /><br />
                 <input type="submit" value="Submit" className="submit-button" />
               </fieldset>
-              <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
+              <aside className={`aside1 ${aside1Show}`}>{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
             </form>
             <form onChange={handleSysTypeSubmit}
               className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
