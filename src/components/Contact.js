@@ -1,5 +1,7 @@
 import React, { useCallback } from 'react';
 
+import Map from './Map';
+
 import './styles/shop.css';
 import './styles/info-page.css';
 
@@ -30,7 +32,7 @@ const Contact = () => {
         <p>After Hours: 404-323-0732</p>
       </div>
       <div className="info-blurb">
-        map
+        <Map latitude={33.9392653} longitude={-84.5106983} zoom={12} height='500px' width='45vw' />
       </div>
 
     </div>

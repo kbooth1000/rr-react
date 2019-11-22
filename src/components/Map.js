@@ -6,26 +6,32 @@ import keys from '../keys/keys.js';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class Map extends Component {
+  latitude = this.props.latitude;
+  longitude = this.spendzoom = this.spendheight = this.spendwidth;
+  zoom = this.zoom;
+  height = this.height;
+  width = this.width;
+  longitude = this.spendzoom = this.spendheight = this.spendwidth;
   static defaultProps = {
     center: {
-      lat: 33.9392653,
-      lng: -84.5106983
+      lat: this.latitude,
+      lng: this.longitude
     },
-    zoom: 12
+    zoom: this.zoom
   };
 
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div style={{ height: this.height, width: this.width }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: keys.mapKey }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
           <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
+            lat={this.lat}
+            lng={this.lng}
             text="My Marker"
           />
         </GoogleMapReact>
