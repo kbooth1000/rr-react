@@ -47,6 +47,9 @@ const Header = () => {
             <li><Link to="financing">
               FINANCING AVAILABLE
                               </Link></li>
+            <li><Link to="contact">
+              CONTACT US
+                              </Link></li>
             {/* <li><a href="#">MORE&nbsp;></a></li> */}
           </ul>
         </div>
@@ -54,7 +57,7 @@ const Header = () => {
           <Link to="quote">GET A QUOTE</Link>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
