@@ -1,8 +1,11 @@
 export const totFinancingDefault = "0%, 84 months"
-
+  
+  const defaultImgUrl = "images/ach_goodman.png";
 export const gasSystems = {
+  defaultImgUrl,
+  mainTitle: "Split System AC w/ Gas Furnace",
   "1.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "1.5 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -41,7 +44,7 @@ export const gasSystems = {
   },
 
   "2.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.0 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -79,7 +82,7 @@ export const gasSystems = {
     levelTotPrices: [6485, 5185, 3985],
   },
   "2.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.5 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -117,7 +120,7 @@ export const gasSystems = {
     levelTotPrices: [6605, 5305, 4105],
   },
   "3.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.0 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -156,7 +159,7 @@ export const gasSystems = {
   },
 
   "3.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.5 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -195,7 +198,7 @@ export const gasSystems = {
   },
 
   "4.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "4.0 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -234,7 +237,7 @@ export const gasSystems = {
   },
 
   "5.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "5.0 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],

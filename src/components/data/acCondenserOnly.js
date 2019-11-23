@@ -1,8 +1,11 @@
-const totFinancingDefault = "0%, 84 months"
+const totFinancingDefault = "0%, 84 months";
+const defaultImgUrl = 'images/replacement-parts/ac-condenser.webp';
 
 export const acCondenserOnly = {
+  defaultImgUrl,
+  mainTitle: "A/C Condenser Unit Only Replacement",
   "1.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "1.5 Ton A/C Condenser Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -40,7 +43,7 @@ export const acCondenserOnly = {
     levelTotPrices: [4499, 3199, 1999],
   },
   "2.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.0 Ton A/C Condenser Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -78,7 +81,7 @@ export const acCondenserOnly = {
     levelTotPrices: [4525, 3225, 2025],
   },
   "2.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "2.5 Ton A/C Condenser Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -116,7 +119,7 @@ export const acCondenserOnly = {
     levelTotPrices: [4675, 3375, 2175],
   },
   "3.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.0 Ton A/C Condenser Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -154,7 +157,7 @@ export const acCondenserOnly = {
     levelTotPrices: [4799, 3499, 2299],
   },
   "3.5": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "3.5 Ton A/C Condenser Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -192,7 +195,7 @@ export const acCondenserOnly = {
     levelTotPrices: [4899, 3599, 2399],
   },
   "4.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "4.0 Ton A/C Condenser Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
@@ -230,7 +233,7 @@ export const acCondenserOnly = {
     levelTotPrices: [4999, 3699, 2499],
   },
   "5.0": {
-    productImage: "images/ach_goodman.png",
+    productImage: defaultImgUrl,
     productTitle: "5.0 Ton A/C Condenser Only",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],

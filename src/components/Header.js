@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './styles/header.css';
+
 const Header = () => {
   return (
     <div className="Header">
@@ -11,17 +13,17 @@ const Header = () => {
         </div>
         <div className="phone-link">
           <i className="fas fa-phone-alt"></i>
-          <a href="tel:+14044814642">(404) 581-4642</a>
+          <a href="tel:+14704814642">(470) 581-4642</a>
         </div>
 
-        <div className="login-link">
+        {/* <div className="login-link">
           <i className="fas fa-user"></i>
           <a href="#">Login</a>
         </div>
         <div className="signup-link">
           <i className="fas fa-sign-in-alt"></i>
           <a href="#">Sign Up</a>
-        </div>
+        </div> */}
       </div>
 
       <div className="main-nav">
@@ -38,14 +40,14 @@ const Header = () => {
             </li>
             <li>
               <Link to="equipment-for-sale">
-                <span className="nobreak">HVAC EQUIPMENT</span>
-                <span className="nobreak">FOR SALE</span>
+                <span className="nobreak">HVAC EQUIPMENT </span>&nbsp;
+                <span className="nobreak"> FOR SALE</span>
               </Link>
             </li>
             <li><Link to="financing">
               FINANCING AVAILABLE
                               </Link></li>
-            <li><a href="#">MORE&nbsp;></a></li>
+            {/* <li><a href="#">MORE&nbsp;></a></li> */}
           </ul>
         </div>
         <div className="quote-button">

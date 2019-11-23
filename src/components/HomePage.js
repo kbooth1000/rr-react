@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from './Carousel';
 
+import galleryImages from './data/galleryImages';
 import './styles/homepage.css';
 
 const HomePage = () => {
+
+
+  const setScrollRef = useCallback(node => {
+    if (node !== null) {
+      node.parentNode.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+
+    }
+  }, [])
+
   return (
-    <div className="HomePage">
+    <div className="HomePage" ref={setScrollRef}>
       <div className="tile-navbar">
         <div className="nav-breaker">
           <div className="tile-nav">
@@ -33,16 +47,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       <div className="slider-div">
-        <div className="hero">
-          <h3>Let us keep you COOL!</h3>
-          <h2>RockRuth Heating &amp; Air in Atlanta</h2>
-          <div className="deck">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates sunt
-                    commodi distinctio enim aspernatur. Earum, doloremque.</div>
-          <div className="call-to-action">
-            <a href="#">SHOP NOW! FINANCING AVAILABLE</a>
-          </div>
-        </div>
+        <Carousel images={galleryImages} />
       </div>
     </div>
   )

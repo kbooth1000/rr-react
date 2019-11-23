@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import RecommendedSystem from './RecommendedSystem';
 import RecommendedReplacements from './RecommendedReplacements';
@@ -14,6 +14,7 @@ const SystemRec = () => {
   const [sysType, setSysType] = useState('');
   const [sysTon, setSysTon] = useState('2.0');
   const [fullOrReplace, setFullOrReplace] = useState('gasSystems');
+  const [aside1Show, setAside1Show] = useState('');
   const [step2Show, setStep2Show] = useState('');
   const [step2Active, setStep2Active] = useState('');
   const [step3Show, setStep3Show] = useState('');
@@ -35,6 +36,7 @@ const SystemRec = () => {
     setZipcode(zipcodeText);
     setStep2Active('active');
     setStep2Show('show');
+    setAside1Show('show');
   }
   const handleSysTypeSubmit = e => {
     // e.preventDefault();
@@ -72,17 +74,49 @@ const SystemRec = () => {
 
 
 
+  // const setStep2ScrollRef = useEffect((node) => {
+  //   console.log('node2', node);
+
+  //   node.scrollIntoView({
+  //     behavior: 'smooth',
+  //     block: 'start',
+  //   });
+  // }, [zipcode])
+
+  // const setStep3ScrollRef = useEffect(node => {
+  //   if (node !== null) {
+  //     console.log('node3', node);
+
+  //     node.parentNode.scrollIntoView({
+  //       behavior: 'smooth',
+  //       block: 'start',
+  //     });
+  //   }
+  // }, [sysTon])
+
+
+  const setScrollRef = useCallback(node => {
+    if (node !== null) {
+      node.parentNode.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+
+    }
+  }, [])
+
   return (
-    <div className="SystemRec">
+    <div className="SystemRec" ref={setScrollRef}>
       {/* {sysType} {sysTon} {fullOrReplace} {zipcode} */}
 
       <div className="main">
 
-
-
         <main style={{ margin: '1rem 0' }}>
-          <h1 style={{ float: 'right', marginRight: '5rem' }}>Shop now</h1>
+
           <section className="recommendation-finder">
+
+            <h1 className="title" style={{ fontWeight: '700', color: '#000', fontSize: '2rem', float: 'right', marginRight: '5rem' }}>SHOP NOW</h1>
+
             <form onSubmit={handleZipSubmit} className={`step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
               <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
                 alt="Display of numerous AC units and accessories." className="main-graphic" />
@@ -92,9 +126,11 @@ const SystemRec = () => {
                 <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" /><br />
                 <input type="submit" value="Submit" className="submit-button" />
               </fieldset>
+              <aside className={`aside1 ${aside1Show}`}>{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
             </form>
-            <aside className="aside1">{validZipcodes.includes(zipcode) ? 'Great, we serve your area.' : '' === zipcode ? '' : `Sorry, we don't serve your area yet.`}</aside>
-            <form onChange={handleSysTypeSubmit} className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>
+            <form onChange={handleSysTypeSubmit}
+              className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
+
               <fieldset className="fieldset">
                 <legend>Heat Source:</legend>
                 <p>Is your heat source a:</p>

@@ -9,6 +9,8 @@ import Cooling from './Cooling';
 import ForSale from './ForSale';
 import Financing from './Financing';
 import Quote from './Quote';
+import Contact from './Contact';
+import RecommendedReplacements from './RecommendedReplacements';
 import Carousel from './Carousel';
 
 const Main = () => {
@@ -19,9 +21,12 @@ const Main = () => {
       <Route path='/shop' component={SystemRec} />
       <Route path='/heating' component={Heating} />
       <Route path='/cooling' component={Cooling} />
+      <Route path='/replacement-parts' component={RecommendedReplacements} />
+      <Route path='/replacement-parts/:info' component={RecommendedReplacements} />
       <Route exact path='/equipment-for-sale' component={ForSale} />
       <Route exact path='/financing' component={Financing} />
       <Route exact path='/quote' component={Quote} />
+      <Route exact path='/Contact' component={Contact} />
       <Route exact path='/carousel' component={Carousel} />
     </div>
   )

@@ -15,12 +15,31 @@ input[type='submit'] {
     cursor: pointer;
     height: 3rem;
 }
+
+.SystemRec .step4 {
+    margin-top: 2.9rem;
+    overflow: hidden;
+}
+.Replacements .step4 {
+    margin-top: 1.9rem;
+    overflow: visible;
+}
 /* .RecommendedReplacements  */
 input[type="radio"] {
     display: none;
 }
 
 /* .RecommendedReplacements  */
+
+.RecommendedReplacements .step4 {
+    overflow: visible;
+    height: 9rem;padding: 1rem 1rem 1.5rem;
+}
+
+.RecommendedReplacements .step4 fieldset {
+    padding: 1rem 1rem 4.7rem;
+}
+
 label {
     margin: .8rem;
     border: 1px #ccc solid;
@@ -30,7 +49,11 @@ label {
     background: #fff;
     font-size: .9rem;
     font-weight: 600;
-    display: inline-block;
+    display: inline-flex;
+    position: relative;
+    height: 2.4rem;
+    margin: 0 3vw;
+    align-items: center;
 }
 
 label.selected {
@@ -52,7 +75,7 @@ label.selected {
     background: #fff;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 form,
@@ -86,6 +109,26 @@ step1.hide {
     transition: 0.7s 0.51s
 }
 
+.step1 input,
+.step2 label,
+.step3 select,
+.SystemRec:not('.Replacements') .step4 label {
+    border: 1px #ccc solid;
+    padding: .1rem .3rem .1rem 0.6rem;
+    border-radius: 5px;
+    /* color: #333; */
+    background: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    display: inline-flex;
+    position: relative;
+    height: 2.4rem;
+    margin: 0 0 0 1vw;
+    align-items: center;
+    width: 20vw;
+    min-width: 15rem;
+}
+
 fieldset,
 .fieldset {
     padding: 1rem;
@@ -101,6 +144,25 @@ legend {
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
+}
+
+label .thumb-pic {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    position: absolute;
+    top: 1.7rem;
+}
+
+label:hover {
+    transform: scale(1.05);
+}
+
+label:hover .thumb-pic {
+    width: 96px;
+    height: 96px;
+    top: 1.5rem;
+    left: -1px;
 }
 
 form.active
@@ -124,24 +186,26 @@ form.active
     width: 100vw;
     height: 0;
     left: 0;
-    top: 0;
+    top: -40px;
     overflow: auto;
     background: #fff;
     z-index: 10;
     filter: opacity(0);
     transition: 0.5s;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .recommendation.show {
     width: calc(100vw - 2rem);
-    height: 98%;
-    min-height: 98vh;
-    padding: 0.5rem;
+    max-width: calc(100% - 2rem);
+    height: calc(100vh - 155px);
+    padding: .5rem;
+    -webkit-filter: opacity(1);
     filter: opacity(1);
-    border: 1rem rgba(0, 0, 0, 0.4) solid;
+    border: 1rem solid rgba(0,0,0,.4);
     margin: 1rem;
+    box-shadow: 7px 10px 11px #333;
 }
 
 .price-grid {
@@ -158,15 +222,32 @@ form.active
     transform: translateX(0);
 }
 
+.pricing-info-box {
+    width: 90%;
+}
+
 aside {
     color: rgb(94, 94, 94);
     font-family: Montserrat, arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin: 1rem auto 1rem;
+    margin: 1rem auto;
     width: 80%;
-    height: 1rem
+    height: 0.4rem;
+}
+
+.aside1 {
+    height: 0;
+    margin: 0;
+}
+.aside1.show {
+    height: 0.4rem;
+    margin: 1rem auto;
+}
+
+.aside2 {
+    height: 0.4rem;
 }
 
 .step3>fieldset>div,
@@ -177,6 +258,8 @@ aside {
     text-align: center;
     flex-direction: column
 }
+
+
 
 input,
 select,
@@ -259,13 +342,29 @@ input[type='submit'],
 }
 
 .close-modal {
+    position: -webkit-sticky;
     position: sticky;
     left: 95%;
     top: 1%;
-    padding: 0.5rem;
-    background: #00aeef;
+    padding: 0;
+    background: hsla(196, 100%, 47%, 1);
     color: #fff;
     z-index: 99;
+    border: 3px  hsl(196, 100%, 37%) solid;
+    height: 2rem;
+    width: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    line-height: 1em;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.close-modal:hover {
+    border: 3px  hsl(196, 100%, 27%) solid;
+    background: hsla(196, 100%, 37%, 1);
+    color: hsla(196, 100%, 87%, 1);
 }
 
 .phone-button-box {
@@ -361,6 +460,11 @@ input[type='submit'],
     border-right: 1px #888 dotted
 }
 
+.product-options {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
 .product-info,
 .product-specs {
     display: flex;
@@ -400,6 +504,11 @@ input[type='submit'],
 
 .replacement-parts-box.display {
     display: block
+}
+
+.info-page .title {
+    width: 100%;
+    text-align: center;
 }
 
 @media only screen and (min-width: 450px) {

@@ -1,0 +1,21 @@
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 1px 1px 7px hsla(0, 0%, 20%, .7);
+}
+
+.nav-list {
+  width: 70px;
+  overflow: hidden;
+
+  width: auto;
+  overflow: hidden;
+  height: 105px;
+  position: relative;
+  top: 10px;
+  text-align: right;
+  right: 0;
+  min-width: 170px;
+}

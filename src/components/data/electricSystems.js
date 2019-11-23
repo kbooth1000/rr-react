@@ -1,11 +1,14 @@
 export const totFinancingDefault = "0%, 84 months"
+const defaultImgUrl = 'images/replacement-parts/heat-pump.webp';
 
 export const electricSystems = {
+  defaultImgUrl,
+  mainTitle: "Complete Heat Pump System",
   "1.5": {
-    productImage: "images/ach_goodman.png",
-    productTitle: "1.5 Complete Heat Pump System/Package Electric Heat Pump System",
-    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
-    seers: ["14 SEER", "14 SEER"],
+    productImage: defaultImgUrl,
+    productTitle: "1.5 Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
     levelDescriptions: [
       "Highest Efficiency, Total Comfort",
       "Energy Efficient Choice",
@@ -31,20 +34,20 @@ export const electricSystems = {
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [46, 45],
+    perMonthPrices: [80, 68, 53],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [3895, 3799],
+    levelTotPrices: [6679, 5679, 4479],
   },
 
   "2.0": {
-    productImage: "images/ach_goodman.png",
-    productTitle: "2.0 Complete Heat Pump System/Package Electric Heat Pump System",
-    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
-    seers: ["14 SEER", "14 SEER"],
+    productImage: defaultImgUrl,
+    productTitle: "2.0 Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
     levelDescriptions: [
       "Highest Efficiency, Total Comfort",
       "Energy Efficient Choice",
@@ -70,19 +73,19 @@ export const electricSystems = {
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [47, 45],
+    perMonthPrices: [81, 69, 54],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [3985, 3799],
+    levelTotPrices: [6762, 5762, 4562],
   },
   "2.5": {
-    productImage: "images/ach_goodman.png",
-    productTitle: "2.5 Complete Heat Pump System/Package Electric Heat Pump System",
-    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
-    seers: ["14 SEER", "14 SEER"],
+    productImage: defaultImgUrl,
+    productTitle: "2.5 Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
     levelDescriptions: [
       "Highest Efficiency, Total Comfort",
       "Energy Efficient Choice",
@@ -108,19 +111,19 @@ export const electricSystems = {
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [47, 50],
+    perMonthPrices: [83, 71, 57],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [4105, 4200],
+    levelTotPrices: [6989 ,5989, 4789],
   },
   "3.0": {
-    productImage: "images/ach_goodman.png",
-    productTitle: "3.0 Complete Heat Pump System/Package Electric Heat Pump System",
-    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
-    seers: ["14 SEER", "14 SEER"],
+    productImage: defaultImgUrl,
+    productTitle: "3.0 Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
     levelDescriptions: [
       "Highest Efficiency, Total Comfort",
       "Energy Efficient Choice",
@@ -146,20 +149,20 @@ export const electricSystems = {
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [51, 52],
+    perMonthPrices: [84, 72, 58],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [4299, 4399],
+    levelTotPrices: [7067 ,6067, 4867],
   },
 
   "3.5": {
-    productImage: "images/ach_goodman.png",
-    productTitle: "3.5 Complete Heat Pump System/Package Electric Heat Pump System",
-    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
-    seers: ["14 SEER", "14 SEER"],
+    productImage: defaultImgUrl,
+    productTitle: "3.5 Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
     levelDescriptions: [
       "Highest Efficiency, Total Comfort",
       "Energy Efficient Choice",
@@ -185,20 +188,20 @@ export const electricSystems = {
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [52, 54],
+    perMonthPrices: [88, 76, 62],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [4379, 4499],
+    levelTotPrices: [7379, 6379, 5179],
   },
 
   "4.0": {
-    productImage: "images/ach_goodman.png",
-    productTitle: "4.0 Complete Heat Pump System/Package Electric Heat Pump System",
-    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
-    seers: ["14 SEER", "14 SEER"],
+    productImage: defaultImgUrl,
+    productTitle: "4.0 Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
     levelDescriptions: [
       "Highest Efficiency, Total Comfort",
       "Energy Efficient Choice",
@@ -224,20 +227,20 @@ export const electricSystems = {
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [57, 58],
+    perMonthPrices: [90, 78, 63],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [4799, 4850],
+    levelTotPrices: [7525, 6526, 5325],
   },
 
   "5.0": {
-    productImage: "images/ach_goodman.png",
-    productTitle: "5.0 Complete Heat Pump System/Package Electric Heat Pump System",
-    pricingLevels: ["Complete Heat Pump System", "Package Electric Heat Pump System"],
-    seers: ["14 SEER", "14 SEER"],
+    productImage: defaultImgUrl,
+    productTitle: "5.0 Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
     levelDescriptions: [
       "Highest Efficiency, Total Comfort",
       "Energy Efficient Choice",
@@ -263,12 +266,12 @@ export const electricSystems = {
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
-    perMonthPrices: [58, 60],
+    perMonthPrices: [96, 84, 70],
     levelTotFinancings: [
       totFinancingDefault,
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [4899, 4999],
+    levelTotPrices: [8079, 7079, 5879],
   },
 }

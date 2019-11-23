@@ -53,6 +53,7 @@
   justify-content: center;
   color: #fff;
   font-size: 1.6rem;
+  max-width: 360px;
 }
 
 .tile-navbar .tile-bg {
@@ -100,12 +101,14 @@
 }
 
 .slider-div {
-  background: url(../images/ACCondenser.webp) no-repeat;
+  /* background: url(../images/ACCondenser.webp) no-repeat; */
   background-size: cover;
   background-position: center center;
+  background-color: #fff;
   height: 550px;
   width: 100%;
   position: relative;
+  padding: 3px;
 }
 
 .hero {
@@ -145,7 +148,8 @@
   letter-spacing: .04rem;
 }
 
-.call-to-action a {
+.call-to-action a, 
+.call-to-action span {
   background: var(--hi-blue);
   color: #fff;
   height: 3.5rem;
@@ -160,3 +164,50 @@
 
 
 
+@media screen and (min-width: 875px) {
+  
+  .nav-list {
+    width: 100%;
+    height: 75px;
+    top: 19px;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .nav-list ul {
+    flex-direction: row;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+  }
+  
+  .nav-breaker {
+    min-width: 400px;
+    width: 50%;
+  }
+  
+  .tile-navbar {
+    height: 25vw;
+    max-height: 360px;
+  }
+  
+  .tile-nav {
+    margin: .1rem;
+  }
+
+  .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
+  .nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-mask {
+      background: var(--lt-blue-trans);
+  }
+
+  .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask,
+  .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask {
+      background: var(--main-blue-trans);
+  }
+}
+.call-to-action a {
+  font-size: .95rem;
+}
