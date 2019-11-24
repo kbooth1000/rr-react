@@ -139,6 +139,8 @@
   font-weight: 700;
   display: inline-block;
   padding: 0 1rem;
+
+  margin-bottom: 0;
 }
 
 .hero .deck {
@@ -161,33 +163,55 @@
   width: 90%;
   font-size: 1rem;
 }
+.call-to-action a {
+  font-size: .95rem;
+}
+
+.call-to-action a {
+  font-size: .95rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 460px) {
+  .call-to-action a {
+    height: 2.8rem;
+  }
+}
+
+
+@media screen and (min-width: 699px) {
+  .HomePage {
+    flex-direction: column-reverse;
+  }
+
+  .hero {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 834px) {
+
+  .call-to-action a {
+    width: 55%;
+  }
+}
 
 
 
 @media screen and (min-width: 875px) {
-  
-  .nav-list {
-    width: 100%;
-    height: 75px;
-    top: 19px;
-  }
-  
-  .menu-icon {
-    display: none;
-  }
-  
-  .nav-list ul {
-    flex-direction: row;
-  }
-  
-  .nav-list li {
-    display: inline-block;
-  }
-  
-  .nav-breaker {
-    min-width: 400px;
-    width: 50%;
-  }
   
   .tile-navbar {
     height: 25vw;
@@ -196,6 +220,11 @@
   
   .tile-nav {
     margin: .1rem;
+  }
+
+  .nav-breaker {
+    min-width: 400px;
+    width: 50%;
   }
 
   .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
@@ -208,6 +237,9 @@
       background: var(--main-blue-trans);
   }
 }
-.call-to-action a {
-  font-size: .95rem;
+
+@media screen and (min-width: 1060px) {
+  .call-to-action a {
+    font-size: 1.3rem;
+  }
 }

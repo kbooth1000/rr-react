@@ -1,0 +1,72 @@
+.Footer {
+  box-shadow: 1px 1px 7px hsla(0, 0%, 20%, .7);
+  margin-top: 1rem;
+}
+
+.Footer .footer-links {
+  height: 5rem ; 
+  margin-bottom:  1rem ;
+  background: var(--trans-blue) ;
+  display:  flex ;
+  align-items: center ;
+  align-content: center ;
+  color:  #333 ;
+  position: relative;
+}
+
+.Footer .footer-links div {
+  margin: 0 1rem;
+    width: auto;
+    top: auto;
+    font-size: 14px;
+    height: 80%;
+  }
+
+.Footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Footer .phone-link, .Footer .email-link {
+  position: relative;
+  color: #fff;
+  left: auto;
+  transform: unset;
+  padding: 1rem;
+}
+
+.Footer .phone-link {
+  background: var(--main-blue-trans);
+}
+
+.Footer .email-link {
+  background: var(--lt-blue);
+}
+
+
+.footer-links i {
+  font-size: 12px;
+  margin-right: .3rem;
+  height: 24px;
+}
+
+.Footer .quote-button a {
+  height: 1rem;
+  background: var(--hi-blue);
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: center;
+  align-self: center;
+}
+
+ /*    ########    MEDIA QUERIES    ########  */
+
+@media screen and (min-width: 410px) {
+  .footer-links {
+      margin-top: 0;
+      justify-content: flex-start;
+  }
+}
