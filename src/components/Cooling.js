@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react';
 
 import './styles/info-page.css';
-import heatingUnitImg from './images/heating-unit-ceiling.webp';
 import ductwork from './images/ductwork.webp';
 import manWithFan from './images/manWithFan.webp';
 import ductClean from './images/ductClean.webp';

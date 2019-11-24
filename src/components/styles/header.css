@@ -11,11 +11,222 @@
   overflow: hidden;
 
   width: auto;
-  overflow: hidden;
-  height: 105px;
+  overflow: visible;
+  height: 85px;
+
   position: relative;
   top: 10px;
   text-align: right;
   right: 0;
   min-width: 170px;
+  font-size: .95em;
 }
+
+.top-links {
+  height: 1rem;
+  background: var(--main-blue);
+  color: #fff;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 2% 0 5%;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.top-links div {
+  margin: 0 1rem;
+  width: auto;
+}
+
+.top-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.email-link {
+  font-weight: 300;
+  font-size: .8rem;
+  letter-spacing: .05rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--lt-blue);
+  ;
+  padding: 0 .5rem;
+  display: none;
+}
+
+.phone-link,
+.login-link,
+.signup-link {
+  font-size: .9rem;
+}
+
+.phone-link {
+  position: absolute;
+  top: .4rem;
+  color: var(--main-blue);
+  left: 50%;
+  transform: translateX(-60%);
+}
+
+.phone-link a {
+  color: var(--main-blue);
+}
+
+.login-link {
+  margin-left: 0rem !important;
+}
+
+.signup-link {
+  margin: 0 2rem !important;
+}
+
+.top-links i {
+  font-size: 12px;
+  margin-right: .3rem;
+}
+
+.logo {
+  height: 93px;
+  width: 260px;
+  background: url(../images/logo.webp) no-repeat;
+  background-size: contain;
+  position: relative;
+  top: -23px;
+  left: 0;
+
+
+  position: relative;
+  left: auto;
+  transform: translateX(0);
+  height: 130px;
+  top: 5px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1210;
+  width: 94%;
+  margin: 0.4rem auto auto;
+  font-size: .89rem;
+  font-weight: 900;
+  position: relative;
+  height: 140px;
+}
+
+
+
+/* .nav-list:hover {
+  width: auto;
+  overflow: hidden;
+  height: 160px;
+  position: relative;
+  top: 42px;
+  text-align: right;
+  right: 0;
+  min-width: 170px;
+} */
+
+.menu-icon {
+  font-size: 28px;
+  display: block;
+  color: var(--lt-blue);
+  height: 30px;
+  transition: 1s;
+  overflow: hidden;
+
+  display: none;
+}
+
+.nav-list ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.2rem;}
+
+.nav-list li {
+  margin: 0 0.4rem 0.2rem;
+}
+
+.nav-list li a.active,
+.nav-list li a:hover {
+  color: var(--hi-blue);
+}
+
+.nav-list .nobreak {
+  display: inline-block;
+}
+
+.quote-button {
+  top: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.quote-button a {
+  height: 1rem;
+  background: var(--hi-blue);
+  color: #fff;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: center;
+}
+
+
+
+@media screen and (min-width: 410px) {
+  .top-links {
+      margin-top: 0;
+      justify-content: flex-start;
+  }
+
+  .phone-link {
+      position: relative;
+      color: #fff;
+      top: 0;
+      left: 0rem;
+      transform: translateX(0);
+  }
+
+  .phone-link a {
+      color: #fff;
+  }
+
+  .login-link {
+      margin-left: calc(100% - 330px) !important;
+      margin-left: 1rem;
+
+  }
+
+  .signup-link {
+      margin: 0 !important;
+  }
+}
+
+@media screen and (min-width: 699px) {
+
+  .email-link {
+    display: flex;
+  }
+
+  .login-link {
+    margin-left: calc(100% - 630px) !important;
+  }
+}
+
+@media screen and (min-width: 875px) {
+  .logo {
+    position: relative;
+    left: auto;
+    transform: translateX(0);
+    height: 130px;
+    top: 5px;
+  }
+}
+
