@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
 // import { Link } from 'react-router-dom';
 import RecommendedSystem from './RecommendedSystem';
 import RecommendedReplacements from './RecommendedReplacements';
@@ -123,9 +123,12 @@ const SystemRec = () => {
                 <p>Enter zip-code where the unit will be installed:</p>
                 <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" /><br />
                 <input type="submit" value="Submit" className="submit-button" />
+                <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
               </fieldset>
-              <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
+
             </form>
+
+
             <form onChange={handleSysTypeSubmit}
               className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
 
@@ -138,10 +141,10 @@ const SystemRec = () => {
                 </label>
                 <label className={sysType === 'electric' ? 'selected' : ''}
                   htmlFor="electric">
-                  <input value="electric" type="radio" name="heat-source" id="electric" /> Electric / Heat Pump</label> <br />
+                  <input value="electric" type="radio" name="heat-source" id="electric" /> Electric / Heat Pump</label>
+                <br />
               </fieldset>
             </form>
-            <aside className="aside2"></aside>
             <form className={`step3 ${step3Show} ${step3Active}`}>
               <fieldset className="fieldset" style={{ display: 'flex' }}>
                 <legend>Square Footage/Tonnage:</legend>

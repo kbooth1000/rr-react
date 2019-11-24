@@ -1,19 +1,10 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 
-const pinStyle = {
-  borderRadius: '10px',
-  transform: 'matrix(-1, 0, 0, 1, 10, 0)'
-}
-const FacilityPin = (props) => {
+const CloseX = (props) => {
   return (
-    <div>
-      <Icon className="building icon"
-        size='big'
-        style={pinStyle}
-        onClick={props.onClick}
-      />
-    </div>
+    <Icon size="big" name='window close' color="teal" />
   )
 }
-export default FacilityPin;
+export default CloseX;

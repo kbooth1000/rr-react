@@ -17,7 +17,7 @@ input[type='submit'] {
 }
 
 .SystemRec .step4 {
-    margin-top: 2.9rem;
+    margin-top: 1rem;
     overflow: hidden;
 }
 .Replacements .step4 {
@@ -78,6 +78,10 @@ label.selected {
     /* overflow: hidden; */
 }
 
+.recommendation-finder .fieldset {
+    border-radius: 14px;
+}
+
 form,
 .recommendation {
     width: 0;
@@ -106,7 +110,7 @@ step1.hide {
 } */
 
 .step2 {
-    transition: 0.7s 0.51s
+    transition: 0.7s 0.51s;
 }
 
 fieldset,
@@ -148,7 +152,7 @@ label:hover .thumb-pic {
 form.active
  {
     border-bottom: 3px solid #00aeef;
-    border-radius: 6px;
+    border-radius: 20px;
     filter: opacity(1)
 }
 
@@ -217,8 +221,22 @@ aside {
     height: 0.4rem;
 }
 
+aside {
+    height: 0;
+    margin: 0 auto;
+}
+.active aside {
+    height: 0.4rem;
+    margin: 1rem auto;
+}
+
+
 .aside2 {
     height: 0.4rem;
+}
+
+.step3 {
+    margin-top: 1rem;
 }
 
 .step3>fieldset>div,
@@ -321,7 +339,7 @@ input[type='submit'],
     background: hsla(196, 100%, 47%, 1);
     color: #fff;
     z-index: 99;
-    border: 3px  hsl(196, 100%, 37%) solid;
+    border: 3px  hsla(196, 100%, 86%, 1) solid;
     height: 2rem;
     width: 2rem;
     box-sizing: border-box;
@@ -330,10 +348,13 @@ input[type='submit'],
     line-height: 1em;
     justify-content: center;
     font-size: 1.2rem;
+    border-radius: 9px;
+    font-weight: 900;
+    font-family: sans-serif;
 }
 
 .close-modal:hover {
-    border: 3px  hsl(196, 100%, 27%) solid;
+    border: 3px  hsla(196, 100%, 92%, 1) solid;
     background: hsla(196, 100%, 37%, 1);
     color: hsla(196, 100%, 87%, 1);
 }
@@ -520,7 +541,8 @@ input[type='submit'],
     }
 
     legend {
-        font-size: 0.9rem
+        font-size: 0.9rem;
+        padding: 0 0.4rem;
     }
 
     fieldset p,
