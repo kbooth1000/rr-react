@@ -19,12 +19,11 @@ const Contact = () => {
 
     <div className="info-page">
       <h1 className="title">CONTACT US</h1>
-      <h2>Contact Us Today!</h2>
+      {/* <h2>Contact Us Today!</h2> */}
       <div className="deck">
         <p><strong> 24 Hour Emergency Service Available</strong></p>
         <p>
           We strive to be in constant communication with our customers until the job is done. If you have questions or special requests, just drop us a line. To get a free quote, or for emergency service, please contact us at your convenience or book online for your heating & air needs. We look forward to serving you!</p>
-        <br /><br />
       </div>
       <div className="info-blurb">
 

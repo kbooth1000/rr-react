@@ -22,7 +22,7 @@ const Map = props => {
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: '400px', width: '45vw' }}>
+    <div style={{ height: '400px', width: '45vw', maxWidth: '650px', minWidth: '260px' }}>
       <GoogleMapReact
         options={makeOptions}
         bootstrapURLKeys={{ key: keys.mapKey }}

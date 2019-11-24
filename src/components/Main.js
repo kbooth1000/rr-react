@@ -13,6 +13,7 @@ import Contact from './Contact';
 import Map from './Map';
 import RecommendedReplacements from './RecommendedReplacements';
 import Carousel from './Carousel';
+import Footer from './Footer';
 
 const Main = () => {
   return (
@@ -30,6 +31,7 @@ const Main = () => {
       <Route exact path='/Contact' component={Contact} />
       <Route exact path='/carousel' component={Carousel} />
       <Route exact path='/map' component={Map} />
+      <Footer />
     </div>
   )
 }
