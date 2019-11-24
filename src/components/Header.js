@@ -46,17 +46,17 @@ const Header = () => {
             </li>
             <li><Link to="financing">
               FINANCING AVAILABLE
-                              </Link></li>
+            </Link></li>
                               <li><Link to="contact">
               CONTACT
-                              </Link></li>
+             </Link></li>
           </ul>
         </div>
         <div className="quote-button">
           <Link to="quote">GET A QUOTE</Link>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

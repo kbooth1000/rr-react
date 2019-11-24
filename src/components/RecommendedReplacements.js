@@ -1,15 +1,15 @@
 import React, { useState, useCallback } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import * as qs from 'query-string';
 import RecommendedSystem from './RecommendedSystem';
 
-import { gasSystems } from './data/gasSystems';
-import { acCondenserOnly } from './data/acCondenserOnly';
-import { evaporatorCoilOnly } from './data/evaporatorCoilOnly';
-import { furnaceOnly } from './data/furnaceOnly';
-import { heatPumpOnly } from './data/heatPumpOnly';
-import { airHandlerOnly } from './data/airHandlerOnly';
-import { electricUnits } from './data/electricUnits';
+// import { gasSystems } from './data/gasSystems';
+// import { acCondenserOnly } from './data/acCondenserOnly';
+// import { evaporatorCoilOnly } from './data/evaporatorCoilOnly';
+// import { furnaceOnly } from './data/furnaceOnly';
+// import { heatPumpOnly } from './data/heatPumpOnly';
+// import { airHandlerOnly } from './data/airHandlerOnly';
+// import { electricUnits } from './data/electricUnits';
 
 import acCondenserOnlyPic from './images/replacement-parts/ac-condenser.webp';
 import evaporatorCoilOnlyPic from './images/replacement-parts/evaporator-coil.png';
