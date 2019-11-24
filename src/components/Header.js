@@ -47,7 +47,9 @@ const Header = () => {
             <li><Link to="financing">
               FINANCING AVAILABLE
                               </Link></li>
-            {/* <li><a href="#">MORE&nbsp;></a></li> */}
+                              <li><Link to="contact">
+              CONTACT
+                              </Link></li>
           </ul>
         </div>
         <div className="quote-button">
