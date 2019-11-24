@@ -113,6 +113,26 @@ step1.hide {
     transition: 0.7s 0.51s;
 }
 
+.step1 input,
+.step2 label,
+.step3 select,
+.SystemRec:not('.Replacements') .step4 label {
+    border: 1px #ccc solid;
+    padding: .1rem .3rem .1rem 0.6rem;
+    border-radius: 5px;
+    /* color: #333; */
+    background: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    display: inline-flex;
+    position: relative;
+    height: 2.4rem;
+    margin: 0 0 0 1vw;
+    align-items: center;
+    width: 20vw;
+    min-width: 15rem;
+}
+
 fieldset,
 .fieldset {
     padding: 1rem;
@@ -216,7 +236,7 @@ aside {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin: 1rem auto 1rem;
+    margin: 1rem auto;
     width: 80%;
     height: 0.4rem;
 }
@@ -229,7 +249,6 @@ aside {
     height: 0.4rem;
     margin: 1rem auto;
 }
-
 
 .aside2 {
     height: 0.4rem;
@@ -450,6 +469,11 @@ input[type='submit'],
 
 .product-info {
     border-right: 1px #888 dotted
+}
+
+.product-options {
+    font-size: 1.3rem;
+    line-height: 2rem;
 }
 
 .product-info,

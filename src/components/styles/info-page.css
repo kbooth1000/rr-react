@@ -31,6 +31,7 @@
   display: flex;
     align-items: flex-end;
     text-align: center;
+    display: block;
 }
 
 .info-blurb img {
@@ -49,7 +50,14 @@ li.product-box {
   width: 32%;
   display: block;
   margin: 0 3rem 4rem;
+  min-width: 100%;
 }
+
+ul.product-options {
+  list-style: none;
+  padding-left: calc(50% - 6rem);
+}
+
 .product-img {
   height: 200px;
   display: flex;
@@ -63,7 +71,11 @@ li.product-box {
   object-fit: contain;
 }
 
-ul.product-options{
-  list-style: none;
-  padding-left: 4rem;
+@media screen and (min-width: 1010px) {
+  li.product-box {
+    width: 32%;
+    display: block;
+    margin: 0 3rem 4rem;
+    min-width: 265px;
+  }
 }

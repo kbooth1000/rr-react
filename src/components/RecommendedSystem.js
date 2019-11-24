@@ -43,7 +43,7 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
             {pricingLevels.map((lvl, i) => (<section key={i} className={`pricing-info-row ${lvl.toLowerCase()}`}>
               <div className="cell level-name">
                 <h3 className="pricing-level">{lvl}</h3>
-                <p className="seer">{seers[i]}</p>
+                <p className="seer">SEER: {seers[i]}</p>
               </div>
               <div className="cell level-info">
                 <div className="level-description">{levelDescriptions[i]}</div>

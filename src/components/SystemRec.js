@@ -14,6 +14,7 @@ const SystemRec = () => {
   const [sysType, setSysType] = useState('');
   const [sysTon, setSysTon] = useState('2.0');
   const [fullOrReplace, setFullOrReplace] = useState('gasSystems');
+  const [aside1Show, setAside1Show] = useState('');
   const [step2Show, setStep2Show] = useState('');
   const [step2Active, setStep2Active] = useState('');
   const [step3Show, setStep3Show] = useState('');
@@ -35,6 +36,7 @@ const SystemRec = () => {
     setZipcode(zipcodeText);
     setStep2Active('active');
     setStep2Show('show');
+    setAside1Show('show');
   }
   const handleSysTypeSubmit = e => {
     // e.preventDefault();
