@@ -42,18 +42,21 @@
 
 .tile-nav .tile-mask {
   width: 100%;
-  height: 100%;
-  flex-grow: 1;
-  margin: 0;
-  background: var(--main-blue-trans);
-  box-sizing: border-box;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.6rem;
-  max-width: 360px;
+    height: 100%;
+    flex-grow: 1;
+    margin: 0;
+    background: var(--main-blue-trans);
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsla(0, 0%, 100%, .85);
+    font-size: 2.6rem;
+    max-width: 360px;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    letter-spacing: .1rem;
 }
 
 .tile-navbar .tile-bg {
@@ -71,19 +74,19 @@
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-bg {
-  background-image: url(../images/cytonn-photography-n95VMLxqM2I-unsplash.jpg);
+  background-image: url(../images/fan-man.webp);
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-bg {
-  background-image: url(https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg);
+  background-image: url(../images/blanket-guy.webp);
 }
 
 .nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-bg {
-  background-image: url(../images/cytonn-photography-n95VMLxqM2I-unsplash.jpg);
+  background-image: url(../images/systems-parts.webp);
 }
 
 .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-bg {
-  background-image: url(https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg);
+  background-image: url(../images/finance-icons.jpg);
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
@@ -98,6 +101,8 @@
 
 .tile-mask:hover {
   background: var(--lt-blue-trans);
+  color: #fff;
+  text-shadow: #333 3px 3px 6px, #333 -3px -3px 10px;;
 }
 
 .slider-div {

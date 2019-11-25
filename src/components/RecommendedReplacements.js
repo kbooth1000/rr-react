@@ -20,7 +20,7 @@ import airHandlerOnlyPic from './images/replacement-parts/air-handler.png';
 
 import './styles/grid.css';
 
-const RecommendedReplacements = (props) => {
+const RecommendedReplacements = (props, {...rest}) => {
   const { sysType, sysTonnage, fullOrReplace } = props;
   const { sysTypePm, sysTonnagePm, fullOrReplacePm } = props.location ? qs.parse(props.location.search) : { sysTypePm: null, sysTonnagePm: null, fullOrReplacePm: null };
 
@@ -40,7 +40,7 @@ const RecommendedReplacements = (props) => {
 
   const setScrollRef = useCallback(node => {
     if (node !== null) {
-      node.parentNode.scrollIntoView({
+      node.parentNode.parentNode.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });

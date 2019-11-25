@@ -1,22 +1,26 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from './Carousel';
 
 import galleryImages from './data/galleryImages';
 import './styles/homepage.css';
 
-const HomePage = () => {
+const HomePage = props => {
 
 
   const setScrollRef = useCallback(node => {
     if (node !== null) {
-      node.parentNode.scrollIntoView({
+      node.parentNode.parentNode.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
 
     }
   }, [])
+
+  useEffect(
+    ()=>props.changeRoute('home')
+  )
 
   return (
     <div className="HomePage" ref={setScrollRef}>
