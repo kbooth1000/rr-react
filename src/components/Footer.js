@@ -7,8 +7,7 @@ import './styles/footer.css';
 const Footer = () => {
   return (
     <div className="Footer">
-      <div className="footer-links" style={{
-      }}>
+      <div className="footer-links" style={{height: 'auto', position: 'relative'}} >
         <div className="email-link">
         <Icon name='envelope' />
           <a href="mailto:info@rockruthhvac.com">info@rockruthhvac.com</a>
@@ -17,6 +16,8 @@ const Footer = () => {
         <Icon name='phone' />
           <a href="tel:+14043230732">(404) 323-0732</a>
         </div>
+
+        <div className="copyright" style={{height: 'auto', position: 'absolute', left: '50%'}}>&copy; {new Date().getFullYear()} RockRuth Heating &amp; Air</div>
         <div className="quote-button">
           <Link to="shop">SHOP NOW</Link>
         </div>

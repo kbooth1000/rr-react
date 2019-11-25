@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { gasSystems } from './data/gasSystems';
@@ -11,7 +11,7 @@ import { electricSystems } from './data/electricSystems';
 
 import './styles/info-page.css';
 
-const ForSale = () => {
+const ForSale = props => {
   const setScrollRef = useCallback(node => {
     if (node !== null) {
       node.parentNode.parentNode.scrollIntoView({
@@ -30,6 +30,11 @@ const ForSale = () => {
   console.log(partsValues.map(product => Object.keys(product)))
 
   let partsEntries = Object.entries(sysData);
+
+  
+  useEffect(
+    ()=>props.changeRoute('for-sale')
+  )
 
   return (
     <div className="ForSale" ref={setScrollRef}>

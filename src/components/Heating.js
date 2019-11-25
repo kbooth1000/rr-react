@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 
 import './styles/info-page.css';
 import heatingUnitImg from './images/heating-unit-ceiling.webp';
@@ -8,10 +8,7 @@ import livingRoom from './images/living_room.webp';
 import hvacFans from './images/hvac_fans.webp';
 import acCondenser from './images/ACCondenser.webp';
 
-
-
-
-const Heating = () => {
+const Heating = props => {
 
       const setScrollRef = useCallback(node => {
             if (node !== null) {
@@ -21,8 +18,12 @@ const Heating = () => {
                   });
             }
       }, [])
+ 
+    useEffect(
+      ()=>props.changeRoute('cooling')
+    )
 
-      return <div className="Heating" ref={setScrollRef}>
+  return <div className="Heating" ref={setScrollRef}>
 
             <div className="info-page">
                   <h1 className="title"> HEATING INSTALLATION & REPAIR </h1>

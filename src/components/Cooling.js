@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 
 import './styles/info-page.css';
 import ductwork from './images/ductwork.webp';
@@ -9,7 +9,7 @@ import units from './images/units.webp';
 import serviceGuy from './images/serviceGuy.webp';
 
 
-const Cooling = () => {
+const Cooling = props => {
 
     const setScrollRef = useCallback(node => {
         if (node !== null) {
@@ -20,6 +20,10 @@ const Cooling = () => {
 
         }
     }, [])
+ 
+    useEffect(
+        ()=>props.changeRoute('cooling')
+      )
 
     return (
         <div className="Cooling" ref={setScrollRef}>
