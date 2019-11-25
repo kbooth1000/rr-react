@@ -37,7 +37,7 @@ const Main = ({ match, ...rest }) => {
         <Route path='/replacement-parts/:info' component={RecommendedReplacements} />
         <Route exact path='/equipment-for-sale' render={() => <ForSale changeRoute={handleChangeRoute} {...rest} />} />
         <Route exact path='/financing' render={() => <Financing {...rest} changeRoute={handleChangeRoute} />} />
-        <Route exact path='/quote' render={() => <Quote changeRoute={handleChangeRoute} {...rest} />} />
+        <Route exact path='/quote' render={() => <SystemRec changeRoute={handleChangeRoute} {...rest} />} />
         <Route exact path='/Contact' render={() => <Contact changeRoute={handleChangeRoute} {...rest} />} />
         <Route exact path='/carousel' render={() => <Carousel changeRoute={handleChangeRoute} {...rest} />} />
         <Route exact path='/map' render={() => <Map changeRoute={handleChangeRoute} {...rest} />} />
