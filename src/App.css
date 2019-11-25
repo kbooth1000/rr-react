@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 html {
   --main-blue: #033d75;
   --hi-blue: #26cdff;
@@ -5,6 +7,7 @@ html {
   --trans-blue: hsla(209, 95%, 51%, 0.2);
   --main-blue-trans: hsla(209, 95%, 24%, 0.2);
   --lt-blue-trans: hsla(194, 100%, 57%, 0.5);
+  --nav-hover: hsl(357, 68%, 53%);
 }
 
 

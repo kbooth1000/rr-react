@@ -1,0 +1,7 @@
+* .page-container {
+    margin: 3rem auto 1rem;
+}
+
+.home .page-container {
+    margin: 0 auto;
+}

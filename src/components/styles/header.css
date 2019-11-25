@@ -4,7 +4,7 @@
   z-index: 10;
   background: #fff;
   box-shadow: 1px 1px 7px hsla(0, 0%, 20%, .7);
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .nav-list {
@@ -144,9 +144,12 @@
   font-size: .9rem;
 }
 
-.nav-list li a.active,
-.nav-list li a:hover {
+.nav-list li a.selected {
   color: var(--hi-blue);
+}
+
+.nav-list li a:hover {
+  color: var(--lt-blue-trans);
 }
 
 .link-home {
@@ -170,7 +173,7 @@
 
 .quote-button a {
   height: 1rem;
-  background: var(--hi-blue);
+  background: var(--nav-hover);
   color: #fff;
   height: 32px;
   display: flex;

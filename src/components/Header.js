@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
 
 import './styles/header.css';
@@ -8,12 +8,12 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="top-links">
-      <div className="email-link">
-        <Icon name='envelope' />
+        <div className="email-link">
+          <Icon name='envelope' />
           <a href="mailto:info@rockruthhvac.com">info@rockruthhvac.com</a>
         </div>
         <div className="phone-link">
-        <Icon name='phone' />
+          <Icon name='phone' />
           <a href="tel:+14043230732">(404) 323-0732</a>
         </div>
 
@@ -34,23 +34,23 @@ const Header = () => {
           <span className="menu-icon"><i className="fas fa-bars"></i></span>
           <ul>
             <li className="link-home">
-              <Link to="/">HOME</Link>
+              <NavLink exact to="/" activeClassName="selected">HOME</NavLink>
             </li>
             <li className="link-shop">
-              <Link to="/shop">SHOP NOW</Link>
+              <NavLink to="/shop" activeClassName="selected">SHOP NOW</NavLink>
             </li>
             <li>
-              <Link to="equipment-for-sale">
+              <NavLink to="equipment-for-sale" activeClassName="selected">
                 <span className="nobreak">HVAC EQUIPMENT </span>&nbsp;
                 <span className="nobreak"> FOR SALE</span>
-              </Link>
+              </NavLink>
             </li>
-            <li><Link to="financing">
+            <li><NavLink to="financing" activeClassName="selected">
               FINANCING AVAILABLE
-            </Link></li>
-                              <li><Link to="contact">
+            </NavLink></li>
+            <li><NavLink to="contact" activeClassName="selected">
               CONTACT
-             </Link></li>
+             </NavLink></li>
           </ul>
         </div>
         <div className="quote-button">

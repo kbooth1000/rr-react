@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 
 import Header from './Header';
@@ -15,22 +15,33 @@ import RecommendedReplacements from './RecommendedReplacements';
 import Carousel from './Carousel';
 import Footer from './Footer';
 
-const Main = () => {
+import './styles/main.css';
+
+const Main = ({ match, ...rest }) => {
+  const [loc, setLoc] = useState('');
+
+  const handleChangeRoute = lcn => {
+    setLoc(lcn);
+    console.log('lcn: ', lcn)
+  }
+
   return (
-    <div className="Main">
+    <div className={`Main ${loc}`}>
       <Header />
-      <Route exact path='/' component={HomePage} />
-      <Route path='/shop' component={SystemRec} />
-      <Route path='/heating' component={Heating} />
-      <Route path='/cooling' component={Cooling} />
-      <Route path='/replacement-parts' component={RecommendedReplacements} />
-      <Route path='/replacement-parts/:info' component={RecommendedReplacements} />
-      <Route exact path='/equipment-for-sale' component={ForSale} />
-      <Route exact path='/financing' component={Financing} />
-      <Route exact path='/quote' component={Quote} />
-      <Route exact path='/Contact' component={Contact} />
-      <Route exact path='/carousel' component={Carousel} />
-      <Route exact path='/map' component={Map} />
+      <div className="page-container">
+        <Route exact path='/' render={() => <HomePage changeRoute={handleChangeRoute} {...rest} />} />
+        <Route path='/shop' render={() => <SystemRec {...rest} changeRoute={handleChangeRoute} />} />
+        <Route path='/heating' render={() => <Heating changeRoute={handleChangeRoute} {...rest} />} />
+        <Route path='/cooling' render={() => <Cooling changeRoute={handleChangeRoute} {...rest} />} />
+        <Route path='/replacement-parts' component={RecommendedReplacements} />
+        <Route path='/replacement-parts/:info' component={RecommendedReplacements} />
+        <Route exact path='/equipment-for-sale' render={() => <ForSale changeRoute={handleChangeRoute} {...rest} />} />
+        <Route exact path='/financing' render={() => <Financing {...rest} changeRoute={handleChangeRoute} />} />
+        <Route exact path='/quote' render={() => <Quote changeRoute={handleChangeRoute} {...rest} />} />
+        <Route exact path='/Contact' render={() => <Contact changeRoute={handleChangeRoute} {...rest} />} />
+        <Route exact path='/carousel' render={() => <Carousel changeRoute={handleChangeRoute} {...rest} />} />
+        <Route exact path='/map' render={() => <Map changeRoute={handleChangeRoute} {...rest} />} />
+      </div>
       <Footer />
     </div>
   )

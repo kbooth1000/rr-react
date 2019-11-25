@@ -37,7 +37,7 @@
 }
 
 .tile-nav:hover .tile-mask {
-  background: rgba(255,255,255,.3) !important;
+  background: rgba(255, 255, 255, .3) !important;
 }
 
 .tile-nav .tile-mask {
@@ -51,9 +51,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  font-size: 1.6rem;
+  color: hsla(0, 0%, 100%, .85);
+  font-size: 2.6rem;
   max-width: 360px;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  letter-spacing: .1rem;
 }
 
 .tile-navbar .tile-bg {
@@ -71,19 +74,19 @@
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-bg {
-  background-image: url(../images/cytonn-photography-n95VMLxqM2I-unsplash.jpg);
+  background-image: url(../images/fan-man.webp);
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-bg {
-  background-image: url(https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg);
+  background-image: url(../images/blanket-guy.webp);
 }
 
 .nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-bg {
-  background-image: url(../images/cytonn-photography-n95VMLxqM2I-unsplash.jpg);
+  background-image: url(../images/systems-parts.webp);
 }
 
 .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-bg {
-  background-image: url(https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg);
+  background-image: url(../images/finance-icons.jpg);
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
@@ -98,6 +101,9 @@
 
 .tile-mask:hover {
   background: var(--lt-blue-trans);
+  color: #fff;
+  text-shadow: #333 3px 3px 6px, #333 -3px -3px 10px;
+  ;
 }
 
 .slider-div {
@@ -126,21 +132,21 @@
 
 .hero h3 {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 400;
   letter-spacing: .05rem;
-  margin: auto;
+  margin: .5rem auto 0;
 }
 
 .hero h2 {
   font-size: 2rem;
-  color: var(--lt-blue);
+  color: var(--nav-hover);
   background: rgba(255, 255, 255, .9);
-  font-weight: 700;
+  font-weight: 900;
   display: inline-block;
   padding: 0 1rem;
-
   margin-bottom: 0;
+  font-family: Lato, sans-serif;
 }
 
 .hero .deck {
@@ -150,7 +156,7 @@
   letter-spacing: .04rem;
 }
 
-.call-to-action a, 
+.call-to-action a,
 .call-to-action span {
   background: var(--hi-blue);
   color: #fff;
@@ -163,6 +169,7 @@
   width: 90%;
   font-size: 1rem;
 }
+
 .call-to-action a {
   font-size: .95rem;
 }
@@ -212,12 +219,12 @@
 
 
 @media screen and (min-width: 875px) {
-  
+
   .tile-navbar {
     height: 25vw;
     max-height: 360px;
   }
-  
+
   .tile-nav {
     margin: .1rem;
   }
@@ -229,12 +236,12 @@
 
   .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
   .nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-mask {
-      background: var(--lt-blue-trans);
+    background: var(--lt-blue-trans);
   }
 
   .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask,
   .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask {
-      background: var(--main-blue-trans);
+    background: var(--main-blue-trans);
   }
 }
 

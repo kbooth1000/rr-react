@@ -14,7 +14,7 @@ import './styles/info-page.css';
 const ForSale = () => {
   const setScrollRef = useCallback(node => {
     if (node !== null) {
-      node.parentNode.scrollIntoView({
+      node.parentNode.parentNode.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });

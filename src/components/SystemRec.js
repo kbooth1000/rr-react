@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import RecommendedSystem from './RecommendedSystem';
 import RecommendedReplacements from './RecommendedReplacements';
@@ -8,7 +8,7 @@ import './styles/shop.css';
 import validZipcodes from './data/zipcodes';
 
 
-const SystemRec = () => {
+const SystemRec = (props, {...rest}) => {
   const [zipcode, setZipcode] = useState('');
   const [zipcodeText, setZipcodeText] = useState('');
   const [sysType, setSysType] = useState('');
@@ -26,7 +26,9 @@ const SystemRec = () => {
   const [fullOrReplaceSelected, setFullOrReplaceSelected] = useState('');
   const [stepNum, setStepNum] = useState(0);
 
-
+useEffect(
+  ()=>props.changeRoute('shop')
+)
 
   const handleZipChange = e => {
     e.preventDefault();
@@ -80,7 +82,7 @@ const SystemRec = () => {
 
   const setScrollRef = useCallback(node => {
     if (node !== null) {
-      node.parentNode.scrollIntoView({
+      node.parentNode.parentNode.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
@@ -94,12 +96,15 @@ const SystemRec = () => {
 
       <div className="main">
 
+
         <main style={{ margin: '1rem 0' }}>
 
           <section className="recommendation-finder">
-
-            <h1 className="title" style={{ fontWeight: '700', color: '#000', fontSize: '2rem', float: 'right', marginRight: '5rem' }}>SHOP NOW</h1>
-
+            <h1 className="title" style={{ float: 'right',
+             marginRight: '5rem',
+             color: 'var(--main-blue)',
+             fontSize: '2.5rem',
+  fontWeight: '900' }}>SHOP NOW</h1>
             <form onSubmit={handleZipSubmit} className={`step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
               <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
                 alt="Display of numerous AC units and accessories." className="main-graphic" />
@@ -216,7 +221,7 @@ const SystemRec = () => {
             {/* END recommendation  */}
           </section>
         </main>
-
+       
       </div>
 
     </div >
