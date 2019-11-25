@@ -17,7 +17,7 @@ import Footer from './Footer';
 
 import './styles/main.css';
 
-const Main = ({ match, ...rest }) => {
+const Main = ({ match, ...props }) => {
   const [loc, setLoc] = useState('');
 
   const handleChangeRoute = lcn => {
@@ -29,18 +29,18 @@ const Main = ({ match, ...rest }) => {
     <div className={`Main ${loc}`}>
       <Header />
       <div className="page-container">
-        <Route exact path='/' render={() => <HomePage changeRoute={handleChangeRoute} {...rest} />} />
-        <Route path='/shop' render={() => <SystemRec {...rest} changeRoute={handleChangeRoute} />} />
-        <Route path='/heating' render={() => <Heating changeRoute={handleChangeRoute} {...rest} />} />
-        <Route path='/cooling' render={() => <Cooling changeRoute={handleChangeRoute} {...rest} />} />
-        <Route path='/replacement-parts' component={RecommendedReplacements} />
-        <Route path='/replacement-parts/:info' component={RecommendedReplacements} />
-        <Route exact path='/equipment-for-sale' render={() => <ForSale changeRoute={handleChangeRoute} {...rest} />} />
-        <Route exact path='/financing' render={() => <Financing {...rest} changeRoute={handleChangeRoute} />} />
-        <Route exact path='/quote' render={() => <SystemRec changeRoute={handleChangeRoute} {...rest} />} />
-        <Route exact path='/Contact' render={() => <Contact changeRoute={handleChangeRoute} {...rest} />} />
-        <Route exact path='/carousel' render={() => <Carousel changeRoute={handleChangeRoute} {...rest} />} />
-        <Route exact path='/map' render={() => <Map changeRoute={handleChangeRoute} {...rest} />} />
+        <Route exact path='/' render={props => <HomePage changeRoute={handleChangeRoute} {...props} />} />
+        <Route path='/shop' render={props => <SystemRec {...props} changeRoute={handleChangeRoute} />} />
+        <Route path='/heating' render={props => <Heating changeRoute={handleChangeRoute} {...props} />} />
+        <Route path='/cooling' render={props => <Cooling changeRoute={handleChangeRoute} {...props} />} />
+        <Route path='/replacement-parts' render={props => <RecommendedReplacements changeRoute={handleChangeRoute} {...props} />} />
+        <Route path='/replacement-parts/:info' render={props => <RecommendedReplacements changeRoute={handleChangeRoute} {...props} />} />
+        <Route exact path='/equipment-for-sale' render={props => <ForSale changeRoute={handleChangeRoute} {...props} />} />
+        <Route exact path='/financing' render={props => <Financing {...props} changeRoute={handleChangeRoute} />} />
+        <Route exact path='/quote' render={props => <SystemRec changeRoute={handleChangeRoute} {...props} />} />
+        <Route exact path='/Contact' render={props => <Contact changeRoute={handleChangeRoute} {...props} />} />
+        <Route exact path='/carousel' render={props => <Carousel changeRoute={handleChangeRoute} {...props} />} />
+        <Route exact path='/map' render={props => <Map changeRoute={handleChangeRoute} {...props} />} />
       </div>
       <Footer />
     </div>

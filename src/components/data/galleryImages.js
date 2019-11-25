@@ -3,7 +3,7 @@ const galleryImages = [
     heroTitle: 'Get Financing Now!',
     heroDeck: 'Earum, doloremque. Choose a system or replacement parts. Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
     callToAction: 'SHOP NOW! FINANCING AVAILABLE!',
-    src: './images/cytonn-photography-n95VMLxqM2I-unsplash.jpg',
+    src: './images/finance-icons.jpg',
     path: '/financing',
   },
   {

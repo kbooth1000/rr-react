@@ -1,11 +1,11 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 
 import Map from './Map';
 
 import './styles/shop.css';
 import './styles/info-page.css';
 
-const Contact = () => {
+const Contact = props => {
   const setScrollRef = useCallback(node => {
     if (node !== null) {
       node.parentNode.parentNode.scrollIntoView({
@@ -14,6 +14,11 @@ const Contact = () => {
       });
     }
   }, [])
+
+  
+  useEffect(
+    ()=>props.changeRoute('contact')
+  )
 
   return <div className="Contact" ref={setScrollRef}>
 
