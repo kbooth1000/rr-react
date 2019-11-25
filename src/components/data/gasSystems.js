@@ -1,6 +1,6 @@
 export const totFinancingDefault = "0%, 84 months"
   
-  const defaultImgUrl = "images/ach_goodman.png";
+  const defaultImgUrl = "images/full-system.png";
 export const gasSystems = {
   defaultImgUrl,
   mainTitle: "Split System AC w/ Gas Furnace",

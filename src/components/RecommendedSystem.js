@@ -8,6 +8,8 @@ import { heatPumpOnly } from './data/heatPumpOnly';
 import { airHandlerOnly } from './data/airHandlerOnly';
 import { electricSystems } from './data/electricSystems';
 
+import goodmanLogo from './images/goodman-logo.png';
+
 
 import './styles/grid.css';
 
@@ -34,6 +36,7 @@ const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
       <div className="info-grid">
         <div className="cell title">{productTitle}</div>
         <div className="cell product-image">
+        <img src={goodmanLogo} alt="Goodman" />
           <img src={productImage} alt={`${productTitle}`} rel="noopener noreferrer" />
 
         </div>
