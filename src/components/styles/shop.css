@@ -498,7 +498,8 @@ input[type='submit'],
     margin: 0 2rem 0 0;
     max-height: 25vw;
     max-width: 25vw;
-    width: 100%
+    width: 100%;
+    margin: 3rem auto;
 }
 
 .full-system-details {
@@ -551,6 +552,10 @@ input[type='submit'],
 @media only screen and (max-width: 603px) {
     .financing-box {
         width: calc(100% - 2rem)
+    }
+    
+    .product-image {
+       margin: 0 auto;
     }
 }
 
