@@ -553,10 +553,6 @@ input[type='submit'],
     .financing-box {
         width: calc(100% - 2rem)
     }
-    
-    .product-image {
-       margin: -2rem auto 5rem;
-    }
 }
 
 @media only screen and (max-width: 450px) {
