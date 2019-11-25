@@ -121,13 +121,13 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin: auto auto 5rem;
+    margin: -2rem auto 5rem;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 160px;
   }
-
+ 
   .info-grid .product-image img {
     max-width: 100%;
     position: relative;
@@ -298,5 +298,6 @@
     /* top: 125px;
     left: -15px; */
     z-index: 10;
+    margin: 3rem auto;
   }
 }
