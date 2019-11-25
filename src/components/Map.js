@@ -25,7 +25,7 @@ const Map = props => {
     <div style={{ height: '400px', width: '45vw', maxWidth: '650px', minWidth: '260px' }}>
       <GoogleMapReact
         options={makeOptions}
-        bootstrapURLKeys={{ key: process.env.mapKey }}
+        bootstrapURLKeys={{ key: keys.mapKey }}
         defaultCenter={{ lat: props.latitude, lng: props.longitude }}
         defaultZoom={props.zoom}
       >
