@@ -1,5 +1,5 @@
 const keys = {
-  mapKey: 'AIzaSyCJQUJ6eysWy-4Ze4T1GZlEYdcRuE8JAU8'
+  mapKey: process.env.REACT_APP_MAP_KEY
 }
 export default keys;
 
