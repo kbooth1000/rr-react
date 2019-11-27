@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className="phone-link">
         <Icon name='phone' />
-          <a href="tel:+17706932946">(770) 693-2946</a>
+          <a href="tel:+14704814642">(470) 481-4642</a>
         </div>
 
         <div className="copyright" style={{height: 'auto', position: 'absolute', left: '50%'}}>&copy; {new Date().getFullYear()} RockRuth Heating &amp; Air</div>

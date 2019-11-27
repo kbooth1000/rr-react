@@ -14,17 +14,10 @@ const Header = () => {
         </div>
         <div className="phone-link">
           <Icon name='phone' />
-          <a href="tel:+17706932946">(770) 693-2946</a>
+          <a href="tel:+14704814642">(470) 481-4642</a>
         </div>
 
-        {/* <div className="login-link">
-          <i className="fas fa-user"></i>
-          <a href="#">Login</a>
-        </div>
-        <div className="signup-link">
-          <i className="fas fa-sign-in-alt"></i>
-          <a href="#">Sign Up</a>
-        </div> */}
+    
       </div>
 
       <div className="main-nav">
