@@ -10,6 +10,13 @@
   margin: 0px auto;
   display: block;
   object-fit: cover;
+  object-position: center;
   min-width: 100%;
   min-height: 100%;
+}
+
+@media screen and (min-width: 1110px) {
+  .GalleryImage img {
+    object-position: top;
+  }
 }
