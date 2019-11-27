@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className="phone-link">
         <Icon name='phone' />
-          <a href="tel:+14043230732">(404) 323-0732</a>
+          <a href="tel:+17706932946">(770) 693-2946</a>
         </div>
 
         <div className="copyright" style={{height: 'auto', position: 'absolute', left: '50%'}}>&copy; {new Date().getFullYear()} RockRuth Heating &amp; Air</div>
@@ -22,36 +22,6 @@ const Footer = () => {
           <Link to="shop">SHOP NOW</Link>
         </div>
       </div>
-
-      {/* <div className="main-nav">
-
-        <div className="nav-list">
-        
-          <ul>
-            <li className="link-home">
-              <Link to="/">HOME</Link>
-            </li>
-            <li className="link-shop">
-              <Link to="/shop">SHOP NOW</Link>
-            </li>
-            <li>
-              <Link to="equipment-for-sale">
-                <span className="nobreak">HVAC EQUIPMENT </span>&nbsp;
-                <span className="nobreak"> FOR SALE</span>
-              </Link>
-            </li>
-            <li><Link to="financing">
-              FINANCING AVAILABLE
-            </Link></li>
-                              <li><Link to="contact">
-              CONTACT
-             </Link></li>
-          </ul>
-        </div>
-        <div className="quote-button">
-          <Link to="shop">SHOP NOW</Link>
-        </div>
-      </div> */}
     </div >
   )
 }

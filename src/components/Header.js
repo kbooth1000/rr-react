@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <div className="phone-link">
           <Icon name='phone' />
-          <a href="tel:+14043230732">(404) 323-0732</a>
+          <a href="tel:+17706932946">(770) 693-2946</a>
         </div>
 
         {/* <div className="login-link">
