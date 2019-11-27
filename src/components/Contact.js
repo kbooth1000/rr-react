@@ -4,6 +4,7 @@ import Map from './Map';
 
 import './styles/shop.css';
 import './styles/info-page.css';
+import { Icon } from 'semantic-ui-react';
 import calendarPage from './images/calendar-page.png';
 
 const Contact = props => {
@@ -25,7 +26,6 @@ const Contact = props => {
 
     <div className="info-page">
       <h1 className="title">CONTACT US</h1>
-      {/* <h2>Contact Us Today!</h2> */}
       <div className="deck">
         <p><strong> 24 Hour Emergency Service Available</strong></p>
         <p>
@@ -35,24 +35,23 @@ const Contact = props => {
 
 
         <p><strong>RockRuth Heating &amp; Air</strong></p>
+        <div style={{marginLeft: '1rem'}}>
         <p>1400 South Marietta Parkway Suite 108, Marietta, Georgia 30067, United States</p>
-        <p>Office: 770-693-2946</p>
-        <p>After Hours: 404-323-0732</p>
-        <p><strong>adslfjasd</strong></p>
+        <p> <Icon name='phone' /> Office: <a href="tel:+17706932946">(770) 693-2946</a></p>
+        <p> <Icon name='phone' /> After Hours: <a href="tel:+14043230732">(404) 323-0732</a></p>
+</div>
         <p><a href="https://portal.fieldpulse.com/rockruthhvac">
           <strong style={{
             color: 'var(--hi-blue)',
-            textAlign: 'center',
-            display: 'block',
-            margin: '3rem',
-            fontSize: '1.8rem'
+            display: 'inline-block',
+            margin: '3rem 3rem 3rem 8px',
+            fontSize: '1.8rem',
+            borderBottom: '2px solid var(--hi-blue)'
           }}>
-            Schedule Service Now!
-          </strong>
+            • Schedule Service Now!</strong>
           <img src={calendarPage} style={{
             marginTop: '-5rem'
-          }} />
-        </a><br />
+          }} /></a><br />
           
         </p>
       </div>
