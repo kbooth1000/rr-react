@@ -1,5 +1,5 @@
 const totFinancingDefault = "0%, 84 months"
-const defaultImgUrl = 'images/replacement-parts/furnace.webp';
+const defaultImgUrl = 'images/replacement-parts/furnace.png';
 
 export const furnaceOnly = {
   defaultImgUrl,

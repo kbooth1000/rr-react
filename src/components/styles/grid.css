@@ -11,13 +11,7 @@
     /* border: 10px solid #666; */
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    grid-template-areas:
-      "title   title   title   title   title"
-      "product-image   pricing-info   pricing-info   pricing-info   right-sidebar"
-      "product-image   pricing-info   pricing-info   pricing-info   right-sidebar"
-      "product-image   pricing-info   pricing-info   pricing-info   right-sidebar"
-      "product-image   finance-btn1   brand-logos   finance-btn2   right-sidebar"
-      "footer   footer   footer   footer   footer";
+    
 
 
     grid-template-areas:
@@ -26,24 +20,16 @@
       "pricing-info   pricing-info  pricing-info  pricing-info  pricing-info"
       "pricing-info   pricing-info  pricing-info  pricing-info  pricing-info"
       "pricing-info   pricing-info  pricing-info  pricing-info  pricing-info"
-      "finance-btn1   brand-logos  brand-logos  brand-logos  finance-btn2"
-      "footer   footer   footer footer footer";
-
-  
+      "   .    finance-btn1    finance-btn1  finance-btn2   finance-btn2"
+      "brand-logos    brand-logos   brand-logos   brand-logos   brand-logos "
+      "footer         footer        footer        footer        footer      ";
 
   top: 25%;
   }
 
-    .info-grid {
-    grid-template-areas:
-      "title   title   title   title   title"
-      "product-image   product-image   product-image   product-image   product-image"
-      "pricing-info   pricing-info   pricing-info   pricing-info   right-sidebar"
-      "pricing-info   pricing-info   pricing-info   pricing-info   right-sidebar"
-      "pricing-info   pricing-info   pricing-info   pricing-info   right-sidebar"
-      "pricing-info   finance-btn1   brand-logos   finance-btn2   right-sidebar"
-      "footer   footer   footer   footer   footer"
-    }
+  .price-grid.hide {
+    display: none;
+  }
 
   .pricing-info-box {
     display: flex;

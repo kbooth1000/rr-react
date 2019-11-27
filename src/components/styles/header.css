@@ -98,7 +98,6 @@
   top: -23px;
   left: 0;
 
-
   position: relative;
   left: auto;
   transform: translateX(0);
@@ -135,12 +134,15 @@
 .nav-list ul {
   list-style: none;
   padding: 0;
-  margin-top: 0.2rem;
+  margin: 0.8rem 0.8rem 0 0;
+  max-width: 89%;
+  line-height: 1rem;
+  float: right;
 }
 
 .nav-list li {
-  margin: 0 0.4rem 0.1rem;
-  line-height: 1.3rem;
+  margin: 0;
+  line-height: 1.1rem;
   font-size: .9rem;
 }
 
@@ -210,14 +212,18 @@
   .signup-link {
     margin: 0 !important;
   }
+
+  .nav-list ul {
+    max-width: 100%;
+  }
+
+  .nav-list li {
+    line-height: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 507px) {
-  .nav-list li {
-    margin: 0 0.4rem 0.1rem;
-    line-height: 1.3rem;
-    font-size: 1rem;
-  }
+  
 }
 
 @media screen and (min-width: 699px) {
@@ -256,6 +262,10 @@
 
   .nav-list li {
     display: inline-block;
+
+    margin: 0 0.4rem 0.1rem;
+    line-height: 1.3rem;
+    font-size: 1rem;
   }
 
   .nav-list li.link-home {

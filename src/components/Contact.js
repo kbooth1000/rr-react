@@ -4,6 +4,7 @@ import Map from './Map';
 
 import './styles/shop.css';
 import './styles/info-page.css';
+import calendarPage from './images/calendar-page.png';
 
 const Contact = props => {
   const setScrollRef = useCallback(node => {
@@ -15,9 +16,9 @@ const Contact = props => {
     }
   }, [])
 
-  
+
   useEffect(
-    ()=>props.changeRoute('contact')
+    () => props.changeRoute('contact')
   )
 
   return <div className="Contact" ref={setScrollRef}>
@@ -37,6 +38,23 @@ const Contact = props => {
         <p>1400 South Marietta Parkway Suite 108, Marietta, Georgia 30067, United States</p>
         <p>Office: 770-693-2946</p>
         <p>After Hours: 404-323-0732</p>
+        <p><strong>adslfjasd</strong></p>
+        <p><a href="https://portal.fieldpulse.com/rockruthhvac">
+          <strong style={{
+            color: 'var(--hi-blue)',
+            textAlign: 'center',
+            display: 'block',
+            margin: '3rem',
+            fontSize: '1.8rem'
+          }}>
+            Schedule Service Now!
+          </strong>
+          <img src={calendarPage} style={{
+            marginTop: '-5rem'
+          }} />
+        </a><br />
+          
+        </p>
       </div>
       <div className="info-blurb">
 
