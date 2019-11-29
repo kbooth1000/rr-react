@@ -30,8 +30,12 @@ const Carousel = props => {
 
             <div className="hero">
               <h3>{img.heroTitle}</h3>
-              <h2>RockRuth Heating &amp; Air in Atlanta</h2>
-              <div className="deck">{img.heroDeck}</div>
+              <h2>
+                <span className="nav-breaker">
+                  RockRuth Heating &amp; Air </span>
+                <span className="nav-breaker">in Atlanta</span>
+              </h2>
+              {/* <div className="deck">{img.heroDeck}</div> */}
               <div className="call-to-action">
                 <span>{img.callToAction}</span>
               </div>

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "eslint": "^6.6.0",
+    "google-map-react": "^1.1.5",
     "konva": "^4.0.17",
     "query-string": "^6.9.0",
     "react": "^16.10.2",
@@ -13,6 +14,8 @@
     "react-native": "^0.61.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1",
     "typescript": "*"
   },
   "scripts": {

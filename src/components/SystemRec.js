@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
 // import { Link } from 'react-router-dom';
 import RecommendedSystem from './RecommendedSystem';
 import RecommendedReplacements from './RecommendedReplacements';
@@ -24,6 +24,7 @@ const SystemRec = () => {
   const [tonDropdownSelect, setTonDropdownSelect] = useState('');
   const [recShow, setRecShow] = useState(false);
   const [fullOrReplaceSelected, setFullOrReplaceSelected] = useState('');
+  const [stepNum, setStepNum] = useState(0);
 
 
 
@@ -38,6 +39,11 @@ const SystemRec = () => {
     setStep2Show('show');
     setAside1Show('show');
   }
+  const handleStepChange = (e, stepNum) => {
+    e.preventDefault();
+    setStepNum(stepNum);
+  }
+
   const handleSysTypeSubmit = e => {
     // e.preventDefault();
     e.target.checked = 'checked';
@@ -72,29 +78,6 @@ const SystemRec = () => {
     } else return <RecommendedReplacements sysType={sysType} sysTonnage={sysTon} fullOrReplace={fullOrReplace} />
   }
 
-
-
-  // const setStep2ScrollRef = useEffect((node) => {
-  //   console.log('node2', node);
-
-  //   node.scrollIntoView({
-  //     behavior: 'smooth',
-  //     block: 'start',
-  //   });
-  // }, [zipcode])
-
-  // const setStep3ScrollRef = useEffect(node => {
-  //   if (node !== null) {
-  //     console.log('node3', node);
-
-  //     node.parentNode.scrollIntoView({
-  //       behavior: 'smooth',
-  //       block: 'start',
-  //     });
-  //   }
-  // }, [sysTon])
-
-
   const setScrollRef = useCallback(node => {
     if (node !== null) {
       node.parentNode.scrollIntoView({
@@ -106,7 +89,7 @@ const SystemRec = () => {
   }, [])
 
   return (
-    <div className="SystemRec" ref={setScrollRef}>
+    <div className="SystemRec" ref={(e)=>setScrollRef(e)}>
       {/* {sysType} {sysTon} {fullOrReplace} {zipcode} */}
 
       <div className="main">
@@ -125,10 +108,17 @@ const SystemRec = () => {
                 <p>Enter zip-code where the unit will be installed:</p>
                 <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" /><br />
                 <input type="submit" value="Submit" className="submit-button" />
+                <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
               </fieldset>
-              <aside className={`aside1 ${aside1Show}`}>{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
+
             </form>
-            <form onChange={handleSysTypeSubmit}
+
+
+            <form onChange={e=>{
+                handleSysTypeSubmit(e);
+                handleStepChange(e, 1);
+              }
+            }
               className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
 
               <fieldset className="fieldset">
@@ -140,10 +130,10 @@ const SystemRec = () => {
                 </label>
                 <label className={sysType === 'electric' ? 'selected' : ''}
                   htmlFor="electric">
-                  <input value="electric" type="radio" name="heat-source" id="electric" /> Electric / Heat Pump</label> <br />
+                  <input value="electric" type="radio" name="heat-source" id="electric" /> Electric / Heat Pump</label>
+                <br />
               </fieldset>
             </form>
-            <aside className="aside2"></aside>
             <form className={`step3 ${step3Show} ${step3Active}`}>
               <fieldset className="fieldset" style={{ display: 'flex' }}>
                 <legend>Square Footage/Tonnage:</legend>
@@ -152,7 +142,10 @@ const SystemRec = () => {
                     <p>
                       Square footage of the home:
                             </p>
-                    <select onChange={handleSysTonSubmit} value={tonDropdownSelect} name="footage" className="footage">
+                    <select onChange={e=>{
+                handleSysTonSubmit(e);
+                handleStepChange(e, 2);
+              }} value={tonDropdownSelect} name="footage" className="footage">
                       <optgroup label="Square Footage">
                         <option name="nochoice" value="0">Choose square footage</option>
                         <option name="800sf" value="1.5">700-800 Sq. Ft.</option>
@@ -170,7 +163,11 @@ const SystemRec = () => {
                     <p>
                       Tonnage of the existing system:
                             </p>
-                    <select onChange={handleSysTonSubmit} value={tonDropdownSelect} name="tonnage" className="tonnage">
+                    <select onChange={e=>{
+                      handleSysTonSubmit(e);
+                      handleStepChange(e, 3);
+                    }
+                    } value={tonDropdownSelect} name="tonnage" className="tonnage">
                       <optgroup label="Tonnage">
                         <option name="nochoice" value="0">Choose tonnage...</option>
                         <option name="1_5t" value="1.5">1.5 tons</option>

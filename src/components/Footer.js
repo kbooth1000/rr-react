@@ -2,36 +2,30 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
 
-import './styles/header.css';
+import './styles/footer.css';
 
-const Header = () => {
+const Footer = () => {
   return (
-    <div className="Header">
-      <div className="top-links">
-      <div className="email-link">
+    <div className="Footer">
+      <div className="footer-links" style={{
+      }}>
+        <div className="email-link">
         <Icon name='envelope' />
           <a href="mailto:info@rockruthhvac.com">info@rockruthhvac.com</a>
         </div>
         <div className="phone-link">
         <Icon name='phone' />
-          <a href="tel:+14703230732">(470) 323-0732</a>
+         <a href="tel:+14704814642">(470) 581-4642</a>
         </div>
-
-        {/* <div className="login-link">
-          <i className="fas fa-user"></i>
-          <a href="#">Login</a>
+        <div className="quote-button">
+          <Link to="shop">SHOP NOW</Link>
         </div>
-        <div className="signup-link">
-          <i className="fas fa-sign-in-alt"></i>
-          <a href="#">Sign Up</a>
-        </div> */}
       </div>
 
-      <div className="main-nav">
-        <Link to="/"><div className="logo">
-        </div></Link>
+      {/* <div className="main-nav">
+
         <div className="nav-list">
-          <span className="menu-icon"><i className="fas fa-bars"></i></span>
+        
           <ul>
             <li className="link-home">
               <Link to="/">HOME</Link>
@@ -54,11 +48,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="quote-button">
-          <Link to="quote">GET A QUOTE</Link>
+          <Link to="shop">SHOP NOW</Link>
         </div>
-      </div>
+      </div> */}
     </div >
   )
 }
 
-export default Header;
+export default Footer;
