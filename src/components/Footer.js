@@ -11,7 +11,7 @@ const Footer = () => {
       }}>
         <div className="email-link">
         <Icon name='envelope' />
-          <a href="mailto:info@rockruthhvac.com">info@rockruthhvac.com</a>
+          <a href="mailto:information@rockruth.com">information@rockruth.com</a>
         </div>
         <div className="phone-link">
         <Icon name='phone' />
