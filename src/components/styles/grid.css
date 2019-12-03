@@ -93,15 +93,9 @@
     grid-area: title;
   }
 
-  
-
 .info-grid .product-image {
     grid-area: product-image;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
     position: relative !important;
-    left: -15px;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -110,11 +104,12 @@
     justify-content: center;
     margin: 0rem auto -15px;
     top: 95px;
-    left: 50%;
+    left: 0;
     -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    transform: translate(0,-50%);
     min-width: 160px;
     max-height: 200px;
+    padding-left: 22rem;
 }
 
 .info-grid .product-image img {

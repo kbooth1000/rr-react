@@ -57,6 +57,10 @@
   font-family: Lato, sans-serif;
   font-weight: 600;
   letter-spacing: .1rem;
+
+
+    width: 46vw;
+    height: 29.5vw;
 }
 
 .tile-navbar .tile-bg {
@@ -71,6 +75,9 @@
   background-position: center;
   position: absolute;
   filter: grayscale(1) opacity(0.5);
+
+  width: 46vw;
+  height: 29.5vw;
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-bg {
@@ -227,6 +234,16 @@
 
   .tile-nav {
     margin: .1rem;
+  }
+
+  .tile-nav .tile-bg {
+    width: 23vw;
+    height: 24vw;
+  }
+
+  .tile-nav .tile-mask {
+    width:23vw;
+    height:24.5vw;
   }
 
   .nav-breaker {
