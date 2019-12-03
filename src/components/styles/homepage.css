@@ -30,6 +30,7 @@
   box-sizing: border-box;
   filter: opacity(1);
   height: 98%;
+  position: relative;
 }
 
 .tile-nav:hover .tile-bg {
@@ -59,8 +60,8 @@
   letter-spacing: .1rem;
 
 
-    width: 46vw;
-    height: 29.5vw;
+/*     width: 46vw;
+    height: 29.5vw; */
 }
 
 .tile-navbar .tile-bg {
@@ -76,8 +77,8 @@
   position: absolute;
   filter: grayscale(1) opacity(0.5);
 
-  width: 46vw;
-  height: 29.5vw;
+/*   width: 46vw;
+  height: 29.5vw; */
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-bg {
