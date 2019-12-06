@@ -240,11 +240,14 @@
     width: 23vw;
     height: 24vw;
     max-width: 100%;
+    max-height: 100%;
   }
 
   .tile-nav .tile-mask {
     width:23vw;
-    height:24.5vw;
+    height:24vw;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .nav-breaker {
