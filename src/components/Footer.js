@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-links" style={{height: 'auto', position: 'relative'}} >
         <div className="email-link">
         <Icon name='envelope' />
-          <a href="mailto:info@rockruthhvac.com">info@rockruthhvac.com</a>
+          <a href="mailto:information@rockruthhvac.com">information@rockruthhvac.com</a>
         </div>
         <div className="phone-link">
         <Icon name='phone' />
