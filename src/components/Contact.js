@@ -45,7 +45,7 @@ const Contact = props => {
           <img src={calendarImg} style={{
             maxWidth: '20rem',
             margin: '1rem auto -3rem 0'
-          }} /></a><br /><strong style={{
+          }} /><br /><strong style={{
             color: 'var(--hi-blue)',
             display: 'inline-block',
             margin: '3rem 3rem 3rem 8px',
@@ -53,7 +53,7 @@ const Contact = props => {
             borderBottom: '2px solid var(--hi-blue)'
           }}>
             • Schedule Service Now!</strong>
-          
+          </a>
         </p>
       </div>
       <div className="info-blurb">
