@@ -5,7 +5,7 @@ import Map from './Map';
 import './styles/shop.css';
 import './styles/info-page.css';
 import { Icon } from 'semantic-ui-react';
-import calendarPage from './images/calendar-page.png';
+import calendarImg from './images/calendar.png';
 
 const Contact = props => {
   const setScrollRef = useCallback(node => {
@@ -41,7 +41,11 @@ const Contact = props => {
         <p> <Icon name='phone' /> After Hours: <a href="tel:+14043230732">(404) 323-0732</a></p>
 </div>
         <p><a href="https://portal.fieldpulse.com/rockruthhvac">
-          <strong style={{
+          
+          <img src={calendarImg} style={{
+            maxWidth: '20rem',
+            margin: '1rem auto -3rem 0'
+          }} /></a><br /><strong style={{
             color: 'var(--hi-blue)',
             display: 'inline-block',
             margin: '3rem 3rem 3rem 8px',
@@ -49,9 +53,6 @@ const Contact = props => {
             borderBottom: '2px solid var(--hi-blue)'
           }}>
             • Schedule Service Now!</strong>
-          <img src={calendarPage} style={{
-            marginTop: '-5rem'
-          }} /></a><br />
           
         </p>
       </div>
