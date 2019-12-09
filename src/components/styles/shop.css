@@ -64,7 +64,7 @@ label.selected {
 
 .main-graphic {
     width: 100%;
-    max-width: 650px;
+    max-width: 850px;
     margin: 1rem auto auto 50%;
     transform: translateX(-50%);
     transition: .8s;
@@ -184,7 +184,9 @@ form.active
  {
     border-bottom: 3px solid #00aeef;
     border-radius: 20px;
-    filter: opacity(1)
+    filter: opacity(1);
+    max-width: 550px;
+    margin: auto;
 }
 
 .active legend {
