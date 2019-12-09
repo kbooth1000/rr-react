@@ -8,7 +8,7 @@ import './styles/shop.css';
 import validZipcodes from './data/zipcodes';
 
 
-const SystemRec = (props, {...rest}) => {
+const SystemRec = (props, { ...rest }) => {
   const [zipcode, setZipcode] = useState('');
   const [zipcodeText, setZipcodeText] = useState('');
   const [sysType, setSysType] = useState('');
@@ -26,9 +26,9 @@ const SystemRec = (props, {...rest}) => {
   const [fullOrReplaceSelected, setFullOrReplaceSelected] = useState('');
   const [stepNum, setStepNum] = useState(0);
 
-useEffect(
-  ()=>props.changeRoute('shop')
-)
+  useEffect(
+    () => props.changeRoute('shop')
+  )
 
   const handleZipChange = e => {
     e.preventDefault();
@@ -91,7 +91,7 @@ useEffect(
   }, [])
 
   return (
-    <div className="SystemRec" ref={(e)=>setScrollRef(e)}>
+    <div className="SystemRec" ref={(e) => setScrollRef(e)}>
       {/* {sysType} {sysTon} {fullOrReplace} {zipcode} */}
 
       <div className="main">
@@ -100,14 +100,16 @@ useEffect(
         <main style={{ margin: '1rem 0' }}>
 
           <section className="recommendation-finder">
-            <h1 className="title" style={{ float: 'right',
-             marginRight: '5rem',
-             color: 'var(--main-blue)',
-             fontSize: '2.5rem',
-  fontWeight: '900' }}>SHOP NOW</h1>
+            <h1 className="title" style={{
+              marginLeft: '50%',
+              color: 'var(--main-blue)',
+              fontSize: '2.5rem',
+              fontWeight: '900',
+              transform: 'translateX(-50%)',
+              display: 'inline-block'
+            }}>SHOP NOW</h1>
             <form onSubmit={handleZipSubmit} className={`step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
-              <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
-                alt="Display of numerous AC units and accessories." className="main-graphic" />
+
               <fieldset className="fieldset">
                 <legend>Location:</legend>
                 <p>Enter zip-code where the unit will be installed:</p>
@@ -117,12 +119,14 @@ useEffect(
               </fieldset>
 
             </form>
+            <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
+              alt="Display of numerous AC units and accessories." className={`main-graphic ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`} />
 
 
-            <form onChange={e=>{
-                handleSysTypeSubmit(e);
-                handleStepChange(e, 1);
-              }
+            <form onChange={e => {
+              handleSysTypeSubmit(e);
+              handleStepChange(e, 1);
+            }
             }
               className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
 
@@ -147,10 +151,10 @@ useEffect(
                     <p>
                       Square footage of the home:
                             </p>
-                    <select onChange={e=>{
-                handleSysTonSubmit(e);
-                handleStepChange(e, 2);
-              }} value={tonDropdownSelect} name="footage" className="footage">
+                    <select onChange={e => {
+                      handleSysTonSubmit(e);
+                      handleStepChange(e, 2);
+                    }} value={tonDropdownSelect} name="footage" className="footage">
                       <optgroup label="Square Footage">
                         <option name="nochoice" value="0">Choose square footage</option>
                         <option name="800sf" value="1.5">700-800 Sq. Ft.</option>
@@ -168,7 +172,7 @@ useEffect(
                     <p>
                       Tonnage of the existing system:
                             </p>
-                    <select onChange={e=>{
+                    <select onChange={e => {
                       handleSysTonSubmit(e);
                       handleStepChange(e, 3);
                     }
@@ -210,7 +214,7 @@ useEffect(
 
             <div className={`recommendation ${recShow ? 'show' : ''}`}>
 
-              <button className="close-modal" value="" onClick={handleCloseModalClick}>X</button>
+              <div className="close-modal" value="" onClick={handleCloseModalClick}></div>
 
               {/* FULL SYSTEM BOX   ##################### */}
 
@@ -221,7 +225,7 @@ useEffect(
             {/* END recommendation  */}
           </section>
         </main>
-       
+
       </div>
 
     </div >
