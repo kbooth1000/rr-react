@@ -35,17 +35,17 @@ const Contact = props => {
 
 
         <p><strong>RockRuth Heating &amp; Air</strong></p>
-        <div style={{marginLeft: '1rem'}}>
-        <p>1400 South Marietta Parkway Suite 108, Marietta, Georgia 30067, United States</p>
-        <p> <Icon name='phone' /> Office: <a href="tel:+17706932946">(770) 693-2946</a></p>
-        <p> <Icon name='phone' /> After Hours: <a href="tel:+14043230732">(404) 323-0732</a></p>
-</div>
+        <div style={{ marginLeft: '1rem' }}>
+          <p>1400 South Marietta Parkway Suite 108, Marietta, Georgia 30067, United States</p>
+          <p> <Icon name='phone' /> Office: <a href="tel:+17706932946">(770) 693-2946</a></p>
+          <p> <Icon name='phone' /> After Hours: <a href="tel:+14043230732">(404) 323-0732</a></p>
+        </div>
         <p><a href="https://portal.fieldpulse.com/rockruthhvac">
-          
+          target="_blank" rel="noreferrer noopener"
           <img src={calendarImg} style={{
             maxWidth: '20rem',
             margin: '1rem auto -3rem 0'
-          }} /><br /><strong style={{
+          }} alt="calendar" /><br /><strong style={{
             color: 'var(--hi-blue)',
             display: 'inline-block',
             margin: '3rem 3rem 3rem 8px',
@@ -53,7 +53,7 @@ const Contact = props => {
             borderBottom: '2px solid var(--hi-blue)'
           }}>
             • Schedule Service Now!</strong>
-          </a>
+        </a>
         </p>
       </div>
       <div className="info-blurb">
