@@ -40,10 +40,9 @@ const Contact = props => {
           <p> <Icon name='phone' /> Office: <a href="tel:+17706932946">(770) 693-2946</a></p>
           <p> <Icon name='phone' /> After Hours: <a href="tel:+14705814642">(404) 581-4642</a></p>
         </div>
-<div class="email-link">
-   <Icon name='email' />
-<a href="mailto:information@rockruthhvac.com">information@rockruthhvac.com</a>
-</div>
+<p>
+   <Icon name='mail outline' /><a href="mailto:information@rockruthhvac.com">information@rockruthhvac.com</a>
+</p>
         <p><a href="https://portal.fieldpulse.com/rockruthhvac"
           target="_blank" rel="noreferrer noopener">
           <img src={calendarImg} style={{
