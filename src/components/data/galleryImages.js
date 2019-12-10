@@ -17,7 +17,7 @@ const galleryImages = [
     heroTitle: 'Get Financing Now!',
     heroDeck: 'Earum, doloremque. Choose a system or replacement parts. Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
     callToAction: 'SHOP NOW! FINANCING AVAILABLE!',
-    src: './images/finance-icons.jpg',
+    src: './images/finance-icons2.jpg',
     path: '/financing',
   },
   {

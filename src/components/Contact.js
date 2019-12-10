@@ -40,8 +40,8 @@ const Contact = props => {
           <p> <Icon name='phone' /> Office: <a href="tel:+17706932946">(770) 693-2946</a></p>
           <p> <Icon name='phone' /> After Hours: <a href="tel:+14043230732">(404) 323-0732</a></p>
         </div>
-        <p><a href="https://portal.fieldpulse.com/rockruthhvac">
-          target="_blank" rel="noreferrer noopener"
+        <p><a href="https://portal.fieldpulse.com/rockruthhvac"
+          target="_blank" rel="noreferrer noopener">
           <img src={calendarImg} style={{
             maxWidth: '20rem',
             margin: '1rem auto -3rem 0'
