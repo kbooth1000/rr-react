@@ -40,20 +40,25 @@ input[type="radio"] {
     padding: 1rem 1rem 4.7rem;
 }
 
-label {
-    margin: .8rem;
-    border: 1px #ccc solid;
+fieldset section {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset label, fieldset select {
+    border: 1px solid #ccc;
     padding: .1rem .3rem;
     border-radius: 5px;
-    /* color: #333; */
     background: #fff;
     font-size: .9rem;
     font-weight: 600;
     display: inline-flex;
     position: relative;
     height: 2.4rem;
-    margin: 0 3vw;
+    margin: 0 0.5rem;
     align-items: center;
+    width: 40%;
+    justify-content: center;
 }
 
 label.selected {
@@ -186,7 +191,6 @@ form.active
     border-radius: 20px;
     filter: opacity(1);
     max-width: 550px;
-    margin: auto;
 }
 
 .active legend {
