@@ -53,7 +53,7 @@ const RecommendedReplacements = (props, {...rest}) => {
       <form className={`step4 show`}>
         <fieldset className="fieldset">
           <p>Which replacement part do you need:</p>
-          <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
             <span className="nowrap">
               <label className={replacementPart === 'acCondenserOnly' ? 'selected' : ''}
                 htmlFor="acCondenserOnly">
