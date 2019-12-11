@@ -113,7 +113,7 @@ const SystemRec = (props, { ...rest }) => {
               <fieldset className="fieldset">
                 <legend>Location:</legend>
                 <p>Enter zip-code where the unit will be installed:</p>
-                <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" /><br />
+                <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" style={{ width: '60%' }} /><br />
                 <input type="submit" value="Submit" className="submit-button" />
                 <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
               </fieldset>

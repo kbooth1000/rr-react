@@ -45,7 +45,7 @@ fieldset section {
     justify-content: center;
 }
 
-fieldset label, fieldset select {
+fieldset label, fieldset select, fieldset input[type=text] {
     border: 1px solid #ccc;
     padding: .1rem .3rem;
     border-radius: 5px;
@@ -57,7 +57,7 @@ fieldset label, fieldset select {
     height: 2.4rem;
     margin: 0 0.5rem;
     align-items: center;
-    width: 40%;
+    /* width: 40%; */
     justify-content: center;
 }
 
@@ -90,6 +90,7 @@ label.selected {
 
 .recommendation-finder .fieldset {
     border-radius: 14px;
+    text-align: center;
 }
 
 form,
@@ -292,13 +293,14 @@ select,
     margin: 0.5rem
 }
 
-input[type='submit'],
-.submit-full {
+input[type='submit'], .submit-full {
     margin: 0.5rem;
     float: right;
     padding: 0 0.5rem !important;
     height: 2rem !important;
-    float: left !important
+    float: none !important;
+    margin: 1rem auto 0;
+    width: 10rem;
 }
 
 .unit-name {
