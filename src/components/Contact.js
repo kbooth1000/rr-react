@@ -38,8 +38,12 @@ const Contact = props => {
         <div style={{ marginLeft: '1rem' }}>
           <p>1400 South Marietta Parkway Suite 108, Marietta, Georgia 30067, United States</p>
           <p> <Icon name='phone' /> Office: <a href="tel:+17706932946">(770) 693-2946</a></p>
-          <p> <Icon name='phone' /> After Hours: <a href="tel:+14043230732">(404) 323-0732</a></p>
+          <p> <Icon name='phone' /> After Hours: <a href="tel:+14705814642">(404) 581-4642</a></p>
+          <p> 
+            <Icon name='mail outline' /><a href="mailto:information@rockruthhvac.com">information@rockruthhvac.com</a>
+          </p>
         </div>
+
         <p><a href="https://portal.fieldpulse.com/rockruthhvac"
           target="_blank" rel="noreferrer noopener">
           <img src={calendarImg} style={{
