@@ -20,10 +20,12 @@ input[type='submit'] {
     margin-top: 1rem;
     overflow: hidden;
 }
+
 .Replacements .step4 {
     margin-top: 1.9rem;
     overflow: visible;
 }
+
 /* .RecommendedReplacements  */
 input[type="radio"] {
     display: none;
@@ -33,7 +35,8 @@ input[type="radio"] {
 
 .RecommendedReplacements .step4 {
     overflow: visible;
-    height: 9rem;padding: 1rem 1rem 1.5rem;
+    height: 9rem;
+    padding: 1rem 1rem 1.5rem;
 }
 
 .RecommendedReplacements .step4 fieldset {
@@ -45,7 +48,25 @@ fieldset section {
     justify-content: center;
 }
 
-fieldset label, fieldset select, fieldset input[type=text] {
+.step fieldset label,
+.step fieldset select,
+.step fieldset input[type=text] {
+    border: 1px solid #ccc;
+    padding: .1rem .3rem;
+    border-radius: 5px;
+    background: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    display: inline-flex;
+    position: relative;
+    height: 2.4rem;
+    margin: 0 0.5rem;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+}
+
+.Replacements fieldset label {
     border: 1px solid #ccc;
     padding: .1rem .3rem;
     border-radius: 5px;
@@ -61,11 +82,18 @@ fieldset label, fieldset select, fieldset input[type=text] {
     justify-content: center;
 }
 
+.Replacements .nowrap {
+    white-space: nowrap;
+    margin-bottom: 1rem;
+    height: 120px;
+}
+
 label.selected {
     color: #222;
     border: 3px solid var(--hi-blue);
     /* background: var(--trans-blue); */
 }
+
 
 .main-graphic {
     width: 100%;
@@ -186,8 +214,7 @@ label:hover .thumb-pic {
     left: -1px;
 }
 
-form.active
- {
+form.active {
     border-bottom: 3px solid #00aeef;
     border-radius: 20px;
     filter: opacity(1);
@@ -225,7 +252,7 @@ form.active
     padding: .5rem;
     -webkit-filter: opacity(1);
     filter: opacity(1);
-    border: 1rem solid rgba(0,0,0,.4);
+    border: 1rem solid rgba(0, 0, 0, .4);
     margin: 1rem;
     box-shadow: 7px 10px 11px #333;
 }
@@ -263,6 +290,7 @@ aside {
     height: 0;
     margin: 0 auto;
 }
+
 .active aside {
     height: 0.4rem;
     margin: 1rem auto;
@@ -293,7 +321,8 @@ select,
     margin: 0.5rem
 }
 
-input[type='submit'], .submit-full {
+input[type='submit'],
+.submit-full {
     margin: 0.5rem;
     float: right;
     padding: 0 0.5rem !important;
@@ -377,7 +406,7 @@ input[type='submit'], .submit-full {
     background: hsla(196, 100%, 47%, 1);
     color: #fff;
     z-index: 99;
-    border: 3px  hsla(196, 100%, 86%, 1) solid;
+    border: 3px hsla(196, 100%, 86%, 1) solid;
     height: 2rem;
     width: 2rem;
     box-sizing: border-box;
@@ -390,14 +419,15 @@ input[type='submit'], .submit-full {
     font-weight: 900;
     font-family: sans-serif;
 }
+
 .close-modal::before {
     content: "\2715";
     color: #fff;
-    font-weight: 900 ;
+    font-weight: 900;
 }
 
 .close-modal:hover {
-    border: 3px  hsla(196, 100%, 92%, 1) solid;
+    border: 3px hsla(196, 100%, 92%, 1) solid;
     background: hsla(196, 100%, 37%, 1);
     color: hsla(196, 100%, 87%, 1);
 }
@@ -573,11 +603,6 @@ input[type='submit'], .submit-full {
     }
 }
 
-@media only screen and (max-width: 603px) {
-    .financing-box {
-        width: calc(100% - 2rem)
-    }
-}
 
 @media only screen and (max-width: 450px) {
 
@@ -586,7 +611,7 @@ input[type='submit'], .submit-full {
         padding: 0.5rem !important;
         border: 0 !important;
         font-size: 1rem !important;
-        width: 90vw !important
+        width: auto;
     }
 
     legend {
@@ -619,6 +644,44 @@ input[type='submit'], .submit-full {
         max-width: 28vw
     }
 }
+
+@media only screen and (max-width: 603px) {
+    .financing-box {
+        width: calc(100% - 2rem)
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .Replacements .nowrap {
+        width:100%;
+        height: auto;
+        margin-bottom: 6px;
+    }
+
+    .Replacements .nowrap label {
+        display: flex;
+        justify-content: flex-start;
+        height: 30px;
+    }
+
+    .Replacements .nowrap label.selected {
+        border: 3px solid var(--hi-blue);
+    }
+
+    .Replacements img {
+        display: none;
+    }
+
+    .Replacements .product-image img {
+        display: block;
+    }
+
+    .show {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {

@@ -108,7 +108,7 @@ const SystemRec = (props, { ...rest }) => {
               transform: 'translateX(-50%)',
               display: 'inline-block'
             }}>SHOP NOW</h1>
-            <form onSubmit={handleZipSubmit} className={`step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
+            <form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
 
               <fieldset className="fieldset">
                 <legend>Location:</legend>
@@ -128,7 +128,7 @@ const SystemRec = (props, { ...rest }) => {
               handleStepChange(e, 1);
             }
             }
-              className={`step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
+              className={`step step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
 
               <fieldset className="fieldset">
                 <legend>Heat Source:</legend>
@@ -144,7 +144,7 @@ const SystemRec = (props, { ...rest }) => {
                 </section>
               </fieldset>
             </form>
-            <form className={`step3 ${step3Show} ${step3Active}`}>
+            <form className={`step step3 ${step3Show} ${step3Active}`}>
               <fieldset className="fieldset" style={{ display: 'flex' }}>
                 <legend>Square Footage/Tonnage:</legend>
                 <div>
@@ -196,7 +196,7 @@ const SystemRec = (props, { ...rest }) => {
               </fieldset>
             </form>
 
-            <form className={`step4 ${step4Show} ${step4Active}`}>
+            <form className={`step step4 ${step4Show} ${step4Active}`}>
               <fieldset className="fieldset">
                 <legend>Full System or Replacement Parts:</legend>
                 <p>

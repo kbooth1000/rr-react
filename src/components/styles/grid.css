@@ -264,7 +264,7 @@
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 740px) {
   .info-grid {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;

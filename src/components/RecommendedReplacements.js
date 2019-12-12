@@ -106,7 +106,8 @@ const RecommendedReplacements = (props, {...rest}) => {
                   alt="" />
               </label></span>
           </div>
-          <br />
+          {/* <br className="linebreak" /> */}
+
 
         </fieldset>
       </form>
@@ -115,11 +116,6 @@ const RecommendedReplacements = (props, {...rest}) => {
         <RecommendedSystem sysType={sysTypePm} sysTonnage={sysTonnagePm} fullOrReplace={fullOrReplacePm} />
       </div>
     }
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <br />
     <div className={`price-grid  ${priceGridShow}`}>
       <RecommendedSystem sysType={sysTypeProp} sysTonnage={sysTonnageProp} fullOrReplace={(sysTypeProp === 'gas' && replacementPart === 'full') ? 'gasSystems' : replacementPart} />
