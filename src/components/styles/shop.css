@@ -644,6 +644,32 @@ input[type='submit'],
         max-height: 28vw;
         max-width: 28vw
     }
+
+    .recommendation.show {
+        width: calc(100vw - 14px);
+        max-width: calc(100% - 14px);
+        height: calc(100vh - 190px);
+        margin: 3px 5px 5px 5px;
+    }
+
+    .pricing-info-box {
+        width: 100%;
+    }
+
+    .pricing-info {
+        margin: 1rem auto;
+    }
+    form.active {
+        border: none;
+    }
+    h1.title {
+        width: 90%;
+        text-align: center;
+    }
+
+    fieldset p, .fieldset p {
+        width: auto !important;
+    }
 }
 
 @media only screen and (max-width: 603px) {
