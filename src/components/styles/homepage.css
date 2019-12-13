@@ -114,6 +114,10 @@
   ;
 }
 
+.GalleryImage {
+  max-width: 1450px;
+}
+
 .slider-div {
   /* background: url(../images/ACCondenser.webp) no-repeat; */
   background-size: cover;
