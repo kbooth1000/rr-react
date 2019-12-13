@@ -92,7 +92,7 @@
 .logo {
   height: 93px;
   width: 260px;
-  background: url(../images/logo.webp) no-repeat;
+  background: url(../images/logo.png) no-repeat;
   background-size: contain;
   position: relative;
   top: -23px;
