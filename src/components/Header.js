@@ -10,11 +10,11 @@ const Header = () => {
       <div className="top-links">
         <div className="email-link">
           <Icon name='envelope' />
-          <a href="mailto:information@rockruthhvac.com">information@rockruthhvac.com</a>
+          <a href="mailto:information@rockruth.com">information@rockruth.com</a>
         </div>
         <div className="phone-link">
           <Icon name='phone' />
-          <a href="tel:+14704814642">(470) 481-4642</a>
+          <a href="tel:+14705814642">(470) 581-4642</a>
         </div>
 
     
