@@ -40,7 +40,7 @@ const Contact = props => {
           <p> <Icon name='phone' /> Office: <a href="tel:+17706932946">(770) 693-2946</a></p>
           <p> <Icon name='phone' /> After Hours: <a href="tel:+14705814642">(404) 581-4642</a></p>
           <p> 
-            <Icon name='mail outline' /><a href="mailto:information@rockruthhvac.com">information@rockruthhvac.com</a>
+            <Icon name='mail outline' /><a href="mailto:information@rockruth.com">information@rockruth.com</a>
           </p>
         </div>
 

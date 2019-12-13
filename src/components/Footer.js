@@ -10,14 +10,14 @@ const Footer = () => {
       <div className="footer-links" style={{height: 'auto', position: 'relative'}} >
         <div className="email-link">
         <Icon name='envelope' />
-          <a href="mailto:information@rockruthhvac.com">information@rockruthhvac.com</a>
+          <a href="mailto:information@rockruth.com">information@rockruth.com</a>
         </div>
         <div className="phone-link">
         <Icon name='phone' />
-          <a href="tel:+14704814642">(470) 481-4642</a>
+          <a href="tel:+14705814642">(470) 581-4642</a>
         </div>
 
-        <div className="copyright" style={{height: 'auto', position: 'absolute', left: '50%'}}>&copy; {new Date().getFullYear()} RockRuth Heating &amp; Air</div>
+        <div className="copyright" style={{textAlign: 'center', height: 'auto', position: 'absolute', left: '50%', lineHeight:'1', fontWeight:'500'}}>&copy; {new Date().getFullYear()} RockRuth Heating HVAC LLC &amp;<br />HVAC Online Pricing Matrix LLC</div>
         <div className="quote-button">
           <Link to="shop">SHOP NOW</Link>
         </div>
