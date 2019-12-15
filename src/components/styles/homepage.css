@@ -82,15 +82,15 @@
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-bg {
-  background-image: url(../images/fan-man.webp);
+  background-image: url(../images/fan-man.jpg);
 }
 
 .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-bg {
-  background-image: url(../images/blanket-guy.webp);
+  background-image: url(../images/blanket-guy.jpg);
 }
 
 .nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-bg {
-  background-image: url(../images/systems-parts.webp);
+  background-image: url(../images/systems-parts.jpg);
 }
 
 .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-bg {
@@ -119,11 +119,11 @@
 }
 
 .slider-div {
-  /* background: url(../images/ACCondenser.webp) no-repeat; */
+  /* background: url(../images/ACCondenser.jpg) no-repeat; */
   background-size: cover;
   background-position: center center;
   background-color: #fff;
-  height: 550px;
+  height: 45vw;
   width: 100%;
   position: relative;
   padding: 3px;
