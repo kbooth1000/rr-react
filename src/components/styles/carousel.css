@@ -4,6 +4,16 @@
 
 .GestureGallery {
   position: absolute;
+  height: auto !important;
+}
+
+.slider-div {
+  height: calc(45vw + 5px) !important;
+}
+
+.GalleryImage  {
+  height: 45vw !important;
+  width: 100% !important;
 }
 
 .GalleryImage img  {
@@ -13,10 +23,16 @@
   object-position: center;
   min-width: 100%;
   min-height: 100%;
+  max-width: 1150px !important;
 }
 
+  
 @media screen and (min-width: 1110px) {
-  .GalleryImage img {
-    object-position: top;
+  .slider-div {
+    height: 555px !important;
+  }
+
+  .GalleryImage  {
+    height: 550px !important;
   }
 }

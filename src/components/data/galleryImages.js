@@ -10,7 +10,7 @@ const galleryImages = [
     heroTitle: 'Choose a System or Replacement Parts.',
     heroDeck: 'RockRuth Heating & Air in Atlanta. Laborum voluptates sunt commodi distinctio enim aspernatur. Earum, doloremque.',
     callToAction: 'WHAT SYSTEM IS BEST FOR YOU?',
-    src: './images/acCondenser.webp',
+    src: './images/ACCondenser.jpg',
     path: '/shop',
   },
   {
