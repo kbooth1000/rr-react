@@ -4,7 +4,11 @@
 
 .GestureGallery {
   position: absolute;
-  height: auto !important;
+  height: 45vw !important;
+}
+
+.Gesture-view {
+  height: 43vw !important;
 }
 
 .slider-div {
@@ -32,7 +36,12 @@
     height: 555px !important;
   }
 
-  .GalleryImage  {
+  .Gesture-view,
+  .GestureGallery,
+  .GalleryImage {
     height: 550px !important;
   }
+
+
+
 }
