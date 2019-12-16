@@ -1,12 +1,12 @@
 export const totFinancingDefault = "0%, 84 months"
-  
-  const defaultImgUrl = "images/full-system.png";
+
+const defaultImgUrl = "images/full-system.png";
 export const gasSystems = {
   defaultImgUrl,
   mainTitle: "Package Unit",
   "1.5": {
     productImage: defaultImgUrl,
-    productTitle: "1.5 Ton Split System AC w/ Gas Furnace (80%)",
+    productTitle: "1.5 Ton Package Unit" //"1.5 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -45,7 +45,7 @@ export const gasSystems = {
 
   "2.0": {
     productImage: defaultImgUrl,
-    productTitle: "2.0 Ton Split System AC w/ Gas Furnace (80%)",
+    productTitle: "2.0 Ton Package Unit",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -83,7 +83,7 @@ export const gasSystems = {
   },
   "2.5": {
     productImage: defaultImgUrl,
-    productTitle: "2.5 Ton Split System AC w/ Gas Furnace (80%)",
+    productTitle: "2.5 Ton Package Unit",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -121,7 +121,7 @@ export const gasSystems = {
   },
   "3.0": {
     productImage: defaultImgUrl,
-    productTitle: "3.0 Ton Split System AC w/ Gas Furnace (80%)",
+    productTitle: "3.0 Ton Package Unit",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -160,7 +160,7 @@ export const gasSystems = {
 
   "3.5": {
     productImage: defaultImgUrl,
-    productTitle: "3.5 Ton Split System AC w/ Gas Furnace (80%)",
+    productTitle: "3.5 Ton Package Unit",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -199,7 +199,7 @@ export const gasSystems = {
 
   "4.0": {
     productImage: defaultImgUrl,
-    productTitle: "4.0 Ton Split System AC w/ Gas Furnace (80%)",
+    productTitle: "4.0 Ton Package Unit",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -238,7 +238,7 @@ export const gasSystems = {
 
   "5.0": {
     productImage: defaultImgUrl,
-    productTitle: "5.0 Ton Split System AC w/ Gas Furnace (80%)",
+    productTitle: "5.0 Ton Package Unit",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
