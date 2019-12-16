@@ -6,7 +6,7 @@ export const gasSystems = {
   mainTitle: "Package Unit",
   "1.5": {
     productImage: defaultImgUrl,
-    productTitle: "1.5 Ton Package Unit" //"1.5 Ton Split System AC w/ Gas Furnace (80%)",
+    productTitle: "1.5 Ton Package Unit", //"1.5 Ton Split System AC w/ Gas Furnace (80%)",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
