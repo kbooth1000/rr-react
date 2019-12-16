@@ -226,6 +226,11 @@ form.active {
     max-width: 550px;
 }
 
+form.step.hide {
+    opacity: 0;
+    filter: opacity(0);
+}
+
 .active legend {
     color: #007fb0
 }
