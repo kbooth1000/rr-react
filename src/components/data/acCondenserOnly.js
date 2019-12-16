@@ -1,5 +1,5 @@
 const totFinancingDefault = "0%, 84 months";
-const defaultImgUrl = 'images/replacement-parts/ac-condenser.webp';
+const defaultImgUrl = 'images/replacement-parts/ac-condenser.png';
 
 export const acCondenserOnly = {
   defaultImgUrl,

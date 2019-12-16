@@ -1,5 +1,5 @@
 const totFinancingDefault = "0%, 84 months"
-const defaultImgUrl = 'images/replacement-parts/heat-pump.webp';
+const defaultImgUrl = 'images/replacement-parts/heat-pump.png';
 
 export const heatPumpOnly = {
   defaultImgUrl,
