@@ -1,5 +1,5 @@
 export const totFinancingDefault = "0%, 84 months"
-const defaultImgUrl = 'images/replacement-parts/heat-pump.png';
+const defaultImgUrl = 'images/replacement-parts/complete-heat-pump-system.png';
 
 export const electricSystems = {
   defaultImgUrl,
@@ -117,7 +117,7 @@ export const electricSystems = {
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [6989 ,5989, 4789],
+    levelTotPrices: [6989, 5989, 4789],
   },
   "3.0": {
     productImage: defaultImgUrl,
@@ -155,7 +155,7 @@ export const electricSystems = {
       totFinancingDefault,
       totFinancingDefault,
     ],
-    levelTotPrices: [7067 ,6067, 4867],
+    levelTotPrices: [7067, 6067, 4867],
   },
 
   "3.5": {

@@ -131,8 +131,8 @@
 
 .hero {
   background: rgba(0, 0, 0, .4);
-  width: 84%;
-  margin: 14% auto auto 8%;
+  width: 90%;
+  margin: 5%;
   position: absolute;
   padding: 1rem;
 
@@ -197,13 +197,6 @@
 
 
 
-
-
-
-
-
-
-
 @media screen and (min-width: 460px) {
   .call-to-action a {
     height: 2.8rem;
@@ -218,6 +211,7 @@
 
   .hero {
     width: 70%;
+    margin-top: 8%;
   }
 }
 

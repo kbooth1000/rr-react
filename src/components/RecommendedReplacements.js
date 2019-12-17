@@ -11,16 +11,16 @@ import RecommendedSystem from './RecommendedSystem';
 // import { airHandlerOnly } from './data/airHandlerOnly';
 // import { electricUnits } from './data/electricUnits';
 
-import acCondenserOnlyPic from './images/replacement-parts/ac-condenser.webp';
+import acCondenserOnlyPic from './images/replacement-parts/ac-condenser.png';
 import evaporatorCoilOnlyPic from './images/replacement-parts/evaporator-coil.png';
-import furnaceOnlyPic from './images/replacement-parts/furnace.webp';
-import heatPumpOnlyPic from './images/replacement-parts/heat-pump.webp';
+import furnaceOnlyPic from './images/replacement-parts/furnace.png';
+import heatPumpOnlyPic from './images/replacement-parts/heat-pump.png';
 import airHandlerOnlyPic from './images/replacement-parts/air-handler.png';
 
 
 import './styles/grid.css';
 
-const RecommendedReplacements = (props, {...rest}) => {
+const RecommendedReplacements = (props, { ...rest }) => {
   const { sysType, sysTonnage, fullOrReplace } = props;
   const { sysTypePm, sysTonnagePm, fullOrReplacePm } = props.location ? qs.parse(props.location.search) : { sysTypePm: null, sysTonnagePm: null, fullOrReplacePm: null };
 
