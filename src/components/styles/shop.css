@@ -130,8 +130,8 @@ form,
     overflow: hidden;
     transition: 0.8s;
     text-align: left;
-    opacity: 0.7;
-    filter: opacity(0.7)
+    opacity: 1;
+    filter: opacity(1)
 }
 
 .step1 {
@@ -589,6 +589,15 @@ input[type='submit'],
     text-align: center;
 }
 
+
+
+
+
+
+
+     /*        *****  MEDIA QUERIES  *****        */
+
+
 @media only screen and (min-width: 450px) {
     .unit-guarantees figure {
         width: 40%
@@ -612,6 +621,50 @@ input[type='submit'],
     .unit-guarantees figure {
         width: 24%;
         text-align: left
+    }
+}
+
+
+
+
+@media screen and (max-width: 740px) {
+    .Replacements .nowrap {
+        width:100%;
+        height: auto;
+        margin-bottom: 6px;
+    }
+
+    .Replacements .nowrap label {
+        display: flex;
+        justify-content: flex-start;
+        height: 30px;
+    }
+
+    .Replacements .nowrap label.selected {
+        border: 3px solid var(--hi-blue);
+    }
+
+    .Replacements img {
+        display: none;
+    }
+
+    .Replacements .product-image img {
+        display: block;
+    }
+
+    .show {
+        width: 100%;
+        height: auto;
+    }
+
+    .pricing-info-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 603px) {
+    .financing-box {
+        width: calc(100% - 2rem)
     }
 }
 
@@ -663,10 +716,6 @@ input[type='submit'],
         margin: 3px 5px 5px 5px;
     }
 
-    .pricing-info-box {
-        width: 100%;
-    }
-
     .pricing-info {
         margin: 1rem auto;
     }
@@ -683,42 +732,9 @@ input[type='submit'],
     }
 }
 
-@media only screen and (max-width: 603px) {
-    .financing-box {
-        width: calc(100% - 2rem)
-    }
-}
 
-@media screen and (max-width: 740px) {
-    .Replacements .nowrap {
-        width:100%;
-        height: auto;
-        margin-bottom: 6px;
-    }
 
-    .Replacements .nowrap label {
-        display: flex;
-        justify-content: flex-start;
-        height: 30px;
-    }
 
-    .Replacements .nowrap label.selected {
-        border: 3px solid var(--hi-blue);
-    }
-
-    .Replacements img {
-        display: none;
-    }
-
-    .Replacements .product-image img {
-        display: block;
-    }
-
-    .show {
-        width: 100%;
-        height: auto;
-    }
-}
 
 
 @media all and (-ms-high-contrast: none),

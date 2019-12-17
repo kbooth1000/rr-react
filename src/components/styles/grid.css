@@ -20,8 +20,8 @@
       "pricing-info   pricing-info  pricing-info  pricing-info  pricing-info"
       "pricing-info   pricing-info  pricing-info  pricing-info  pricing-info"
       "pricing-info   pricing-info  pricing-info  pricing-info  pricing-info"
-      "   .    finance-btn1    finance-btn1  finance-btn2   finance-btn2"
       "brand-logos    brand-logos   brand-logos   brand-logos   brand-logos "
+      "finance-btns   finance-btns   finance-btns  finance-btns  finance-btns"
       "footer         footer        footer        footer        footer      ";
 
   top: 25%;
@@ -140,18 +140,23 @@
 
   .info-grid .brand-logos img {
     max-width: 100%;
+    display: block;
   }
 
   .info-grid .finance-btn2 {
     grid-area: finance-btn2;
   }
 
+  .info-grid .mobile-finance-buttons {
+    grid-area: finance-btns;
+  }
+
   .info-grid .footer {
     grid-area: footer;
   }
 
-
 }
+
 
 *,
 *:before,
@@ -262,6 +267,12 @@
   max-height: 60px;
 }
 
+.mobile-finance-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
 
 
 @media screen and (min-width: 740px) {
@@ -271,7 +282,8 @@
     grid-template-areas:
       "title            title         title           title         title"
       "product-image    pricing-info  pricing-info    pricing-info  pricing-info"
-      "finance-btn1    brand-logos  brand-logos     brand-logos   finance-btn2"
+      "brand-logos    brand-logos  brand-logos     brand-logos   brand-logos"
+      "finance-btns      finance-btns   finance-btns     finance-btns   finance-btns"  
       "footer           footer        footer          footer        footer";
   }
 
@@ -286,4 +298,7 @@
     z-index: 10;
     margin: 3rem auto;
   }
+
+
+
 }
