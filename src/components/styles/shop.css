@@ -102,6 +102,7 @@ label.selected {
     margin: 1rem auto auto 50%;
     transform: translateX(-50%);
     transition: .8s;
+    opacity: 1;
     filter: opacity(1);
     top: 10rem;
 }
@@ -129,6 +130,7 @@ form,
     overflow: hidden;
     transition: 0.8s;
     text-align: left;
+    opacity: 0.7;
     filter: opacity(0.7)
 }
 
@@ -145,6 +147,7 @@ form,
 }
 
 .main-graphic.hide {
+    opacity: 0;
     filter: opacity(0);
     position: absolute;
     top: 10rem;
@@ -218,8 +221,14 @@ label:hover .thumb-pic {
 form.active {
     border-bottom: 3px solid #00aeef;
     border-radius: 20px;
+    opacity: 1;
     filter: opacity(1);
     max-width: 550px;
+}
+
+form.step.hide {
+    opacity: 0;
+    filter: opacity(0);
 }
 
 .active legend {
@@ -240,6 +249,7 @@ form.active {
     overflow: auto;
     background: #fff;
     z-index: 10;
+    opacity: 0;
     filter: opacity(0);
     transition: 0.5s;
     padding: 0;
@@ -251,6 +261,7 @@ form.active {
     max-width: calc(100% - 2rem);
     height: calc(100vh - 155px);
     padding: .5rem;
+    opacity: 1;
     -webkit-filter: opacity(1);
     filter: opacity(1);
     border: 1rem solid rgba(0, 0, 0, .4);

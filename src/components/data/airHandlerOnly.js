@@ -1,5 +1,5 @@
 const totFinancingDefault = "0%, 84 months"
-const defaultImgUrl = 'images/replacement-parts/air-handler.webp';
+const defaultImgUrl = 'images/replacement-parts/air-handler.png';
 
 export const airHandlerOnly = {
   defaultImgUrl,
