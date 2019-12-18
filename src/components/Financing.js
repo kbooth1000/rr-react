@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect } from 'react';
 
 import './styles/shop.css';
+import './styles/financing.css';
 import './styles/info-page.css';
 
 const Financing = props => {
@@ -17,71 +18,81 @@ const Financing = props => {
     ()=>props.changeRoute('financing')
   )
 
-  return <div className="Financing" ref={setScrollRef}>
+  return <div className="Financing" ref={setScrollRef} style={{textAlign: 'center'}}>
 
     <div className="info-page">
-      <h1 className="title"> HVAC FINANCING 101</h1>
+      <h1 className="title">HVAC FINANCING 101</h1>
+      <h2 style={{textAlign:'center'}}>RockRuth is the Easiest Way To Buy A New AC Unit TODAY </h2> <h3> WORRY &amp; HASSLE FREE!</h3>
       <div className="deck">
-        <p><i>For most people, HVAC financing is a large expense, and can be challenging
-              for anyone, especially a new homeowner. While paying out of pocket is the
-              best option, there are plenty of options to finance the HVAC system that
-              is right for you.</i></p>
-        <div>The cost to install a new HVAC system can vary based on:
-<ul>
-            <li>The type of equipment being installed (full system or replacement parts);</li>
-            <li>The existing equipment (age and location);</li>
-            <li>And the type of install (new install or replace existing)</li>
-          </ul>
+        <p>
+          RockRuth is <i>NOT</i> like most other sites! We are <i>NOT</i> an E-Commerce Site where customers purchase online equipment and then are passed off to a 3rd-party company to install the equipment.
+        </p>
         </div>
+        <p><strong>
+        RockRuth HVAC provides:</strong></p>
+        <ul>
+          <li>100% TRANSPARENT PRICING</li>
+          <li>INSTALLATION INCLUDED</li>
+          <li>10-YEAR WARRANTY</li>
+        </ul>
+        <i>ALL INCLUDED IN ONE PRICE BY ONE COMPANY!</i><br/>
+        <p>Delivered &amp; Installed by our seasoned, licensed installation crews <br/>(who will present you with their legal certificate* on delivery)</p>
+        <span style={{fontSize:'0.8rem'}}>*EPA &amp; NATE CERTIFIED<br/><br/></span>
+    
+      <div className="callouts">
+        <aside>ONE COMPANY</aside>
+        <aside>ONE INSTALLATION</aside>
+        <aside>ONE LOW PRICE</aside>
+      </div>
+      <div className="callouts">
+        <h4>
+        MAKING THE PROCESS SEAMLESS and ELIMINATING SURPRISES
+        </h4></div>
+      <div className="info-blurb">
+      <div>
+      AND IF YOU don’t WANT TO PAY THAT DAY, or for the next several years just pay when you wish with one of our options that have no pre-payment penalties
+    
+    </div>
+      
       </div>
 
-      <div className="info-blurb">
-        <h2>What to Know Before You Buy</h2>
-        <p><strong>Home Equity</strong></p>
-        <p>
-          Borrowing against the equity in your home can often be a good way to
-          finance home improvements. This option has less interest and is tax-deductible,
-          but there are risks. Falling behind on your payment could cost you not only
-            your HVAC system but your home.</p>
+ <div className="mobile-finance-buttons">
 
-        <p><strong>Private Lenders</strong></p>
-        <p>You can also borrow from private lenders, such as banks or credit unions.
-    The interest rates and max amounts available to borrow will vary, but many banks
-        have low-interest rates for these types of loans.</p>
-
-        <p><strong>Loan Programs</strong></p>
-        <p>There are loan programs, such as the Federal Housing Administration’s (FHA)
-        PowerSaver Loan Program, that allow you to borrow up to $7,500 without putting
-        up your home as collateral. However, you must have home equity to participate.</p>
-
-        <p><strong>Credit Card Companies</strong></p>
-        <p>Talk to your credit card company about charging this large of a purchase to
-        your card. Know that there is a possibility of higher interest rates.</p>
-
-        <p><strong>Utility Companies</strong></p>
-        <p>Utility companies can also help by charging monthly payments for your new HVAC
-        system on your electric bill. They often provide low-interest rates if you choose
-              energy-efficient systems.</p>
-        <div className="finance-buttons" style={{ marginTop:'4rem', width: '100%', display: 'flex', justifyContent: 'space-around' }}>
-          <div  className="cell finance-btn1" style={{ width: '9rem', textAlign: 'center' }}>
-            <div  className="12-month-button">
-              <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&amp;cid=10021&amp;promo=RE468&amp;loamt="
-                className="apply-button">12 Month <span>Same-As-Cash*</span><aside  className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd.,
-                Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid
-                      in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside></a>
-            </div>
-          </div>
-          <div  className="cell finance-btn2" style={{ width: '9rem', textAlign: 'center' }}>
-            <div  className="60-month-button">
-              <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&amp;cid=10021&amp;promo=ZRE78&amp;loamt="
-                 className="apply-button">0.00%<span>60-Month Loan*</span><aside  className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd.,
-                Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid
-                      in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside></a>
-            </div>
-          </div>
-        </div>
-      </div></div>
+<div className="cell finance-btn1">
+  <div className="12-month-button">
+    <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=RE468&loamt=" className="apply-button">12 Month <span>Same-As-Cash*</span>
+      <aside className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside></a>
   </div>
+</div>
+
+<div className="cell finance-btn2">
+  <div className="60-month-button">
+    <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=ZRE78&loamt=" className="apply-button">0.00%<span>60-Month Loan*</span>
+      <aside className="hover-show">*Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment terms vary from 24 to 132 months. Interest waived if repaid in 365 days. 18.58% fixed APR, effective as of August 1, 2019, subject to change. Interest starts accruing when the loan closes.</aside></a>
+  </div>
+</div>
+
+<div className="cell finance-btn1">
+  <div className="12-month-button">
+    <a rel="noopener noreferrer" target="_blank" href="https://application.enerbank.com/#/link?spnum=8665104594&cid=10021&promo=69910YRR69&loamt=" className="apply-button">6.99% <span>10-Year Loan*</span>
+      <aside className="hover-show">**Loans provided by EnerBank USA, Member FDIC, (1245 Brickyard Rd., Suite 600, Salt Lake City, UT 84106) on approved credit, for a limited time. Repayment term is 120 months. 6.99% fixed APR. Minimum loan amounts apply. The first monthly payment will be due 30 days after the loan closes.</aside></a>
+  </div>
+</div>
+
+</div>
+
+<div className="info-blurb">
+  <p>
+  At RockRuth Heating &amp; Air we are changing the way customers view HVAC by making it more simple with multiple options on each aspect of the customer experience.
+  </p><p>
+The bottom line is that we make it affordable and easy without having a salesman in the middle. Our technicians and installers are not paid on commissions and don’t benefit off sales so its starts out with a more honest experience.
+    </p><p>
+Save thousands of dollars and avoid the time it takes calling around to different contractors and scheduling appointments just to get a quote. Here, you get the accurate quote including price, installation, equipment registered upon completion all by a licensed contractor. And all up front.
+    </p>
+    </div>
+  </div>
+</div>
+
 }
 
 export default Financing;
