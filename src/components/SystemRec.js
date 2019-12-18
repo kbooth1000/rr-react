@@ -110,6 +110,8 @@ const SystemRec = (props, { ...rest }) => {
             }}>SHOP NOW</h1>
             <form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
 
+            <h3 style={{textAlign:'center', width:'90%', margin:'auto'}}>To get a custom recommendation, just answer a few questions: <br /><br /> </h3>
+
               <fieldset className="fieldset">
                 <legend>Location:</legend>
                 <p>Enter zip-code where the unit will be installed:</p>
