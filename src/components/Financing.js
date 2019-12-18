@@ -44,13 +44,13 @@ const Financing = props => {
         <aside>ONE INSTALLATION</aside>
         <aside>ONE LOW PRICE</aside>
       </div>
-      <div className="callouts">
-        <h4>
+      <div className="callouts"> 
+        <h4><br/>
         MAKING THE PROCESS SEAMLESS and ELIMINATING SURPRISES
         </h4></div>
       <div className="info-blurb">
-      <div>
-      AND IF YOU don’t WANT TO PAY THAT DAY, or for the next several years just pay when you wish with one of our options that have no pre-payment penalties
+      <div><br/>
+      AND IF YOU don’t WANT TO PAY THAT DAY -- or for the next several years -- just pay when you wish with one of our options that have no pre-payment penalties
     
     </div>
       
@@ -82,8 +82,10 @@ const Financing = props => {
 </div>
 
 <div className="info-blurb">
-  <p>
-  At RockRuth Heating &amp; Air we are changing the way customers view HVAC by making it more simple with multiple options on each aspect of the customer experience.
+  <p><br/>
+  <strong>
+  At RockRuth Heating &amp; Air<br/></strong>
+  we are changing the way customers view HVAC by making it more simple with multiple options on each aspect of the customer experience.
   </p><p>
 The bottom line is that we make it affordable and easy without having a salesman in the middle. Our technicians and installers are not paid on commissions and don’t benefit off sales so its starts out with a more honest experience.
     </p><p>
