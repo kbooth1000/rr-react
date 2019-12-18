@@ -27,7 +27,7 @@ const Contact = props => {
     <div className="info-page">
       <h1 className="title">CONTACT US</h1>
       <div className="deck">
-        <p><strong> 24 Hour Emergency Service Available</strong></p>
+        <p><strong>24 Hour Emergency Service Available</strong></p>
         <p>
           We strive to be in constant communication with our customers until the job is done. If you have questions or special requests, just drop us a line. To get a free quote, or for emergency service, please contact us at your convenience or book online for your heating & air needs. We look forward to serving you!</p>
       </div>
@@ -54,7 +54,7 @@ const Contact = props => {
             display: 'inline-block',
             margin: '3rem 3rem 3rem 8px',
             fontSize: '1.8rem',
-            borderBottom: '2px solid var(--hi-blue)'
+            textAlign: 'center'
           }}>
             • Schedule Service Now!</strong>
         </a>

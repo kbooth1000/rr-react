@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect } from 'react';
 
 import './styles/info-page.css';
-import ductwork from './images/ductwork.webp';
-import manWithFan from './images/manWithFan.webp';
-import ductClean from './images/ductClean.webp';
-import bigFan from './images/bigFan.webp';
-import units from './images/units.webp';
-import serviceGuy from './images/serviceGuy.webp';
+import ductwork from './images/ductwork.jpg';
+import manWithFan from './images/manWithFan.jpg';
+import ductClean from './images/ductClean.jpg';
+import bigFan from './images/bigFan.jpg';
+import units from './images/units.png';
+import serviceGuy from './images/serviceGuy.jpg';
 
 
 const Cooling = props => {
@@ -29,7 +29,7 @@ const Cooling = props => {
         <div className="Cooling" ref={setScrollRef}>
 
             <div className="info-page">
-                <h1 className="title"> AIR CONDITIONING INSTALLATION & REPAIR</h1>
+                <h1 className="title">AIR CONDITIONING INSTALLATION & REPAIR</h1>
                 <div className="info-blurb">
 
                     <h2>RockRuth Heating &amp; Air serving Atlanta</h2> <img src={

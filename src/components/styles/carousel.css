@@ -5,18 +5,22 @@
 .GestureGallery {
   position: absolute;
   height: 45vw !important;
+  min-height: 305px;
 }
 
 .Gesture-view {
-  height: 43vw !important;
+  height: 45vw !important;
+  min-height: 300px;
 }
 
 .slider-div {
   height: calc(45vw + 5px) !important;
+  min-height: 305px;
 }
 
 .GalleryImage  {
   height: 45vw !important;
+  min-height: 300px;
   width: 100% !important;
 }
 
