@@ -99,6 +99,8 @@ const SystemRec = (props, { ...rest }) => {
 
         <main style={{ margin: '1rem 0' }}>
 
+          <aside className="hint">Hint area Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas quasi quo, sapiente quos neque fugiat dolorem accusamus repudiandae laboriosam, molestias inventore nesciunt dolorum similique officia iste voluptatem ea dolore?</aside>
+
           <section className="recommendation-finder">
             <h1 className="title" style={{
               marginLeft: '50%',
@@ -110,11 +112,11 @@ const SystemRec = (props, { ...rest }) => {
             }}>SHOP NOW</h1>
             <form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
 
-            <h3 style={{textAlign:'center', width:'90%', margin:'auto'}}>To get a custom recommendation, just answer a few questions: <br /><br /> </h3>
+              <h3 style={{ textAlign: 'center', width: '90%', margin: 'auto' }}>To get a custom recommendation, just answer a few questions: <br /><br /> </h3>
 
               <fieldset className="fieldset">
                 <legend>Location:</legend>
-                <p>Enter zip-code where the unit will be installed:</p>
+                <p>What is the <strong>zip code</strong> where the unit will be installed:</p>
                 <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" style={{ width: '60%' }} /><br />
                 <input type="submit" value="Submit" className="submit-button" />
                 <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
@@ -134,7 +136,7 @@ const SystemRec = (props, { ...rest }) => {
 
               <fieldset className="fieldset">
                 <legend>Heat Source:</legend>
-                <p>Is your heat source a:</p>
+                <p>Is your current heat source a:</p>
                 <section>
                   <label htmlFor="gas-furnace" className={sysType === 'gas' ? 'selected' : ''}>
                     <input value="gas" type="radio" name="heat-source" id="gas-furnace" />
