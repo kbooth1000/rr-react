@@ -589,6 +589,22 @@ input[type='submit'],
     text-align: center;
 }
 
+.hint {
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+    border: 1px solid #333;
+    height: auto;
+    right: calc(100vw + 10rem);
+    /* transform: translateX(100%); */
+}
+
+.hint.show {
+    position: relative;
+    right: 50%;
+    transform: transateX(50%);
+}
 
 
 
