@@ -8,6 +8,7 @@ html {
   --main-blue-trans: hsla(209, 95%, 24%, 0.2);
   --lt-blue-trans: hsla(194, 100%, 57%, 0.5);
   --nav-hover: hsl(357, 68%, 53%);
+  overflow: hidden;
 }
 
 
