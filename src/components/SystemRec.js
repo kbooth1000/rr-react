@@ -25,6 +25,10 @@ const SystemRec = (props, { ...rest }) => {
   const [recShow, setRecShow] = useState(false);
   const [fullOrReplaceSelected, setFullOrReplaceSelected] = useState('');
   const [stepNum, setStepNum] = useState(0);
+  const [showHint, setShowHint] = useState(false);
+  const [hintText, setHintText] = useState(`
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore consequuntur, vitae sed ipsam cum, molestiae animi id modi architecto corporis accusantium voluptatem, veritatis accusamus eum deserunt temporibus deleniti! Voluptas, obcaecati?
+  `);
 
   useEffect(
     () => props.changeRoute('shop')
@@ -74,6 +78,10 @@ const SystemRec = (props, { ...rest }) => {
     setRecShow(!recShow)
   }
 
+  const handleHintClick = e => {
+    setShowHint(!showHint);
+  }
+
   const fullOrReplaceComponent = (sysType, sysTon, fullOrReplace) => {
     if (fullOrReplace === 'full') {
       return <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas') ? 'gasSystems' : 'electricSystems'} />
@@ -99,7 +107,7 @@ const SystemRec = (props, { ...rest }) => {
 
         <main style={{ margin: '1rem 0' }}>
 
-          <aside className="hint">Hint area Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas quasi quo, sapiente quos neque fugiat dolorem accusamus repudiandae laboriosam, molestias inventore nesciunt dolorum similique officia iste voluptatem ea dolore?</aside>
+          <aside className={`hint ${showHint ? 'show-hint' : ''} `} onClick={handleHintClick} data-hint-text={hintText}></aside>
 
           <section className="recommendation-finder">
             <h1 className="title" style={{
@@ -134,9 +142,11 @@ const SystemRec = (props, { ...rest }) => {
             }
               className={`step step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
 
+              <aside className="hint-button" onClick={handleHintClick} data-hint-text={hintText} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
+
               <fieldset className="fieldset">
                 <legend>Heat Source:</legend>
-                <p>Is your current heat source a:</p>
+                <p>What is your current heat source:</p>
                 <section>
                   <label htmlFor="gas-furnace" className={sysType === 'gas' ? 'selected' : ''}>
                     <input value="gas" type="radio" name="heat-source" id="gas-furnace" />

@@ -409,7 +409,7 @@ input[type='submit'],
     font-size: 1.5rem
 }
 
-.close-modal {
+.close-modal, .hint {
     position: -webkit-sticky;
     position: sticky;
     left: 95%;
@@ -430,9 +430,10 @@ input[type='submit'],
     border-radius: 9px;
     font-weight: 900;
     font-family: sans-serif;
+    overflow:hidden;
 }
 
-.close-modal::before {
+.close-modal:before, .hint:before {
     content: "\2715";
     color: #fff;
     font-weight: 900;
@@ -443,6 +444,72 @@ input[type='submit'],
     background: hsla(196, 100%, 37%, 1);
     color: hsla(196, 100%, 87%, 1);
 }
+
+.hint {
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    background: transparent;
+    height: auto;
+    left: 10%;
+    width: 80%;
+    border-radius: 8px;
+    color: #fff;
+    top: 201px;
+    transition: .5s;
+    height: 0;
+    width: 0;
+}
+
+hint.show-hint {
+    padding: 1rem;
+    border: 5px solid #333;
+    height: auto;
+    background: hsla(210, 50%, 60%, 1);
+
+}
+
+.hint.show-hint {
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    background: hsla(210, 50%, 60%, 1);
+    border: 5px solid #333;
+    height: auto;
+    left: 10%;
+    width: 80%;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #fff;
+    top: 201px;
+    transition: .5s;
+}
+.hint:before{
+    /* content: '\2754'; */
+    display: none;
+}
+.hint.show-hint:before {
+    content: attr(data-hint-text)
+}
+
+.hint-button {
+    color: #fff !important;
+    font-weight: 900;
+    cursor: pointer;
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem !important;
+    position: absolute;
+    right: 1rem;
+    top: 2.3rem;
+    padding: 2px;
+    border: 4px var(--main-blue-trans) solid;
+    justify-content: center;
+    align-items: center;
+    background: var(--lt-blue);
+}
+
 
 .phone-button-box {
     float: right;
@@ -587,23 +654,6 @@ input[type='submit'],
 .info-page .title {
     width: 100%;
     text-align: center;
-}
-
-.hint {
-    display: flex;
-    position: absolute;
-    z-index: 999;
-    background: #fff;
-    border: 1px solid #333;
-    height: auto;
-    right: calc(100vw + 10rem);
-    /* transform: translateX(100%); */
-}
-
-.hint.show {
-    position: relative;
-    right: 50%;
-    transform: transateX(50%);
 }
 
 
