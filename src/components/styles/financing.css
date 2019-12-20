@@ -25,6 +25,11 @@
     justify-content: space-around;
   }
 
+  .mobile-finance-buttons .cell {
+    margin: .2rem;
+    min-width: 11rem;
+  }
+
   
 @media screen and (min-width: 1110px) {
   .slider-div {
