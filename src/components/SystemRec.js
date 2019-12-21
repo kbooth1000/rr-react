@@ -30,6 +30,13 @@ const SystemRec = (props, { ...rest }) => {
   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore consequuntur, vitae sed ipsam cum, molestiae animi id modi architecto corporis accusantium voluptatem, veritatis accusamus eum deserunt temporibus deleniti! Voluptas, obcaecati?
   `);
 
+  let hintTexts = [
+    '1 Number One hint text',
+    '2 Number Two hint text',
+    '3 Number Three hint text',
+    '4 Number Four hint text',
+  ]
+
   useEffect(
     () => props.changeRoute('shop')
   )
@@ -80,6 +87,8 @@ const SystemRec = (props, { ...rest }) => {
 
   const handleHintClick = e => {
     setShowHint(!showHint);
+    // if (!showHint) setHintText('');
+    // setHintText(e.target.dataset.hintText);
   }
 
   const fullOrReplaceComponent = (sysType, sysTon, fullOrReplace) => {
@@ -107,7 +116,11 @@ const SystemRec = (props, { ...rest }) => {
 
         <main style={{ margin: '1rem 0' }}>
 
-          <aside className={`hint ${showHint ? 'show-hint' : ''} `} onClick={handleHintClick} data-hint-text={hintText}></aside>
+          <aside className={`hint ${showHint ? 'show-hint' : ''} `} onClick={handleHintClick}>
+            <span>
+              {hintText}
+            </span>
+          </aside>
 
           <section className="recommendation-finder">
             <h1 className="title" style={{
@@ -142,9 +155,12 @@ const SystemRec = (props, { ...rest }) => {
             }
               className={`step step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
 
-              <aside className="hint-button" onClick={handleHintClick} data-hint-text={hintText} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
 
               <fieldset className="fieldset">
+                <aside className="hint-button" onClick={() => {
+                  setHintText(hintTexts[0]);
+                  handleHintClick();
+                }} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
                 <legend>Heat Source:</legend>
                 <p>What is your current heat source:</p>
                 <section>
@@ -160,6 +176,10 @@ const SystemRec = (props, { ...rest }) => {
             </form>
             <form className={`step step3 ${step3Show} ${step3Active}`}>
               <fieldset className="fieldset" style={{ display: 'flex' }}>
+                <aside className="hint-button" onClick={() => {
+                  setHintText(hintTexts[1]);
+                  handleHintClick();
+                }} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
                 <legend>Square Footage/Tonnage:</legend>
                 <div>
                   <div className="footage-dropdown">
@@ -212,6 +232,10 @@ const SystemRec = (props, { ...rest }) => {
 
             <form className={`step step4 ${step4Show} ${step4Active}`}>
               <fieldset className="fieldset">
+                <aside className="hint-button" onClick={() => {
+                  setHintText(hintTexts[2]);
+                  handleHintClick();
+                }} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
                 <legend>Full System or Replacement Parts:</legend>
                 <p>
                   Do you need a full system installed or are you looking for replacement

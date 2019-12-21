@@ -53,14 +53,14 @@
   align-items: center;
   justify-content: center;
   color: hsla(0, 0%, 100%, .85);
-  font-size: 2.6rem;
-/*   max-width: 360px; */
+  font-size: 7.4vw;
+  /*   max-width: 360px; */
   font-family: Lato, sans-serif;
   font-weight: 600;
   letter-spacing: .1rem;
 
 
-/*     width: 46vw;
+  /*     width: 46vw;
     height: 29.5vw; */
 }
 
@@ -77,7 +77,7 @@
   position: absolute;
   filter: grayscale(1) opacity(0.5);
 
-/*   width: 46vw;
+  /*   width: 46vw;
   height: 29.5vw; */
 }
 
@@ -203,6 +203,11 @@
   }
 }
 
+@media screen and (min-width: 640px) {
+  .tile-nav .tile-mask {
+    font-size: 2.6rem;
+  }
+}
 
 @media screen and (min-width: 699px) {
   .HomePage {
@@ -243,10 +248,11 @@
   }
 
   .tile-nav .tile-mask {
-    width:23vw;
-    height:24.5vw;
+    width: 23vw;
+    height: 24.5vw;
     max-width: 100%;
     max-height: 100%;
+
   }
 
   .nav-breaker {

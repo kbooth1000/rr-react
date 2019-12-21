@@ -123,15 +123,20 @@ label.selected {
     text-align: center;
 }
 
+.recommendation-finder .active .fieldset DONTSHOW {
+    box-shadow: #00aeef 0px 3px 0px;
+}
+
 form,
 .recommendation {
     width: 0;
+    padding: 0 0 3px;
     margin: auto;
     overflow: hidden;
     transition: 0.8s;
     text-align: left;
-    opacity: 1;  /* 0.7 */
-    filter: 1;  /* opacity(0.7) */
+    opacity: 1;
+    filter: opacity(1);
 }
 
 .step1 {
@@ -219,9 +224,9 @@ label:hover .thumb-pic {
 }
 
 form.active {
-    border-bottom: 3px solid #00aeef;
     border-radius: 20px;
     opacity: 1;
+    -webkit-filter: opacity(1);
     filter: opacity(1);
     max-width: 550px;
 }
@@ -409,7 +414,8 @@ input[type='submit'],
     font-size: 1.5rem
 }
 
-.close-modal, .hint {
+.close-modal,
+.hint {
     position: -webkit-sticky;
     position: sticky;
     left: 95%;
@@ -430,10 +436,11 @@ input[type='submit'],
     border-radius: 9px;
     font-weight: 900;
     font-family: sans-serif;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.close-modal:before, .hint:before {
+.close-modal:before,
+.hint:before {
     content: "\2715";
     color: #fff;
     font-weight: 900;
@@ -447,50 +454,34 @@ input[type='submit'],
 
 .hint {
     overflow: hidden;
-    display: flex;
+    display: block;
     position: absolute;
     z-index: 999;
-    background: transparent;
-    height: auto;
-    left: 10%;
-    width: 80%;
-    border-radius: 8px;
-    color: #fff;
-    top: 201px;
+    background: var(--main-blue-trans);
+    color: #333;
     transition: .5s;
     height: 0;
     width: 0;
+    left: 0;
+    top: 201px;
 }
 
-hint.show-hint {
-    padding: 1rem;
-    border: 5px solid #333;
+.hint span {
+    width: 80%;
     height: auto;
-    background: hsla(210, 50%, 60%, 1);
-
+    background: #fff;
+    transform: translateY(-200px);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    min-height: 150px;
+    margin: 200px auto;
 }
 
 .hint.show-hint {
-    display: flex;
-    position: absolute;
-    z-index: 999;
-    background: hsla(210, 50%, 60%, 1);
-    border: 5px solid #333;
-    height: auto;
-    left: 10%;
-    width: 80%;
-    border-radius: 8px;
-    padding: 1rem;
-    color: #fff;
-    top: 201px;
-    transition: .5s;
-}
-.hint:before{
-    /* content: '\2754'; */
-    display: none;
-}
-.hint.show-hint:before {
-    content: attr(data-hint-text)
+    height: 100vh;
+    width: 100vw;
 }
 
 .hint-button {
@@ -661,7 +652,7 @@ hint.show-hint {
 
 
 
-     /*        *****  MEDIA QUERIES  *****        */
+/*        *****  MEDIA QUERIES  *****        */
 
 
 @media only screen and (min-width: 450px) {
@@ -695,7 +686,7 @@ hint.show-hint {
 
 @media screen and (max-width: 740px) {
     .Replacements .nowrap {
-        width:100%;
+        width: 100%;
         height: auto;
         margin-bottom: 6px;
     }
@@ -785,15 +776,18 @@ hint.show-hint {
     .pricing-info {
         margin: 1rem auto;
     }
+
     form.active {
         border: none;
     }
+
     h1.title {
         width: 90%;
         text-align: center;
     }
 
-    fieldset p, .fieldset p {
+    fieldset p,
+    .fieldset p {
         width: auto !important;
     }
 }
