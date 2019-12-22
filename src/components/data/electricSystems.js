@@ -1,12 +1,12 @@
 export const totFinancingDefault = "0%, 84 months"
-const defaultImgUrl = 'images/replacement-parts/complete-heat-pump-system.png';
+const defaultImgUrl = 'images/split-system-electric.png';
 
 export const electricSystems = {
   defaultImgUrl,
-  mainTitle: "Complete Heat Pump System",
+  mainTitle: "Split Heat Pump System",
   "1.5": {
     productImage: defaultImgUrl,
-    productTitle: "1.5 Ton Complete Heat Pump System",
+    productTitle: "1.5 Ton Split Heat Pump System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -45,7 +45,7 @@ export const electricSystems = {
 
   "2.0": {
     productImage: defaultImgUrl,
-    productTitle: "2.0 Ton Complete Heat Pump System",
+    productTitle: "2.0 Ton Split Heat Pump System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -83,7 +83,7 @@ export const electricSystems = {
   },
   "2.5": {
     productImage: defaultImgUrl,
-    productTitle: "2.5 Ton Complete Heat Pump System",
+    productTitle: "2.5 Ton Split Heat Pump System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -121,7 +121,7 @@ export const electricSystems = {
   },
   "3.0": {
     productImage: defaultImgUrl,
-    productTitle: "3.0 Ton Complete Heat Pump System",
+    productTitle: "3.0 Ton Split Heat Pump System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -160,7 +160,7 @@ export const electricSystems = {
 
   "3.5": {
     productImage: defaultImgUrl,
-    productTitle: "3.5 Ton Complete Heat Pump System",
+    productTitle: "3.5 Ton Split Heat Pump System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -199,7 +199,7 @@ export const electricSystems = {
 
   "4.0": {
     productImage: defaultImgUrl,
-    productTitle: "4.0 Ton Complete Heat Pump System",
+    productTitle: "4.0 Ton Split Heat Pump System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -238,7 +238,7 @@ export const electricSystems = {
 
   "5.0": {
     productImage: defaultImgUrl,
-    productTitle: "5.0 Ton Complete Heat Pump System",
+    productTitle: "5.0 Ton Split Heat Pump System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [

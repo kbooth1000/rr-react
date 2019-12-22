@@ -8,7 +8,6 @@ import Heating from './Heating';
 import Cooling from './Cooling';
 import ForSale from './ForSale';
 import Financing from './Financing';
-import Quote from './Quote';
 import Contact from './Contact';
 import Map from './Map';
 import RecommendedReplacements from './RecommendedReplacements';
