@@ -1,12 +1,14 @@
 import React from 'react';
 
 import { gasSystems } from './data/gasSystems';
+import { gasUnits } from './data/gasUnits';
 import { acCondenserOnly } from './data/acCondenserOnly';
 import { evaporatorCoilOnly } from './data/evaporatorCoilOnly';
 import { furnaceOnly } from './data/furnaceOnly';
 import { heatPumpOnly } from './data/heatPumpOnly';
 import { airHandlerOnly } from './data/airHandlerOnly';
 import { electricSystems } from './data/electricSystems';
+import { electricUnits } from './data/electricUnits';
 
 import goodmanLogo from './images/goodman-logo.png';
 
@@ -15,7 +17,7 @@ import './styles/grid.css';
 
 const RecommendedSystem = ({ sysType, sysTonnage, fullOrReplace }) => {
 
-  const sysData = { gasSystems, electricSystems, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
+  const sysData = { gasSystems, electricSystems, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly, gasUnits, electricUnits };
 
   let { productTitle, productImage, pricingLevels, seers, levelDescriptions, levelFeatureLists, levelTotFinancings, levelTotPrices } = sysData[fullOrReplace] ? sysData[fullOrReplace][sysTonnage] :
     {
