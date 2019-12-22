@@ -147,6 +147,16 @@ form,
     filter: opacity(1);
 }
 
+.sysRec-intro {
+    overflow: hidden;
+    transition: 1s;
+    height: auto;
+}
+
+.sysRec-intro.hide {
+    height: 0;
+}
+
 .step1 {
     transition: top .5s;
     height: auto;
@@ -423,8 +433,7 @@ input[type='submit'],
     font-size: 1.5rem
 }
 
-.close-modal,
-.hint {
+.close-modal {
     position: -webkit-sticky;
     position: sticky;
     left: 95%;
@@ -478,6 +487,7 @@ input[type='submit'],
     width: 80%;
     height: auto;
     background: #fff;
+    -webkit-transform: translateY(-200px);
     transform: translateY(-200px);
     padding: 2rem;
     border-radius: 1rem;
@@ -485,6 +495,9 @@ input[type='submit'],
     align-items: center;
     min-height: 150px;
     margin: 260px auto;
+    max-height: 50%;
+    overflow: auto;
+    display: block;
 }
 
 .hint span:before {
@@ -502,7 +515,25 @@ input[type='submit'],
 
 .hint.show-hint {
     height: 100vh;
-    width: 100vw;
+    width: 94vw;
+    max-width: 1450px;
+    margin: auto;
+    left: 3vw;
+}
+
+@media screen and (min-width: 1450px) {
+    .hint.show-hint {
+        width: 1450px;
+        left: calc((100vw - 1450px) / 2);
+    }
+}
+.start-button{
+    color: #fff !important;
+font-weight: 900;
+background: var(--lt-blue);
+border: 4px var(--lt-blue) solid;
+border-radius: 1rem;
+cursor: pointer;
 }
 
 .hint-button {

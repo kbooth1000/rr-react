@@ -6,9 +6,11 @@ import RecommendedReplacements from './RecommendedReplacements';
 import './styles/shop.css';
 
 import validZipcodes from './data/zipcodes';
+import hintTexts from './data/hintTexts';
 
 
 const SystemRec = (props, { ...rest }) => {
+  const [showFirstStep, setShowFirstStep] = useState(false);
   const [zipcode, setZipcode] = useState('');
   const [zipcodeText, setZipcodeText] = useState('');
   const [sysType, setSysType] = useState('');
@@ -30,22 +32,16 @@ const SystemRec = (props, { ...rest }) => {
   Lorem ipsum, dolor sit amet
   `);
 
-  let hintTexts = [
-    <section><h4>ELECTRIC/HEAT PUMP</h4><p>Straight AC units are basic air conditioning. Heat strips are added to give a system the ability to heat in the winter. On the other side of the token an <strong>Electric Heat Pump</strong> uses refrigerant to both cool and heat the home with what is called a reversing valve allowing refrigerant to pass back and forth through the air handler and heat pump.</p>
-    <p>
-    <h4>GAS FURNACE</h4>
-    <strong>Gas systems</strong> burn natural gas for heat inside a furnace. If you receive a monthly gas bill, chances are you have a gas furnace.</p></section>,
-    <section><h4>Choose what is the needed Tonnage / Square Footage?</h4>
-<p>The square footage estimator is generally accurate to picking the correct unit size. Keep in mind, every purchase has a pre-install job site inspection where your contractor will be able to verify that you ordered the correct unit, or make any necessary changes to insure you are replacing the correct unit size, & in some cases show you why you DONT need to replace the unit which happens more times than not.
-</p>
-<p>
-NOTE: If you have multiple AC unit on your home, you can use the same square footage estimator based on how much area each unit covers.</p></section>,
-    <section><h4>Choose whether you are looking for a full system or just need replacement parts.</h4></section>
-  ]
+  
 
   useEffect(
     () => props.changeRoute('shop')
   )
+
+  const handleStartClick = e => {
+    e.preventDefault();
+    setShowFirstStep(!showFirstStep);
+  }
 
   const handleZipChange = e => {
     e.preventDefault();
@@ -137,16 +133,26 @@ NOTE: If you have multiple AC unit on your home, you can use the same square foo
               transform: 'translateX(-50%)',
               display: 'inline-block'
             }}>SHOP NOW</h1>
-            <form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
-<div>
-              <h3 style={{ textAlign: 'center', width: '90%', margin: 'auto' }}>To get a custom recommendation, just answer a few questions: </h3><p>
+            
+<div class={`sysRec-intro ${showFirstStep ? 'hide' : 'show'}`} style={{ textAlign: 'center', width: '90%', margin: 'auto' }}>
+              <h2>To get a custom recommendation, just answer a few questions: </h2>
+              <p>
+              <br />
+              <button className="start-button" onClick={handleStartClick}>Get Started Now:</button>
+              <br />
+              <br />
               See the Results and Choose Your New Air Conditioner! Matched with the best recommendation for efficiency, most competitive costs, & 10 Year Warranty Included!</p><p>
-We’ll show you a great selection of air conditioners in the size and tonnage you choose but first match you with the best option available for the parameters input. We will also show you all your options on SEER ratings from the minimum of 14 to 18 & 20. If you want more options or specific brands please call 770-693-2946 for a customized quote. RockRuth HVAC LLC services & installs all makes and models. If you see the option you want, simply pick the unit you want and check out.</p><p> ITS TRULY THAT EASY WITHOUT A PUSHY SALESMAN.</p>
+We’ll show you a great selection of air conditioners in the size and tonnage you choose but first match you with the best option available for the parameters input. We will also show you all your options on SEER ratings from the minimum of 14 to 18 & 20. If you want more options or specific brands please call 770-693-2946 for a customized quote. RockRuth HVAC LLC services & installs all makes and models. If you see the option you want, simply pick the unit you want and check out.</p><p> ITS TRULY THAT EASY WITHOUT A PUSHY SALESPERSON.</p>
 
  
 <p>
-If using financing there is no down payment NOR Payment due until the time of competition!</p><br />
-<h2>Get Started Now:</h2> </div>
+If using financing there is no down payment NOR Payment due until the time of completion!</p>
+
+<button class="start-button" onClick={handleStartClick}>Get Started Now:</button> <br /><br />
+
+</div>
+
+<form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active ${showFirstStep ? 'show' : 'hide'}`}>
 
               <fieldset className="fieldset">
                 <legend>Location:</legend>
