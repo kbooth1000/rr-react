@@ -33,7 +33,7 @@ const Heating = props => {
                         }
                               alt="" />
                         <p> <i> Heating systems don&apos;t tend to break down during the summer;
-                  they tend to stop working during the heart of winter, when the weather is at its coldest.Don&apos;t risk your comfort and property
+                  they tend to stop working during the heart of winter, when the weather is at its coldest. Don&apos;t risk your comfort and property
                   by putting off the heating system service you need.We can thoroughly inspect your equipment and
                   let you know of any problems(or potential problems) we find.This way, you can nip your heating
       system issues in the bud before the cold sets in . </i></p> </div>
@@ -54,7 +54,7 @@ const Heating = props => {
                               acCondenser
                         }
                               alt="" />
-                        <p> <i> Many people tend to ignore or forget about their furnaces until they s top working.When your furnace stops functioning properly, you&apos;ll want
+                        <p> <i> Many people tend to ignore or forget about their furnaces until they stop working.When your furnace stops functioning properly, you&apos;ll want
                   an experienced professional&apos;s help to make sure the problem doesn'
                   t quickly get worse.That&apos;s where RockRuth Heating &amp; Air comes in. As an
       established HVAC company in Atlanta, GA, we have the tools and skills to provide you with accurate, cost - effective furnace repair service </i></p> </div>
