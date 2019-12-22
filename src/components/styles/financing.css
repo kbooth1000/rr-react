@@ -19,10 +19,20 @@
 }
 
 .mobile-finance-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.mobile-finance-buttons .cell {
+    min-width: 11rem;
+    margin-bottom: .3rem;
+  }
+
+  .mobile-finance-buttons .cell {
+    margin: .2rem;
+    min-width: 11rem;
   }
 
   

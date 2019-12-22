@@ -64,16 +64,19 @@
 }
 
 .Footer .quote-button a {
-  height: 1rem;
+  height: .8rem;
   background: var(--hi-blue);
   color: #fff;
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 .5rem;
   justify-content: center;
   align-self: center;
+  margin-right: -10px;
 }
+
+
 
 .Footer .phone-link,
   .Footer .email-link {
@@ -90,6 +93,11 @@
 
   .footer-links .copyright {
     font-size: 0.9rem !important;
+  }
+
+  .Footer .quote-button a {
+    padding: 0 1rem;
+    margin-right: 0;
   }
 }
 

@@ -6,9 +6,11 @@ import RecommendedReplacements from './RecommendedReplacements';
 import './styles/shop.css';
 
 import validZipcodes from './data/zipcodes';
+import hintTexts from './data/hintTexts';
 
 
 const SystemRec = (props, { ...rest }) => {
+  const [showFirstStep, setShowFirstStep] = useState(false);
   const [zipcode, setZipcode] = useState('');
   const [zipcodeText, setZipcodeText] = useState('');
   const [sysType, setSysType] = useState('');
@@ -25,10 +27,21 @@ const SystemRec = (props, { ...rest }) => {
   const [recShow, setRecShow] = useState(false);
   const [fullOrReplaceSelected, setFullOrReplaceSelected] = useState('');
   const [stepNum, setStepNum] = useState(0);
+  const [showHint, setShowHint] = useState(false);
+  const [hintText, setHintText] = useState(`
+  Lorem ipsum, dolor sit amet
+  `);
+
+  
 
   useEffect(
     () => props.changeRoute('shop')
   )
+
+  const handleStartClick = e => {
+    e.preventDefault();
+    setShowFirstStep(!showFirstStep);
+  }
 
   const handleZipChange = e => {
     e.preventDefault();
@@ -74,6 +87,12 @@ const SystemRec = (props, { ...rest }) => {
     setRecShow(!recShow)
   }
 
+  const handleHintClick = e => {
+    setShowHint(!showHint);
+    // if (!showHint) setHintText('');
+    // setHintText(e.target.dataset.hintText);
+  }
+
   const fullOrReplaceComponent = (sysType, sysTon, fullOrReplace) => {
     if (fullOrReplace === 'full') {
       return <RecommendedSystem sysType={sysType} sysTonnage={sysTon} fullOrReplace={(sysType === 'gas') ? 'gasSystems' : 'electricSystems'} />
@@ -99,6 +118,12 @@ const SystemRec = (props, { ...rest }) => {
 
         <main style={{ margin: '1rem 0' }}>
 
+          <aside className={`hint ${showHint ? 'show-hint' : ''} `} onClick={handleHintClick}>
+            <span>
+              {hintText}
+            </span>
+          </aside>
+
           <section className="recommendation-finder">
             <h1 className="title" style={{
               marginLeft: '50%',
@@ -108,11 +133,30 @@ const SystemRec = (props, { ...rest }) => {
               transform: 'translateX(-50%)',
               display: 'inline-block'
             }}>SHOP NOW</h1>
-            <form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
+            
+<div class={`sysRec-intro ${showFirstStep ? 'hide' : 'show'}`} style={{ textAlign: 'center', width: '90%', margin: 'auto' }}>
+              <h2>To get a custom recommendation, just answer a few questions: </h2>
+              <p>
+              <br />
+              <button className="start-button" onClick={handleStartClick}>Get Started Now:</button>
+              <br />
+              <br />
+              See the Results and Choose Your New Air Conditioner! Matched with the best recommendation for efficiency, most competitive costs, & 10 Year Warranty Included!</p><p>
+We’ll show you a great selection of air conditioners in the size and tonnage you choose but first match you with the best option available for the parameters input. We will also show you all your options on SEER ratings from the minimum of 14 to 18 & 20. If you want more options or specific brands please call 770-693-2946 for a customized quote. RockRuth HVAC LLC services & installs all makes and models. If you see the option you want, simply pick the unit you want and check out.</p><p> ITS TRULY THAT EASY WITHOUT A PUSHY SALESPERSON.</p>
+
+ 
+<p>
+If using financing there is no down payment NOR Payment due until the time of completion!</p>
+
+<button class="start-button" onClick={handleStartClick}>Get Started Now:</button> <br /><br />
+
+</div>
+
+<form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active ${showFirstStep ? 'show' : 'hide'}`}>
 
               <fieldset className="fieldset">
                 <legend>Location:</legend>
-                <p>Enter zip-code where the unit will be installed:</p>
+                <p>What is the <strong>zip code</strong> where the unit will be installed:</p>
                 <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" style={{ width: '60%' }} /><br />
                 <input type="submit" value="Submit" className="submit-button" />
                 <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
@@ -130,9 +174,14 @@ const SystemRec = (props, { ...rest }) => {
             }
               className={`step step2 ${validZipcodes.includes(zipcode) ? step2Show : ''} ${step2Active}`}>          <br />
 
+
               <fieldset className="fieldset">
+                <aside className="hint-button" onClick={() => {
+                  setHintText(hintTexts[0]);
+                  handleHintClick();
+                }} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
                 <legend>Heat Source:</legend>
-                <p>Is your heat source a:</p>
+                <p>What is your current heat source:</p>
                 <section>
                   <label htmlFor="gas-furnace" className={sysType === 'gas' ? 'selected' : ''}>
                     <input value="gas" type="radio" name="heat-source" id="gas-furnace" />
@@ -146,6 +195,10 @@ const SystemRec = (props, { ...rest }) => {
             </form>
             <form className={`step step3 ${step3Show} ${step3Active}`}>
               <fieldset className="fieldset" style={{ display: 'flex' }}>
+                <aside className="hint-button" onClick={() => {
+                  setHintText(hintTexts[1]);
+                  handleHintClick();
+                }} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
                 <legend>Square Footage/Tonnage:</legend>
                 <div>
                   <div className="footage-dropdown">
@@ -198,6 +251,10 @@ const SystemRec = (props, { ...rest }) => {
 
             <form className={`step step4 ${step4Show} ${step4Active}`}>
               <fieldset className="fieldset">
+                <aside className="hint-button" onClick={() => {
+                  setHintText(hintTexts[2]);
+                  handleHintClick();
+                }} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
                 <legend>Full System or Replacement Parts:</legend>
                 <p>
                   Do you need a full system installed or are you looking for replacement

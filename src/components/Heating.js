@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect } from 'react';
 
 import './styles/info-page.css';
-import heatingUnitImg from './images/heating-unit-ceiling.webp';
-import furnaceRepairs from './images/furnace_repairs.webp';
-import ductwork from './images/ductwork.webp';
-import livingRoom from './images/living_room.webp';
-import hvacFans from './images/hvac_fans.webp';
-import acCondenser from './images/ACCondenser.webp';
+import heatingUnitImg from './images/heating-unit-ceiling.jpg';
+import furnaceRepairs from './images/furnace_repairs.jpg';
+import ductwork from './images/ductwork.jpg';
+import livingRoom from './images/living_room.jpg';
+import hvacFans from './images/hvac_fans.jpg';
+import acCondenser from './images/ACCondenser.jpg';
 
 const Heating = props => {
 
