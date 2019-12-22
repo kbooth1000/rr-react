@@ -296,8 +296,8 @@ form.step.hide {
     border: 1rem solid rgba(0, 0, 0, .4);
     margin: 1rem;
     box-shadow: 7px 10px 11px #333;
-    overflowX: hidden;
-    overflowY: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .price-grid {
