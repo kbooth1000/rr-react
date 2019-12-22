@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import RecommendedSystem from './RecommendedSystem';
 import RecommendedReplacements from './RecommendedReplacements';
 
@@ -111,10 +110,8 @@ const SystemRec = (props, { ...rest }) => {
 
   return (
     <div className="SystemRec" ref={(e) => setScrollRef(e)}>
-      {/* {sysType} {sysTon} {fullOrReplace} {zipcode} */}
 
       <div className="main">
-
 
         <main style={{ margin: '1rem 0' }}>
 
@@ -134,32 +131,16 @@ const SystemRec = (props, { ...rest }) => {
               display: 'inline-block'
             }}>SHOP NOW</h1>
             
-<div class={`sysRec-intro ${showFirstStep ? 'hide' : 'show'}`} style={{ textAlign: 'center', width: '90%', margin: 'auto' }}>
-              <h2>To get a custom recommendation, just answer a few questions: </h2>
-              <p>
-              <br />
-              <button className="start-button" onClick={handleStartClick}>Get Started Now:</button>
-              <br />
-              <br />
-              See the Results and Choose Your New Air Conditioner! Matched with the best recommendation for efficiency, most competitive costs, & 10 Year Warranty Included!</p><p>
-We’ll show you a great selection of air conditioners in the size and tonnage you choose but first match you with the best option available for the parameters input. We will also show you all your options on SEER ratings from the minimum of 14 to 18 & 20. If you want more options or specific brands please call 770-693-2946 for a customized quote. RockRuth HVAC LLC services & installs all makes and models. If you see the option you want, simply pick the unit you want and check out.</p><p> ITS TRULY THAT EASY WITHOUT A PUSHY SALESPERSON.</p>
 
- 
-<p>
-If using financing there is no down payment NOR Payment due until the time of completion!</p>
 
-<button class="start-button" onClick={handleStartClick}>Get Started Now:</button> <br /><br />
-
-</div>
-
-<form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active ${showFirstStep ? 'show' : 'hide'}`}>
+<form onSubmit={handleZipSubmit} className={`step step1 ${(validZipcodes.includes(zipcode)) ? 'hide' : 'show'} active`}>
 
               <fieldset className="fieldset">
                 <legend>Location:</legend>
                 <p>What is the <strong>zip code</strong> where the unit will be installed:</p>
                 <input onChange={handleZipChange} value={zipcodeText} autoFocus type="text" name="zip-code" pattern="[0-9]*" inputMode="numeric" style={{ width: '60%' }} /><br />
                 <input type="submit" value="Submit" className="submit-button" />
-                <aside className="aside1">{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
+                <aside className={`aside1 ${'' === zipcode || !zipcode ? 'hide' : 'show'}`}>{'' === zipcode || !zipcode ? '' : !validZipcodes.includes(zipcode) ? `Sorry, we don't serve your area yet.` : `Great, we serve your area.`}</aside>
               </fieldset>
 
             </form>

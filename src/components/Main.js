@@ -12,6 +12,7 @@ import Quote from './Quote';
 import Contact from './Contact';
 import Map from './Map';
 import RecommendedReplacements from './RecommendedReplacements';
+import Shop from './Shop';
 import Carousel from './Carousel';
 import Footer from './Footer';
 
@@ -30,7 +31,7 @@ const Main = ({ match, ...props }) => {
       <Header />
       <div className="page-container">
         <Route exact path='/' render={props => <HomePage changeRoute={handleChangeRoute} {...props} />} />
-        <Route path='/shop' render={props => <SystemRec {...props} changeRoute={handleChangeRoute} />} />
+        <Route path='/shop' render={props => <Shop {...props} changeRoute={handleChangeRoute} />} />
         <Route path='/heating' render={props => <Heating changeRoute={handleChangeRoute} {...props} />} />
         <Route path='/cooling' render={props => <Cooling changeRoute={handleChangeRoute} {...props} />} />
         <Route path='/replacement-parts' render={props => <RecommendedReplacements changeRoute={handleChangeRoute} {...props} />} />

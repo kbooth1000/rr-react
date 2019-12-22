@@ -47,7 +47,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="quote-button">
-          <Link to="quote">GET A QUOTE</Link>
+          <Link to="shop">GET A QUOTE</Link>
         </div>
       </div>
     </div >
