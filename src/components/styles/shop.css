@@ -48,6 +48,11 @@ fieldset section {
     justify-content: center;
 }
 
+.step {
+    height: 0;
+    overflow: hidden;
+}
+
 .step fieldset label,
 .step fieldset select,
 .step fieldset input[type=text] {
@@ -332,6 +337,10 @@ aside {
     margin: 3rem auto;
 }
 
+.active aside.hide {
+    height: 0;
+}
+
 .aside2 {
     height: 0.4rem;
 }
@@ -529,11 +538,14 @@ input[type='submit'],
 }
 .start-button{
     color: #fff !important;
-font-weight: 900;
-background: var(--lt-blue);
-border: 4px var(--lt-blue) solid;
-border-radius: 1rem;
-cursor: pointer;
+    font-weight: 900;
+    background: var(--lt-blue);
+    border: 4px var(--lt-blue) solid;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 180px;
+    margin: auto;
+    text-align: center;
 }
 
 .hint-button {
