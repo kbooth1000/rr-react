@@ -40,8 +40,7 @@ const SystemRec = (props, { ...rest }) => {
 </p>
 <p>
 NOTE: If you have multiple AC unit on your home, you can use the same square footage estimator based on how much area each unit covers.</p></section>,
-    <section>3 Number Three hint text</section>,
-    <section>4 Number Four hint text</section>
+    <section><h4>Choose whether you are looking for a full system or just need replacement parts.</h4></section>
   ]
 
   useEffect(
