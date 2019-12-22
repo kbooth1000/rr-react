@@ -27,14 +27,21 @@ const SystemRec = (props, { ...rest }) => {
   const [stepNum, setStepNum] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [hintText, setHintText] = useState(`
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore consequuntur, vitae sed ipsam cum, molestiae animi id modi architecto corporis accusantium voluptatem, veritatis accusamus eum deserunt temporibus deleniti! Voluptas, obcaecati?
+  Lorem ipsum, dolor sit amet
   `);
 
   let hintTexts = [
-    '1 Number One hint text',
-    '2 Number Two hint text',
-    '3 Number Three hint text',
-    '4 Number Four hint text',
+    <section><h4>ELECTRIC/HEAT PUMP</h4><p>Straight AC units are basic air conditioning. Heat strips are added to give a system the ability to heat in the winter. On the other side of the token an <strong>Electric Heat Pump</strong> uses refrigerant to both cool and heat the home with what is called a reversing valve allowing refrigerant to pass back and forth through the air handler and heat pump.</p>
+    <p>
+    <h4>GAS FURNACE</h4>
+    <strong>Gas systems</strong> burn natural gas for heat inside a furnace. If you receive a monthly gas bill, chances are you have a gas furnace.</p></section>,
+    <section><h4>Choose what is the needed Tonnage / Square Footage?</h4>
+<p>The square footage estimator is generally accurate to picking the correct unit size. Keep in mind, every purchase has a pre-install job site inspection where your contractor will be able to verify that you ordered the correct unit, or make any necessary changes to insure you are replacing the correct unit size, & in some cases show you why you DONT need to replace the unit which happens more times than not.
+</p>
+<p>
+NOTE: If you have multiple AC unit on your home, you can use the same square footage estimator based on how much area each unit covers.</p></section>,
+    <section>3 Number Three hint text</section>,
+    <section>4 Number Four hint text</section>
   ]
 
   useEffect(

@@ -67,6 +67,14 @@ fieldset section {
     line-height: 1rem;
 }
 
+.step fieldset label.selected ,
+.step fieldset select.selected ,
+.step fieldset input[type=text].selected  {
+    border: 3px solid var(--hi-blue);
+}
+
+
+
 .Replacements fieldset label {
     border: 1px solid #ccc;
     padding: .1rem .3rem;
@@ -190,6 +198,7 @@ form,
 fieldset,
 .fieldset {
     padding: 1rem;
+    position: relative;
 }
 
 /* legend {
@@ -310,7 +319,7 @@ aside {
 
 .active aside {
     height: 0.4rem;
-    margin: 1rem auto;
+    margin: 3rem auto;
 }
 
 .aside2 {
@@ -439,8 +448,7 @@ input[type='submit'],
     overflow: hidden;
 }
 
-.close-modal:before,
-.hint:before {
+.close-modal:before {
     content: "\2715";
     color: #fff;
     font-weight: 900;
@@ -476,7 +484,20 @@ input[type='submit'],
     display: flex;
     align-items: center;
     min-height: 150px;
-    margin: 200px auto;
+    margin: 260px auto;
+}
+
+.hint span:before {
+    content: "\2715";
+    font-weight: 900;
+    right: 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    color: #003;
+    font-size: 1.5rem;
+    color: #336;
+    cursor: pointer;
 }
 
 .hint.show-hint {
@@ -486,19 +507,20 @@ input[type='submit'],
 
 .hint-button {
     color: #fff !important;
-    font-weight: 900;
-    cursor: pointer;
-    display: flex;
-    width: 1.5rem;
-    height: 1.5rem !important;
-    position: absolute;
-    right: 1rem;
-    top: 2.3rem;
-    padding: 2px;
-    border: 4px var(--main-blue-trans) solid;
-    justify-content: center;
-    align-items: center;
-    background: var(--lt-blue);
+font-weight: 900;
+cursor: pointer;
+display: flex;
+width: 1.5rem;
+height: 1.5rem !important;
+position: absolute;
+right: 1rem;
+top: -1.3rem;
+border: 4px var(--lt-blue) solid;
+justify-content: center;
+align-items: center;
+background: var(--lt-blue);
+border-radius: 50%;
+padding: 8px 8px 7px;
 }
 
 
