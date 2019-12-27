@@ -256,8 +256,7 @@ const SystemRec = (props, { ...rest }) => {
 
               </fieldset>
             </form>
-            <div src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
-              alt="Display of numerous AC units and accessories." className={`medallion-graphic ${(validZipcodes.includes(zipcode)) ? 'show' : 'hide'} active`}>
+            <div className={`medallion-graphic ${(validZipcodes.includes(zipcode)) ? 'show' : 'hide'} active`}>
                 <p>100% Transparent Online Pricing Guarantee</p>
                 <div>
                 <img src={sealOfTransparency} alt="Seal of Transparency"/>
