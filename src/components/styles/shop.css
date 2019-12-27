@@ -126,6 +126,7 @@ label.selected {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 2.5rem;
 }
 
 .medallion-graphic div {
@@ -144,6 +145,8 @@ label.selected {
 .medallion-graphic div img {
     height: 15vw;
     min-height: 100px;
+    max-height: 100%;
+    width: auto;
 }
 
 .recommendation-finder {
