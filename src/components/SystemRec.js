@@ -7,6 +7,10 @@ import './styles/shop.css';
 import validZipcodes from './data/zipcodes';
 import hintTexts from './data/hintTexts';
 
+import sealOfTransparency from './images/seal-of-transparency.png';
+import lowPriceGuarantee from './images/lowest-price-guarantee.png';
+
+
 
 const SystemRec = (props, { ...rest }) => {
   const [showFirstStep, setShowFirstStep] = useState(false);
@@ -232,10 +236,10 @@ const SystemRec = (props, { ...rest }) => {
 
             <form className={`step step4 ${step4Show} ${step4Active}`}>
               <fieldset className="fieldset">
-                <aside className="hint-button" onClick={() => {
+                {/* <aside className="hint-button" onClick={() => {
                   setHintText(hintTexts[2]);
                   handleHintClick();
-                }} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside>
+                }} style={{ color: 'var(--hi-blue)', fontWeight: '900', cursor: 'pointer' }}>?</aside> */}
                 <legend>Full System or Replacement Parts:</legend>
                 <p>
                   Do you need a full system installed or are you looking for replacement
@@ -252,6 +256,14 @@ const SystemRec = (props, { ...rest }) => {
 
               </fieldset>
             </form>
+            <div src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
+              alt="Display of numerous AC units and accessories." className={`medallion-graphic ${(validZipcodes.includes(zipcode)) ? 'show' : 'hide'} active`}>
+                <p>100% Transparent Online Pricing Guarantee</p>
+                <div>
+                <img src={sealOfTransparency} alt="Seal of Transparency"/>
+                <img src={lowPriceGuarantee} alt="Lowest Price Guarantee"/>
+              </div>
+              </div>
 
             <div className={`recommendation ${recShow ? 'show' : ''}`}>
 
