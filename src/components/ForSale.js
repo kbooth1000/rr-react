@@ -8,6 +8,8 @@ import { furnaceOnly } from './data/furnaceOnly';
 import { heatPumpOnly } from './data/heatPumpOnly';
 import { airHandlerOnly } from './data/airHandlerOnly';
 import { electricSystems } from './data/electricSystems';
+import { gasUnits } from './data/gasUnits';
+import { electricUnits } from './data/electricUnits';
 
 import './styles/info-page.css';
 
@@ -22,7 +24,7 @@ const ForSale = props => {
     }
   }, [])
 
-  const sysData = { gasSystems, electricSystems, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
+  const sysData = { gasSystems, electricSystems, gasUnits, electricUnits, acCondenserOnly, evaporatorCoilOnly, furnaceOnly, heatPumpOnly, airHandlerOnly };
   const tonnages = ['1.5', '2.0', '2.5', '3.0', '3.5', '4.0', '5.0']
 
   let partsKeys = Object.keys(sysData);

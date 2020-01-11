@@ -1,151 +1,277 @@
-var heatPumpImgUrl =
-    'https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/heatPumpSystem1.png/:/';
-var electricUnits = {
-    "1.5": {
-        ton: 1.5,
-        seer: 14,
-        levelDescriptions: ["no data", "no data", "no data"
-        ],
-        levelFeatureLists: [
-            ["no data"
-            ],
-            [
-                "no data"
-            ],
-            [
-                "no data"
-            ],
-        ],
-        productTitle: 'Complete Heat Pump System',
-        kw: 5,
-        productImage: heatPumpImgUrl,
-        pricingLevels: ["Platinum", "Gold", "Silver"],
-        pricePackage: 3799
-    },
-    "2.0": {
-        ton: 2,
-        seer: 14,
-        levelDescriptions: ["no data", "no data", "no data"
-        ],
-        levelFeatureLists: [
-            ["no data"
-            ],
-            [
-                "no data"
-            ],
-            [
-                "no data"
-            ],
-        ],
-        productTitle: 'Complete Heat Pump System',
-        kw: 5,
-        productImage: heatPumpImgUrl,
-        pricingLevels: ["Platinum", "Gold", "Silver"],
-        pricePackage: 3799
-    },
-    "2.5": {
-        ton: 2.5,
-        seer: 14,
-        levelDescriptions: ["no data", "no data", "no data"
-        ],
-        levelFeatureLists: [
-            ["no data"
-            ],
-            [
-                "no data"
-            ],
-            [
-                "no data"
-            ],
-        ],
-        productTitle: 'Complete Heat Pump System',
-        kw: 5,
-        productImage: heatPumpImgUrl,
-        pricingLevels: ["Platinum", "Gold", "Silver"],
-        pricePackage: 4200
-    },
-    "3.0": {
-        ton: 3,
-        seer: 14,
-        levelDescriptions: ["no data", "no data", "no data"
-        ],
-        levelFeatureLists: [
-            ["no data"
-            ],
-            [
-                "no data"
-            ],
-            [
-                "no data"
-            ],
-        ],
-        productTitle: 'Complete Heat Pump System',
-        kw: 8,
-        productImage: heatPumpImgUrl,
-        pricingLevels: ["Platinum", "Gold", "Silver"],
-        pricePackage: 4399
-    },
-    "3.5": {
-        ton: 3.5,
-        seer: 14,
-        levelDescriptions: ["no data", "no data", "no data"
-        ],
-        levelFeatureLists: [
-            ["no data"
-            ],
-            [
-                "no data"
-            ],
-            [
-                "no data"
-            ],
-        ],
-        productTitle: 'Complete Heat Pump System',
-        kw: 10,
-        productImage: heatPumpImgUrl,
-        pricingLevels: ["Platinum", "Gold", "Silver"],
-        pricePackage: 4499
-    },
-    "4.0": {
-        ton: 4,
-        seer: 14,
-        levelDescriptions: ["no data", "no data", "no data"
-        ],
-        levelFeatureLists: [
-            ["no data"
-            ],
-            [
-                "no data"
-            ],
-            [
-                "no data"
-            ],
-        ],
-        productTitle: 'Complete Heat Pump System',
-        kw: 10,
-        productImage: heatPumpImgUrl,
-        pricingLevels: ["Platinum", "Gold", "Silver"],
-        pricePackage: 4850
-    },
-    "5.0": {
-        ton: 5,
-        seer: 14,
-        levelDescriptions: ["no data", "no data", "no data"
-        ],
-        levelFeatureLists: [
-            ["no data"
-            ],
-            [
-                "no data"
-            ],
-            [
-                "no data"
-            ],
-        ],
-        productTitle: 'Complete Heat Pump System',
-        kw: 10,
-        productImage: heatPumpImgUrl,
-        pricingLevels: ["Platinum", "Gold", "Silver"],
-        pricePackage: 4999
-    }
-};
+export const totFinancingDefault = "0%, 84 months"
+const defaultImgUrl = 'images/replacement-parts/complete-heat-pump-system.png';
+
+export const electricUnits = {
+  defaultImgUrl,
+  mainTitle: "Complete Heat Pump System",
+  "1.5": {
+    productImage: defaultImgUrl,
+    productTitle: "1.5 Ton Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
+    ],
+    levelFeatureLists: [
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+    ],
+    perMonthPrices: [80, 68, 53],
+    levelTotFinancings: [
+      totFinancingDefault,
+      totFinancingDefault,
+      totFinancingDefault,
+    ],
+    levelTotPrices: [6679, 5679, 4479],
+  },
+
+  "2.0": {
+    productImage: defaultImgUrl,
+    productTitle: "2.0 Ton Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
+    ],
+    levelFeatureLists: [
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+    ],
+    perMonthPrices: [81, 69, 54],
+    levelTotFinancings: [
+      totFinancingDefault,
+      totFinancingDefault,
+      totFinancingDefault,
+    ],
+    levelTotPrices: [6762, 5762, 4562],
+  },
+  "2.5": {
+    productImage: defaultImgUrl,
+    productTitle: "2.5 Ton Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
+    ],
+    levelFeatureLists: [
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+    ],
+    perMonthPrices: [83, 71, 57],
+    levelTotFinancings: [
+      totFinancingDefault,
+      totFinancingDefault,
+      totFinancingDefault,
+    ],
+    levelTotPrices: [6989, 5989, 4789],
+  },
+  "3.0": {
+    productImage: defaultImgUrl,
+    productTitle: "3.0 Ton Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
+    ],
+    levelFeatureLists: [
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+    ],
+    perMonthPrices: [84, 72, 58],
+    levelTotFinancings: [
+      totFinancingDefault,
+      totFinancingDefault,
+      totFinancingDefault,
+    ],
+    levelTotPrices: [7067, 6067, 4867],
+  },
+
+  "3.5": {
+    productImage: defaultImgUrl,
+    productTitle: "3.5 Ton Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
+    ],
+    levelFeatureLists: [
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+    ],
+    perMonthPrices: [88, 76, 62],
+    levelTotFinancings: [
+      totFinancingDefault,
+      totFinancingDefault,
+      totFinancingDefault,
+    ],
+    levelTotPrices: [7379, 6379, 5179],
+  },
+
+  "4.0": {
+    productImage: defaultImgUrl,
+    productTitle: "4.0 Ton Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
+    ],
+    levelFeatureLists: [
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+    ],
+    perMonthPrices: [90, 78, 63],
+    levelTotFinancings: [
+      totFinancingDefault,
+      totFinancingDefault,
+      totFinancingDefault,
+    ],
+    levelTotPrices: [7525, 6526, 5325],
+  },
+
+  "5.0": {
+    productImage: defaultImgUrl,
+    productTitle: "5.0 Ton Complete Heat Pump System",
+    pricingLevels: ["Platinum", "Gold", "Silver"],
+    seers: ["18", "16", "14"],
+    levelDescriptions: [
+      "Highest Efficiency, Total Comfort",
+      "Energy Efficient Choice",
+      "Better Efficiency, Competitive Price",
+    ],
+    levelFeatureLists: [
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Variable Speed Compressor",
+        "Variable speed Indoor Fan",
+        "10 Year Parts & 10 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Two Stage Scroll Compressor",
+        "80% AFUE Two Stage Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+      [
+        "Free Duct Cleaning ($1K Value)",
+        "Single Stage Compressor",
+        "80% AFUE Constant Torque Furnace",
+        "10 Year Parts / 1 Year Labor Warranty",
+      ],
+    ],
+    perMonthPrices: [96, 84, 70],
+    levelTotFinancings: [
+      totFinancingDefault,
+      totFinancingDefault,
+      totFinancingDefault,
+    ],
+    levelTotPrices: [8079, 7079, 5879],
+  },
+}
