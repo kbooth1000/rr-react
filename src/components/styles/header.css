@@ -105,6 +105,14 @@
   top: 5px;
 }
 
+.short-header .logo {
+  top: 19px;
+  height: 76px;
+  width: 160px;
+  background: url(/static/media/logo-short.6c5f0000.png) no-repeat;
+  background-size: contain;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -118,7 +126,10 @@
   height: 140px;
 }
 
-
+.short-header .main-nav {
+  height: 98px;
+  margin: -1rem auto auto;
+}
 
 .menu-icon {
   font-size: 28px;
@@ -154,6 +165,10 @@
   color: var(--lt-blue-trans);
 }
 
+.short-header .nav-list ul {
+  margin: 0rem 9.8rem 0 0;
+}
+
 .link-home {
   display: none;
 }
@@ -171,6 +186,10 @@
   top: 5px;
   position: absolute;
   right: 0;
+}
+
+.short-header .quote-button {
+  top: 19px;
 }
 
 .quote-button a {
@@ -238,18 +257,41 @@
 }
 
 @media screen and (min-width: 875px) {
-  .logo {
+
+  .short-header .main-nav {
+    height: 80px;
+  }
+  .short-header .logo {
     position: relative;
     left: auto;
     transform: translateX(0);
-    height: 130px;
-    top: 5px;
+
+    top: 34px;
+    height: 110px;
+    background: url(/static/media/logo-short.6c5f0000.png) no-repeat;
+    background-size: contain;
   }
 
   .nav-list {
     width: 100%;
     height: 75px;
     top: 19px;
+  }
+
+  .quote-button {
+    top: 5px;
+    position: absolute;
+    right: 0;
+  }
+
+  .short-header .quote-button {
+    top: 30px;
+    position: absolute;
+    right: 0;
+  }
+
+  .short-header .nav-list {
+    top: 32px;
   }
 
   .menu-icon {
@@ -302,6 +344,18 @@
     min-width: 170px;
     font-size: .8rem;
     line-height: 1.5;
+  }
+
+  .short-header .nav-list {
+    top: 16px;
+  }
+
+  .short-header .nav-list ul {
+    margin: 0 0.8rem 0 0;
+  }
+
+  .short-header .quote-button {
+    top: -18px;
   }
   
   .logo {

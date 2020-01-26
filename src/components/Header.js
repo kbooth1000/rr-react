@@ -6,7 +6,7 @@ import './styles/header.css';
 
 const Header = () => {
   return (
-    <div className="Header">
+    <div className="Header short-header">
       <div className="top-links">
         <div className="email-link">
           <Icon name='envelope' />
