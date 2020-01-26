@@ -109,7 +109,7 @@
   top: 19px;
   height: 76px;
   width: 160px;
-  background: url(/static/media/logo-short.6c5f0000.png) no-repeat;
+  background: url(../images/logo-short.png) no-repeat;
   background-size: contain;
 }
 
@@ -268,7 +268,7 @@
 
     top: 34px;
     height: 110px;
-    background: url(/static/media/logo-short.6c5f0000.png) no-repeat;
+    background: url(../images/logo-short.png) no-repeat;
     background-size: contain;
   }
 
