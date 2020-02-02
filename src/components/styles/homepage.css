@@ -34,11 +34,20 @@
 }
 
 .tile-nav:hover .tile-bg {
-  filter: brightness(.8);
+  /* filter: brightness(.8); */
+  background-color: var(--main-blue-trans);
+  background-color: hsla(206, 73%, 32%, 0.55);
+}
+
+/* .tile-bg:hover {
+  filter: grayscale(1) opacity(0.5);
+} */
+.tile-nav:hover .tile-bg {
+  filter: grayscale(99%) opacity(0.85) !important;
 }
 
 .tile-nav:hover .tile-mask {
-  background: rgba(255, 255, 255, .3) !important;
+  /* background: rgba(255, 255, 255, .3) !important; */
 }
 
 .tile-nav .tile-mask {
@@ -46,7 +55,7 @@
   height: 100%;
   flex-grow: 1;
   margin: 0;
-  background: var(--main-blue-trans);
+  /* background: var(--main-blue-trans); */
   box-sizing: border-box;
   position: absolute;
   display: flex;
@@ -58,7 +67,7 @@
   font-family: Lato, sans-serif;
   font-weight: 600;
   letter-spacing: .1rem;
-
+  text-shadow: #999 2px 2px 10px, #666 -2px -2px 6px;
 
   /*     width: 46vw;
     height: 29.5vw; */
@@ -75,7 +84,7 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  filter: grayscale(1) opacity(0.5);
+  /* filter: grayscale(1) opacity(0.5); */
 
   /*   width: 46vw;
   height: 29.5vw; */
@@ -97,21 +106,21 @@
   background-image: url(../images/finance-icons.jpg);
 }
 
-.nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
-.nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask {
-  background: var(--lt-blue-trans);
+.nav-breaker:nth-child(1):hover .tile-nav:nth-child(1),
+.nav-breaker:nth-child(2):hover .tile-nav:nth-child(2) {
+  /* background: var(--lt-blue-trans); */
 }
 
-.nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask,
-.nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-mask {
-  background: var(--main-blue-trans);
+.nav-breaker:nth-child(1):hover .tile-nav:nth-child(2),
+.nav-breaker:nth-child(2):hover .tile-nav:nth-child(1) {
+  /* background: var(--lt-blue-trans); */
 }
 
 .tile-mask:hover {
   background: var(--lt-blue-trans);
+  background-color: hsla(194, 100%, 31%, 0.65);
   color: #fff;
-  text-shadow: #333 3px 3px 6px, #333 -3px -3px 10px;
-  ;
+  /* text-shadow: #333 3px 3px 6px, #333 -3px -3px 10px; */
 }
 
 .GalleryImage {
@@ -135,7 +144,7 @@
   margin: 5%;
   position: absolute;
   padding: 1rem;
-
+  text-transform: uppercase;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.27) 0%, rgba(0, 0, 0, 0.65) 37%, rgba(0, 0, 0, 0.65) 69%, rgba(0, 0, 0, 0.47) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.27) 0%, rgba(0, 0, 0, 0.65) 37%, rgba(0, 0, 0, 0.65) 69%, rgba(0, 0, 0, 0.47) 100%);
@@ -206,6 +215,7 @@
 @media screen and (min-width: 640px) {
   .tile-nav .tile-mask {
     font-size: 2.6rem;
+    text-shadow: #999 2px 2px 10px, #666 -2px -2px 6px;
   }
 }
 
@@ -252,7 +262,7 @@
     height: 24.5vw;
     max-width: 100%;
     max-height: 100%;
-
+    text-shadow: #999 2px 2px 10px, #666 -2px -2px 6px;
   }
 
   .nav-breaker {
@@ -262,12 +272,12 @@
 
   .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
   .nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-mask {
-    background: var(--lt-blue-trans);
+    /* background: var(--lt-blue-trans); */
   }
 
-  .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask,
-  .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask {
-    background: var(--main-blue-trans);
+  .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask:hover,
+  .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask:hover {
+    /* background: var(--main-blue-trans); */
   }
 }
 
