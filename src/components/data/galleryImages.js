@@ -3,7 +3,7 @@ const galleryImages = [
     heroTitle: 'Keep Warm this Winter!',
     heroDeck: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates sunt commodi distinctio enim aspernatur. Earum, doloremque.',
     callToAction: 'LEARN MORE ABOUT HEATING SYSTEMS!',
-    src: 'https://images.unsplash.com/photo-1433162653888-a571db5ccccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+    src: './images/cold-pug.jpg',
     path: '/heating',
   },
   {
