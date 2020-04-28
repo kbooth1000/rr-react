@@ -74,7 +74,7 @@ const Header = () => {
 
                               target="_blank"
 
-                              href="https://www.payzer.com/Payment/ExternalMake/businessId/9599">
+                              href="https://www.payzer.com/Payment/ExternalMake/businessId/9599" />
 
                         <area style={{outline: 'none'}} title="Apply for Instant Financing"
 
@@ -84,7 +84,7 @@ const Header = () => {
 
                               target="_blank"
 
-                              href="https://www.payzer.com/Account/FinancingOptions/businessId/9599">
+                              href="https://www.payzer.com/Account/FinancingOptions/businessId/9599" />
 
                     </map>
 
