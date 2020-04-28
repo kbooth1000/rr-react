@@ -89,7 +89,16 @@ const Header = () => {
                               href="https://www.payzer.com/Account/FinancingOptions/businessId/9599" />
 
                     </map>
-<span style={{ fontSize:'15px', fontWeight:'500', textAlign:'center', fontStyle:'italics' }}>Serving Greater Atlanta and Florida</span>
+<span style={{ 
+             fontSize:'15px', 
+             fontWeight:'500', 
+             textAlign:'center', 
+             fontStyle:'italic', 
+             marginTop: '-18px',
+             display: 'block'
+             color: #D9363E; }}>
+              Serving Greater Atlanta and Florida
+             </span>
                 </div>
   
     </div >
