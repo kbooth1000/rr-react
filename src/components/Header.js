@@ -55,8 +55,9 @@ const Header = () => {
   
   
   <div style={{ position: 'absolute',
-    right: '12px',
-    top: '108px' }}>
+    right: '2px',
+    top: '108px',
+    transform: 'scale(0.85)' }}>
 
                     <img style={{outline: 'none', margin: '0 auto', display: 'block'}} alt=""
 
