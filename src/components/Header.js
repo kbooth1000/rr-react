@@ -96,7 +96,7 @@ const Header = () => {
              textAlign:'center', 
              fontStyle:'italic', 
              marginTop: '-18px',
-             display: 'block'
+             display: 'block',
              color: #D9363E; }}>
               Serving Greater Atlanta and Florida
              </span>
