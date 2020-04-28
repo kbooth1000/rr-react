@@ -60,7 +60,7 @@ const Header = () => {
 
                          src="https://www.payzer.com/images/jpp-button-medium.png"
 
-                         usemap="#JPPMediumButtonMap" width="250" height="100">
+                         usemap="#JPPMediumButtonMap" width="250" height="100" />
 
                     <p></p>
 
