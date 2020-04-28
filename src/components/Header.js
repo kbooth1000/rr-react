@@ -54,7 +54,9 @@ const Header = () => {
   
   
   
-  <div style={{ float:'left' }}>
+  <div style={{ position: 'absolute',
+    right: '12px',
+    top: '108px' }}>
 
                     <img style={{outline: 'none', margin: '0 auto', display: 'block'}} alt=""
 
