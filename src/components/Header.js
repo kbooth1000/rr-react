@@ -97,8 +97,9 @@ const Header = () => {
              fontStyle:'italic', 
              marginTop: '-18px',
              display: 'block',
-             color: '#D9363E' }}>
-              Serving Greater Atlanta and Florida
+          color: '#D9363E',
+        background: 'rgba(255,255,255,0.8)'}}>
+          Serving Florida and Greater Atlanta
              </span>
                 </div>
   
