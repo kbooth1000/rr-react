@@ -13,7 +13,7 @@ import lowPriceGuarantee from './images/lowest-price-guarantee.png';
 
 
 const SystemRec = (props, { ...rest }) => {
-  const [showFirstStep, setShowFirstStep] = useState(false);
+  // const [showFirstStep, setShowFirstStep] = useState(false);
   const [zipcode, setZipcode] = useState('');
   const [zipcodeText, setZipcodeText] = useState('');
   const [sysType, setSysType] = useState('');
