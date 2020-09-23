@@ -48,11 +48,11 @@ const SystemRec = (props, { ...rest }) => {
     setZipcode(zipcodeText);
     setStep2Active('active');
     setStep2Show('show');
-    setAside1Show('show');
+    // setAside1Show('show');
   }
   const handleStepChange = (e, stepNum) => {
     e.preventDefault();
-    setStepNum(stepNum);
+    // setStepNum(stepNum);
   }
 
   const handleSysTypeSubmit = e => {
@@ -75,7 +75,7 @@ const SystemRec = (props, { ...rest }) => {
 
   const handleFullOrReplaceSubmit = e => {
     setFullOrReplace(e.target.value);
-    setFullOrReplaceSelected(e.target.value);
+    // setFullOrReplaceSelected(e.target.value);
     setRecShow(true);
   }
 
