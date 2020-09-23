@@ -91,8 +91,8 @@
 
 .logo {
   height: 93px;
-  width: 260px;
-  background: url(../images/logo.png) no-repeat;
+  width: 201px;
+  background: url(../images/logo-RR-cropped.png) no-repeat;
   background-size: contain;
   position: relative;
   top: -23px;
@@ -106,10 +106,10 @@
 }
 
 .short-header .logo {
-  top: 19px;
+  top: 8px;
   height: 76px;
   width: 160px;
-  background: url(../images/logo-short.png) no-repeat;
+  background: url(../images/logo-RR-cropped.png) no-repeat;
   background-size: contain;
 }
 
@@ -261,14 +261,15 @@
   .short-header .main-nav {
     height: 80px;
   }
+
   .short-header .logo {
     position: relative;
     left: auto;
     transform: translateX(0);
 
-    top: 34px;
-    height: 110px;
-    background: url(../images/logo-short.png) no-repeat;
+    top: 8px;
+    height: 60px;
+    background: url(../images/logo-RR-cropped.png) no-repeat;
     background-size: contain;
   }
 
@@ -293,6 +294,7 @@
   .short-header .nav-list {
     top: 32px;
   }
+
   .short-header .nav-list ul {
     margin-right: 8.3rem;
   }
@@ -360,7 +362,7 @@
   .short-header .quote-button {
     top: -18px;
   }
-  
+
   .logo {
     width: 150px;
     top: -5px;
