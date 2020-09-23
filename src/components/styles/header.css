@@ -247,6 +247,19 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .payzer-button {
+    top: 43px !important;
+    transform: scale(0.47) !important;
+    right: -4rem !important;
+    transition: .45s;
+  }
+
+  .payzer-button:hover {
+    transform: scale(0.62) !important;
+  }
+}
+
 @media screen and (min-width: 699px) {
 
 

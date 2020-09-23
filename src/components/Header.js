@@ -54,7 +54,7 @@ const Header = () => {
   
   
   
-  <div style={{ position: 'absolute',
+  <div className="payzer-button" style={{ position: 'absolute',
     right: '2px',
     top: '108px',
     transform: 'scale(0.85)' }}>
