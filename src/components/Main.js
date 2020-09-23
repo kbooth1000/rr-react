@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import Header from './Header';
 import HomePage from './HomePage';
@@ -22,7 +23,8 @@ const Main = ({ match, ...props }) => {
 
   const handleChangeRoute = lcn => {
     setLoc(lcn);
-    console.log('lcn: ', lcn)
+    ReactGA.pageview(window.location.pathname, window.location.search);
+    console.log('lcn: ', lcn, window.location.pathname, window.location.search)
   }
 
   return (

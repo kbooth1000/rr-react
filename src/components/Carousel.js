@@ -16,7 +16,7 @@ const Carousel = props => {
         setImgIndex(0);
       } else {
         setImgIndex(imgIndex + 1);
-        console.log('imgIndex', imgIndex);
+        // console.log('imgIndex', imgIndex);
       }
     }, 3500);
     return () => clearInterval(carouselDelay);
