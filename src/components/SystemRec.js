@@ -19,7 +19,6 @@ const SystemRec = (props, { ...rest }) => {
   const [sysType, setSysType] = useState('');
   const [sysTon, setSysTon] = useState('2.0');
   const [fullOrReplace, setFullOrReplace] = useState('gasSystems');
-  const [aside1Show, setAside1Show] = useState('');
   const [step2Show, setStep2Show] = useState('');
   const [step2Active, setStep2Active] = useState('');
   const [step3Show, setStep3Show] = useState('');
@@ -28,8 +27,6 @@ const SystemRec = (props, { ...rest }) => {
   const [step4Active, setStep4Active] = useState('');
   const [tonDropdownSelect, setTonDropdownSelect] = useState('');
   const [recShow, setRecShow] = useState(false);
-  const [fullOrReplaceSelected, setFullOrReplaceSelected] = useState('');
-  const [stepNum, setStepNum] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [hintText, setHintText] = useState(`
   Lorem ipsum, dolor sit amet
@@ -41,10 +38,6 @@ const SystemRec = (props, { ...rest }) => {
     () => props.changeRoute('shop')
   )
 
-  const handleStartClick = e => {
-    e.preventDefault();
-    setShowFirstStep(!showFirstStep);
-  }
 
   const handleZipChange = e => {
     e.preventDefault();

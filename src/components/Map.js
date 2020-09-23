@@ -2,7 +2,6 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
 import './styles/map.css';
-import keys from '../keys/keys.js';
 
 const Marker = ({ text }) => <a className="map-marker" href="https://www.google.com/maps?daddr=1400+S+Marietta+Pkwy+SE+Suite+108,+Marietta,+Georgia+30067,+United+States" target="_blank" rel="noopener noreferrer">
   <div
