@@ -30,7 +30,7 @@ return <div className="Shop" ref={setScrollRef}>
               <h2>To get a custom recommendation, just answer a few questions: </h2>
               <p>
               <br />
-              <Link to="quote"><div class="start-button">Get Started Now:</div></Link>
+              <Link to="quote"><div className="start-button">Get Started Now:</div></Link>
               <br />
               <br />
               See the Results and Choose Your New Air Conditioner! Matched with the best recommendation for efficiency, most competitive costs, installation & 10 Year Warranty Included!</p>
