@@ -1,6 +1,6 @@
 const galleryImages = [
   {
-    heroTitle: 'Keep Warm this Winter!',
+    heroTitle: '',
     heroDeck: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates sunt commodi distinctio enim aspernatur. Earum, doloremque.',
     callToAction: 'LEARN MORE ABOUT HEATING SYSTEMS!',
     src: './images/cold-pug.jpg',

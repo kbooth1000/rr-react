@@ -33,7 +33,7 @@ const Carousel = props => {
               <h2>
                 <span className="nav-breaker">
                   RockRuth Heating &amp; Air </span>
-                <span className="nav-breaker">in Florida and Atlanta</span>
+                <span className="nav-breaker" style={{fontSize:'0.8em'}}>serving Florida and Georgia</span>
               </h2>
               {/* <div className="deck">{img.heroDeck}</div> */}
               <div className="call-to-action">

@@ -32,15 +32,14 @@ const Contact = props => {
           We strive to be in constant communication with our customers until the job is done. If you have questions or special requests, just drop us a line. To get a free quote, or for emergency service, please contact us at your convenience or book online for your heating & air needs. We look forward to serving you!</p>
       </div>
       <div className="info-blurb">
-
-
         <p><strong>RockRuth Heating &amp; Air</strong></p>
         <div style={{ marginLeft: '1rem' }}>
-          <p>1400 South Marietta Parkway Suite 108, Marietta, Georgia 30067, United States</p>
-          <p> <Icon name='phone' /> Office: <a href="tel:+17706932946">(770) 693-2946</a></p>
+          <p> <Icon name='phone' /> 
+            <span> FL Office <a href="tel:+19046642495">(904) 664-2495</a>&nbsp;&nbsp;</span> <span style={{ whiteSpace: 'nowrap' }}>
+              <br /><Icon name='phone' /> GA Office <a href="tel:+14705814642">(470) 581-4642</a></span></p>
           <p> <Icon name='phone' /> After Hours: <a href="tel:+14705814642">(404) 581-4642</a></p>
           <p> 
-            <Icon name='mail outline' /><a href="mailto:information@rockruth.com">information@rockruth.com</a>
+            <Icon name='mail outline' /><a style={{fontSize:'.85em'}} href="mailto:customerservice@rockruth.com">customerservice@rockruth.com</a>
           </p>
         </div>
 

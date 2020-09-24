@@ -10,11 +10,13 @@ const Header = () => {
       <div className="top-links">
         <div className="email-link">
           <Icon name='envelope' />
-          <a href="mailto:information@rockruth.com">information@rockruth.com</a>
+          <a href="mailto:customerservice@rockruth.com">customerservice@rockruth.com</a>
         </div>
         <div className="phone-link">
           <Icon name='phone' />
-          <a href="tel:+14705814642">(470) 581-4642</a>
+          <span> <a href="tel:+19046442495">(904) 644-2495</a>&nbsp;&nbsp;</span>
+          {/* <span style={{ whiteSpace: 'nowrap' }}>
+            <Icon name='phone' />GA <a href="tel:+14705814642">(470) 581-4642</a></span> */}
         </div>
 
     

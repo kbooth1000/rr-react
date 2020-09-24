@@ -32,12 +32,12 @@ const Cooling = props => {
                 <h1 className="title">AIR CONDITIONING INSTALLATION & REPAIR</h1>
                 <div className="info-blurb">
 
-                    <h2>RockRuth Heating &amp; Air serving Atlanta</h2> <img src={
+                    <h2>RockRuth<br /> Heating &amp; Air </h2> <img src={
                         serviceGuy
                     }
                         alt="" />
                     <p><i>RockRuth Heating & Air has a history of serving the air conditioning
-                        repair needs of those in the Atlanta Area. Our trained technicians have
+                        repair needs of those in Florida and Georgia. Our trained technicians have
                         the knowledge to address all heating & air issues that you'll encounter,
                         and because we realize that you depend on your air conditioning system
                         to maintain comfort in your home or business, our staff insists on punctual

@@ -45,7 +45,7 @@ const Heating = props => {
                               alt="" />
                         <p> <i> Need a heating solution
                   for your home? Is your current furnace in
-                        total disrepair? At RockRuth Heating & Air in Atlanta, GA, our team provides the highest level of quality in furnace installations and replacements.When you hire us, you can rest assured that all jobs are performed by knowledgeable technicians.Our experienced staff is dedicated to serving your needs, and we&apos;re ready to put our knowledge
+                        total disrepair? At RockRuth Heating & Air, our team provides the highest level of quality in furnace installations and replacements.When you hire us, you can rest assured that all jobs are performed by knowledgeable technicians.Our experienced staff is dedicated to serving your needs, and we&apos;re ready to put our knowledge
                   to work
       for you. </i></p> </div>
 
@@ -57,7 +57,7 @@ const Heating = props => {
                         <p> <i> Many people tend to ignore or forget about their furnaces until they stop working.When your furnace stops functioning properly, you&apos;ll want
                   an experienced professional&apos;s help to make sure the problem doesn'
                   t quickly get worse.That&apos;s where RockRuth Heating &amp; Air comes in. As an
-      established HVAC company in Atlanta, GA, we have the tools and skills to provide you with accurate, cost - effective furnace repair service </i></p> </div>
+      established HVAC company, we have the tools and skills to provide you with accurate, cost - effective furnace repair service </i></p> </div>
 
                   <div className="info-blurb">
                         <h2> HOW WE CAN HELP </h2> <img src={
