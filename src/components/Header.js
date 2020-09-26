@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <div className="phone-link">
           <Icon name='phone' />
-          <span> <a href="tel:+19046442495">(904) 644-2495</a>&nbsp;&nbsp;</span>
+          <span> <a href="tel:+19046642495">(904) 664-2495</a>&nbsp;&nbsp;</span>
           {/* <span style={{ whiteSpace: 'nowrap' }}>
             <Icon name='phone' />GA <a href="tel:+14705814642">(470) 581-4642</a></span> */}
         </div>

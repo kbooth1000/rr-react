@@ -66,7 +66,7 @@ const Heating = props => {
                               alt="" />
                         <p> <i> By having your furnace serviced on a regular basis, you may be able to avoid more extensive problems down the line. At RockRuth HVAC we&apos;re
                   equipped to
-                  catch furnace problems early on, ongoing maintenance from RockRuth Heating And Air could mean preventing a total malfunction at a later point in time.To learn more about our furnace service packages,
+                  catch furnace problems early on, ongoing maintenance from RockRuth Heating & Air could mean preventing a total malfunction at a later point in time.To learn more about our furnace service packages,
             call Today &amp; also check out our Service Maintenance Plan! </i>
                         </p> </div>
 
@@ -75,7 +75,7 @@ const Heating = props => {
                               hvacFans
                         }
                               alt="" />
-                        <p> <i> At RockRuth Heating And Air, we provide the highest level of quality in
+                        <p> <i> At RockRuth Heating & Air, we provide the highest level of quality in
             all of our heating system installation or repair projects, and all jobs are performed by highly - experienced HVAC contractors you can trust.We also aim to keep our prices reasonable and affordable, and we offer a variety heating systems to suit your needs and budget whether its heating repair or a furnace installation. </i></p>
                   </div>
 

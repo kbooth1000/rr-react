@@ -380,4 +380,11 @@
     width: 150px;
     top: -5px;
   }
+
+  .payzer-button {
+    top: 83px !important;
+    transform: scale(0.47) !important;
+    right: -63px !important;
+    transition: .45s;
+  }
 }

@@ -36,8 +36,7 @@ const Cooling = props => {
                         serviceGuy
                     }
                         alt="" />
-                    <p><i>RockRuth Heating & Air has a history of serving the air conditioning
-                        repair needs of those in Florida and Georgia. Our trained technicians have
+                    <p><i>RockRuth Heating & Air has a history of serving the air conditioning repair needs of those in Florida and Georgia. Our trained technicians have
                         the knowledge to address all heating & air issues that you'll encounter,
                         and because we realize that you depend on your air conditioning system
                         to maintain comfort in your home or business, our staff insists on punctual
@@ -97,7 +96,7 @@ const Cooling = props => {
                         </ul>
                     </p>
                     <p><strong>DEPENDABLE SERVICE</strong></p>
-                    <p><i>At RockRuth Heating And Air, we go out of our way to provide the
+                    <p><i>At RockRuth Heating & Air, we go out of our way to provide the
                           thorough, dependable repair work you deserve. When you bring us in
                           to fix your thermostat, you can rest assured that we'll take the time
                           to do the job right. We cater to commercial and residential customers
