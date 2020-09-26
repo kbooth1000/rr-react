@@ -61,7 +61,7 @@ const Contact = props => {
       </div>
       <div className="info-blurb">
 
-        <Map text="RockRuth Heating &amp; Air" latitude={33.9392653} longitude={-84.5106983} zoom={15} height='500px' width='45vw' />
+        <Map text="RockRuth Heating &amp; Air" latitude={25.8000316} longitude={-80.2017535} zoom={15} height='500px' width='45vw' />
       </div>
 
     </div>
