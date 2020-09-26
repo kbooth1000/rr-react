@@ -44,7 +44,7 @@ return <div className="Shop" ref={setScrollRef}>
               </div>
               
               <p>
-We’ll show you a great selection of air conditioners in the size and tonnage you choose but first match you with the best option available for the parameters input. We will also show you all your options on SEER ratings from the minimum of 14 to 18 & 20. If you want more options or specific brands please call 770-693-2946 for a customized quote. RockRuth HVAC LLC services & installs all makes and models. If you see the option you want, simply pick the unit you want and check out.</p>
+We’ll show you a great selection of air conditioners in the size and tonnage you choose but first match you with the best option available for the parameters input. We will also show you all your options on SEER ratings from the minimum of 14 to 18 & 20. If you want more options or specific brands please call 770-693-2946 for a customized quote. RockRuth Heating & Air services & installs all makes and models. If you see the option you want, simply pick the unit you want and check out.</p>
 
 <p>IT'S TRULY THAT EASY WITHOUT A PUSHY SALESPERSON.</p>
 

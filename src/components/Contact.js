@@ -37,7 +37,7 @@ const Contact = props => {
           <p> <Icon name='phone' /> 
             <span> FL Office <a href="tel:+19046642495">(904) 664-2495</a>&nbsp;&nbsp;</span> <span style={{ whiteSpace: 'nowrap' }}>
               <br /><Icon name='phone' /> GA Office <a href="tel:+14705814642">(470) 581-4642</a></span></p>
-          <p> <Icon name='phone' /> After Hours: <a href="tel:+14705814642">(404) 581-4642</a></p>
+          <p> <Icon name='phone' /> After Hours: <a href="tel:+14705814642">(470) 581-4642</a></p>
           <p> 
             <Icon name='mail outline' /><a style={{fontSize:'.85em'}} href="mailto:customerservice@rockruth.com">customerservice@rockruth.com</a>
           </p>
