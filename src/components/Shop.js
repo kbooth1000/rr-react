@@ -30,7 +30,7 @@ return <div className="Shop" ref={setScrollRef}>
               <h2>To get a custom recommendation, just answer a few questions: </h2>
               <p>
               <br />
-              <Link to="quote"><div className="start-button">Get Started Now:</div></Link>
+              <Link to="quote" className="start-button">Get Started Now:</Link>
               <br />
               <br />
               See the Results and Choose Your New Air Conditioner! Matched with the best recommendation for efficiency, most competitive costs, installation & 10 Year Warranty Included!</p>
@@ -50,7 +50,7 @@ We’ll show you a great selection of air conditioners in the size and tonnage y
 
 <p>
 If using financing there is no down payment NOR Payment due until the time of completion!</p>
-<Link to="quote"><div class="start-button">Get Started Now:</div></Link>
+<Link to="quote" className="start-button">Get Started Now:</Link>
  <br /><br />
  {/* <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
               alt="Display of numerous AC units and accessories." className="main-graphic" /> */}
