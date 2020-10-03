@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
@@ -20,6 +20,8 @@ import './styles/main.css';
 
 const Main = ({ match, ...props }) => {
   const [loc, setLoc] = useState('');
+
+  useEffect(() => { ReactGA.initialize('UA-144448260-3'); }, []);
 
   const handleChangeRoute = lcn => {
     setLoc(lcn);
