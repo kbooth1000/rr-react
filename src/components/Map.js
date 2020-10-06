@@ -3,12 +3,12 @@ import GoogleMapReact from 'google-map-react';
 
 import './styles/map.css';
 
-const Marker = ({ text }) => <section>
+const Marker = ({ text }) => <a className="map-marker" href="https://www.google.com/maps?daddr=218+NW+24th+St,+Miami,+FL+3127,+United+States" target="_blank" rel="noopener noreferrer">
   <div
     className="marker-text">{text}</div>
   <div className="marker-dot"></div>
   <div className="marker-link">GET DIRECTIONS</div>
-</section>
+</a>
 
 const Map = props => {
   const makeOptions = () => {
