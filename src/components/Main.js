@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
 import Header from './Header';
@@ -21,7 +21,12 @@ import './styles/main.css';
 const Main = ({ match, ...props }) => {
   const [loc, setLoc] = useState('');
 
-  useEffect(() => { ReactGA.initialize('UA-144448260-3'); }, []);
+  let location = useLocation();
+  useEffect(() => {
+    ReactGA.initialize('UA-144448260-3');
+    ReactGA.set({ page: location.pathname }); // Update the user's current page
+    ReactGA.pageview(location.pathname); // Record a pageview for the given page
+  }, [location]);
 
   const handleChangeRoute = lcn => {
     setLoc(lcn);
