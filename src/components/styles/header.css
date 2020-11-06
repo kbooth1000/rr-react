@@ -68,12 +68,14 @@
   position: absolute;
   top: .4rem;
   color: var(--main-blue);
-  left: 50%;
+  color: #fff;
+  left: 20%;
   transform: translateX(-60%);
 }
 
 .phone-link a {
   color: var(--main-blue);
+  color: #fff;
 }
 
 .login-link {
