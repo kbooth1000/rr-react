@@ -25,7 +25,7 @@ const Main = ({ match, ...props }) => {
 
   let location = useLocation();
   useEffect(() => {
-    ReactGA.initialize({ trackingId: process.env.REACT_APP_GA_TRACKING_CODE});
+    ReactGA.initialize({ trackingId: 'UA-176574403-1' });
     ReactGA.set({ page: location.pathname }); // Update the user's current page
     ReactGA.pageview(location.pathname); // Record a pageview for the given page
   }, [location]);
