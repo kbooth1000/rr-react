@@ -15,17 +15,17 @@ import RecommendedReplacements from './RecommendedReplacements';
 import Shop from './Shop';
 import Carousel from './Carousel';
 import Footer from './Footer';
-import keys from '../keys/keys.js';
+//import keys from '../keys/keys.js';
 
 import './styles/main.css';
 
 const Main = ({ match, ...props }) => {
   const [loc, setLoc] = useState('');
-  const trackingCode = keys.gaTrackingCode;
+  //const trackingCode = keys.gaTrackingCode;  
 
   let location = useLocation();
   useEffect(() => {
-    ReactGA.initialize(trackingCode);
+    ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
     ReactGA.set({ page: location.pathname }); // Update the user's current page
     ReactGA.pageview(location.pathname); // Record a pageview for the given page
   }, [location]);
