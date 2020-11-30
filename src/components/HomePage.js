@@ -14,7 +14,6 @@ const HomePage = props => {
         behavior: 'smooth',
         block: 'start',
       });
-
     }
   }, [])
 

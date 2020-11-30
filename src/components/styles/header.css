@@ -249,7 +249,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 874px) {
   .payzer-button {
     top: 43px !important;
     transform: scale(0.47) !important;
