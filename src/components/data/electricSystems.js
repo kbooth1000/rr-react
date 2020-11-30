@@ -3,10 +3,10 @@ const defaultImgUrl = 'images/split-system-electric.png';
 
 export const electricSystems = {
   defaultImgUrl,
-  mainTitle: "Split Heat Pump System",
+  mainTitle: "Split A/C System",
   "1.5": {
     productImage: defaultImgUrl,
-    productTitle: "1.5 Ton Split Heat Pump System",
+    productTitle: "1.5 Ton Split A/C System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -24,13 +24,13 @@ export const electricSystems = {
       [
         "Free Duct Cleaning ($1K Value)",
         "Two Stage Scroll Compressor",
-        "80% AFUE Two Stage Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
         "Free Duct Cleaning ($1K Value)",
         "Single Stage Compressor",
-        "80% AFUE Constant Torque Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
@@ -45,7 +45,7 @@ export const electricSystems = {
 
   "2.0": {
     productImage: defaultImgUrl,
-    productTitle: "2.0 Ton Split Heat Pump System",
+    productTitle: "2.0 Ton Split A/C System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -63,13 +63,13 @@ export const electricSystems = {
       [
         "Free Duct Cleaning ($1K Value)",
         "Two Stage Scroll Compressor",
-        "80% AFUE Two Stage Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
         "Free Duct Cleaning ($1K Value)",
         "Single Stage Compressor",
-        "80% AFUE Constant Torque Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
@@ -83,7 +83,7 @@ export const electricSystems = {
   },
   "2.5": {
     productImage: defaultImgUrl,
-    productTitle: "2.5 Ton Split Heat Pump System",
+    productTitle: "2.5 Ton Split A/C System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -101,13 +101,13 @@ export const electricSystems = {
       [
         "Free Duct Cleaning ($1K Value)",
         "Two Stage Scroll Compressor",
-        "80% AFUE Two Stage Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
         "Free Duct Cleaning ($1K Value)",
         "Single Stage Compressor",
-        "80% AFUE Constant Torque Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
@@ -121,7 +121,7 @@ export const electricSystems = {
   },
   "3.0": {
     productImage: defaultImgUrl,
-    productTitle: "3.0 Ton Split Heat Pump System",
+    productTitle: "3.0 Ton Split A/C System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -139,13 +139,13 @@ export const electricSystems = {
       [
         "Free Duct Cleaning ($1K Value)",
         "Two Stage Scroll Compressor",
-        "80% AFUE Two Stage Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
         "Free Duct Cleaning ($1K Value)",
         "Single Stage Compressor",
-        "80% AFUE Constant Torque Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
@@ -160,7 +160,7 @@ export const electricSystems = {
 
   "3.5": {
     productImage: defaultImgUrl,
-    productTitle: "3.5 Ton Split Heat Pump System",
+    productTitle: "3.5 Ton Split A/C System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -178,13 +178,13 @@ export const electricSystems = {
       [
         "Free Duct Cleaning ($1K Value)",
         "Two Stage Scroll Compressor",
-        "80% AFUE Two Stage Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
         "Free Duct Cleaning ($1K Value)",
         "Single Stage Compressor",
-        "80% AFUE Constant Torque Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
@@ -199,7 +199,7 @@ export const electricSystems = {
 
   "4.0": {
     productImage: defaultImgUrl,
-    productTitle: "4.0 Ton Split Heat Pump System",
+    productTitle: "4.0 Ton Split A/C System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -217,13 +217,13 @@ export const electricSystems = {
       [
         "Free Duct Cleaning ($1K Value)",
         "Two Stage Scroll Compressor",
-        "80% AFUE Two Stage Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
         "Free Duct Cleaning ($1K Value)",
         "Single Stage Compressor",
-        "80% AFUE Constant Torque Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],
@@ -238,7 +238,7 @@ export const electricSystems = {
 
   "5.0": {
     productImage: defaultImgUrl,
-    productTitle: "5.0 Ton Split Heat Pump System",
+    productTitle: "5.0 Ton Split A/C System",
     pricingLevels: ["Platinum", "Gold", "Silver"],
     seers: ["18", "16", "14"],
     levelDescriptions: [
@@ -256,13 +256,13 @@ export const electricSystems = {
       [
         "Free Duct Cleaning ($1K Value)",
         "Two Stage Scroll Compressor",
-        "80% AFUE Two Stage Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
       [
         "Free Duct Cleaning ($1K Value)",
         "Single Stage Compressor",
-        "80% AFUE Constant Torque Furnace",
+        "Multi-Speed Air Handler - Multiposition",
         "10 Year Parts / 1 Year Labor Warranty",
       ],
     ],

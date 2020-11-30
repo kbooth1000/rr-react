@@ -11,16 +11,13 @@ const Carousel = props => {
 
     const carouselDelay = setInterval(() => {
       if (imgIndex >= props.images.length - 1) {
-        console.log('>>>');
-
         setImgIndex(0);
       } else {
         setImgIndex(imgIndex + 1);
-        // console.log('imgIndex', imgIndex);
       }
     }, 3500);
     return () => clearInterval(carouselDelay);
-  }, [imgIndex, props.images.length])
+  })
 
   return (
     <div className="Carousel">
