@@ -5,6 +5,7 @@ import ReactGA from 'react-ga';
 import Header from './Header';
 import HomePage from './HomePage';
 import SystemRec from './SystemRec';
+import NewSystemRec from './NewSystemRec';
 import Heating from './Heating';
 import Cooling from './Cooling';
 import ForSale from './ForSale';
@@ -13,6 +14,7 @@ import Contact from './Contact';
 import Map from './Map';
 import RecommendedReplacements from './RecommendedReplacements';
 import Shop from './Shop';
+import NewShop from './NewShop';
 import Carousel from './Carousel';
 import Footer from './Footer';
 //import keys from '../keys/keys.js';
@@ -40,7 +42,11 @@ const Main = ({ match, ...props }) => {
     <div className={`Main ${loc}`}>
       <Header />
       <div className="page-container">
-        <Route exact path='/' render={props => <HomePage changeRoute={handleChangeRoute} {...props} />} />
+        <Route exact path='/' render={props => <main changeRoute={handleChangeRoute} {...props}>
+          <NewSystemRec changeRoute={handleChangeRoute} {...props} />
+          <NewShop {...props} changeRoute={handleChangeRoute} />
+          </main>} />
+        {/* <Route exact path='/' render={props => <HomePage changeRoute={handleChangeRoute} {...props} />} /> */}
         <Route path='/shop' render={props => <Shop {...props} changeRoute={handleChangeRoute} />} />
         <Route path='/heating' render={props => <Heating changeRoute={handleChangeRoute} {...props} />} />
         <Route path='/cooling' render={props => <Cooling changeRoute={handleChangeRoute} {...props} />} />
