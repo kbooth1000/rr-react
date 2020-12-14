@@ -106,7 +106,7 @@ const NewHomePage = (props, { ...rest }) => {
   }, [])
 
   return (
-    <div className="SystemRec" ref={(e) => setScrollRef(e)}>
+    <div className="SystemRec">
 
       <div className="main">
 

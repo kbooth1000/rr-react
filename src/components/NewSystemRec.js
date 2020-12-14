@@ -97,7 +97,7 @@ const NewSystemRec = (props, { ...rest }) => {
 
   const setScrollRef = useCallback(node => {
     if (node !== null) {
-      node.parentNode.parentNode.scrollIntoView({
+      node.parentNode.parentNode.parentNode.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
