@@ -3,7 +3,7 @@ import { Route, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
 import Header from './Header';
-import HomePage from './HomePage';
+// import HomePage from './HomePage';
 import SystemRec from './SystemRec';
 import NewSystemRec from './NewSystemRec';
 import Heating from './Heating';
