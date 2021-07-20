@@ -14,7 +14,7 @@
     "react-gesture-gallery": "^1.1.0",
     "react-gesture-responder": "^2.1.0",
     "react-helmet": "^6.1.0",
-    "react-native": "^0.61.4",
+    "react-native": "^0.62.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "semantic-ui-css": "^2.4.1",
